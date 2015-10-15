@@ -16,18 +16,11 @@ App通过微信登录后,需要回调服务器保存相关数据,等待服务器
 
 然而事情并没有按照计划来发展,flush没有生效.四处谷歌,发现如下:  
 
-```
-So that’s what I found out:
+> So that’s what I found out: Flush would not work under Apache’s mod_gzip or Nginx’s gzip because, logically, it is gzipping the content, and to do that it must buffer content to gzip it. Any sort of web server gzipping would affect this. In short, at the server side, we need to disable gzip and decrease the fastcgi buffer size. [http://stackoverflow.com/questions/4706525/php-flush-not-working](http://stackoverflow.com/questions/4706525/php-flush-not-working)
 
-Flush would not work under Apache’s mod_gzip or Nginx’s gzip because, logically, it is gzipping the content, and to do that it must buffer content to gzip it. Any sort of web server gzipping would affect this. In short, at the server side, we need to disable gzip and decrease the fastcgi buffer size.
-[http://stackoverflow.com/questions/4706525/php-flush-not-working](http://stackoverflow.com/questions/4706525/php-flush-not-working)
-```
+这个方法没戏了,Server都是走Nginx+PHP-FPM架构,因为这个把gzip和buffer关掉得不偿失.继续搜,发现有提到fastcgi_finish_request方法的,文档:[http://php.net/manual/zh/function.fastcgi-finish-request.php](http://php.net/manual/zh/function.fastcgi-finish-request.php)
 
-这个方法没戏了,Server都是走Nginx+PHP-FPM架构,因为这个把gzip和buffer关掉得不偿失.继续搜,发现有提到fastcgi_finish_request方法的,文档:(http://php.net/manual/zh/function.fastcgi-finish-request.php)[http://php.net/manual/zh/function.fastcgi-finish-request.php]
-
-```
-此函数冲刷(flush)所有响应的数据给客户端并结束请求。 这使得客户端结束连接后，需要大量时间运行的任务能够继续运行。
-```
+> 此函数冲刷(flush)所有响应的数据给客户端并结束请求。 这使得客户端结束连接后，需要大量时间运行的任务能够继续运行。
 
 这不就是我要的么.拿他代替flush,果然ok.自己封装了一个hook,可以在apiReturn后,根据requestUri自动寻找对应的hook和方法执行,用$_POST或者$GLOBALS来传递数据就ok,如此解决 登录再也不卡了.
 
