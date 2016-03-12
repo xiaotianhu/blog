@@ -1,5 +1,5 @@
 Date: 2016-03-12
-Title: mac+搬瓦工部署finalspeed&常见失败解决方法
+Title: mac+搬瓦工部署finalspeed&常见失败解决方法&群晖局域网部署
 Tags:  mac 搬瓦工 finalspeed 
 Toc:no
 Status: public
@@ -47,4 +47,16 @@ FinalSpeed server start success.
 
 打开个Youtube视频感受一下吧.
 
+```
+更新 有群晖的可以部署在群晖上,这样局域网用就很爽了 
+还没测试安卓客户端,理论应该可行
+```
 
+找了一个命令行下的finalspeed客户端,群晖装好java 启动成功
+https://github.com/zqhong/finalspeed/releases 命令行客户端 
+
+群晖装java很简单  装好之后命令行进去,命令:
+nohup /var/packages/JavaManager/target/Java/bin/java -jar client.jar &
+
+配置自己照着mac上的改一下 或者直接复制过去就行了
+ss的127.0.0.1改成局域网群晖的ip,完美
