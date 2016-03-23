@@ -292,7 +292,9 @@ CSS选择器在QueryPath中相当重要,上面介绍了十个支持CSS选择器�
 
 > div.content ul>li:first
 
->这个语句会选择全部class为content的div,在div内部搜索全部的<ul>,返回每个<ul>内部的第一个<li>元素.
+```
+这个语句会选择全部class为content的div,在div内部搜索全部的<ul/>,返回每个<ul/>内部的第一个<li/>元素.
+```
 
 #在返回结果中遍历#
 
