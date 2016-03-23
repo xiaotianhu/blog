@@ -146,7 +146,7 @@ QueryPath::HTML_STUB包含了一个最基本的HTML样板,内容如下:
 
 打开一个文档之后,会需要对文档进行遍历来找到需要的内容.QueryPath在这方面的设计非常易用.为了满足大部分遍历的需求,QueryPath提供了多种方法,大部分都支持使用CSS3选择器来找到对应的节点.
 
-    ![](images/QueryPath_1.gif)
+![](images/QueryPath_1.gif)
 
 上图总结了最常用的遍历方法.下面有具体对应的描述.除此之外还有别的方法,这些介绍的是最常用的方法.
 
@@ -292,7 +292,7 @@ CSS选择器在QueryPath中相当重要,上面介绍了十个支持CSS选择器�
 
 > div.content ul>li:first
 
-这个语句会选择全部class为content的div,在div内部搜索全部的<ul>,返回每个<ul>内部的第一个<li>元素.
+>这个语句会选择全部class为content的div,在div内部搜索全部的<ul>,返回每个<ul>内部的第一个<li>元素.
 
 #在返回结果中遍历#
 
@@ -342,7 +342,7 @@ foreach循环的每个结果会赋值给$child变量,但$child变量不只是一
 
 在这个例子中,使用了text()方法来修改了<title/>元素的内容.QueryPath提供了一堆这样的方法来修改文档. 下图展示了这些方法作用的地方,这些方法都可以用来新增或是修改数据.绿色的标签表示当前选中的元素:
 
-    ![](images/QueryPath_2.gif)
+![](images/QueryPath_2.gif)
     
 这些方法都是用来处理字符串的,通常用在HTML或者XML文档中,用来往文档中插入数据.插入后的数据立刻就可以访问和操作.
 
