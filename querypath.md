@@ -1,4 +1,11 @@
-QueryPath PHP的Jquery实现
+Date: 2016-03-23
+Title: [原创翻译]QueryPath PHP的Jquery实现
+Tags:  QueryPath  php  jquery dom 抓取 
+Toc:no
+Status: public
+Position: 1
+
+#QueryPath PHP的Jquery实现#
 
     HTML,HTTP和XML,是WEB技术领域无可争议的三大基础支柱技术.然而对于PHP开发者来说,在使用这三种技术的时候可能会比较麻烦.新出现的QueryPath库,是一个使用PHP实现的如同Jquery的类库,提供了方便强大的处理XML,HTTP,HTML的类库.无论是WEB网页,WEB service,SVG或者SPAARQL,RDF,Atom,QueryPath都能处理,并且用PHP语言提供了健壮并简单易用的API.在本文中,介绍了如何构建QueryPath对象,如何遍历并处理XML和HTML.
 
