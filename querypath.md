@@ -1,6 +1,6 @@
 Date: 2016-03-23
-Title: [原创翻译]QueryPath PHP的Jquery实现
-Tags:  QueryPath  php  jquery dom 抓取 
+Title: [原创翻译]QueryPath PHP的Jquery实现,QueryPath教程
+Tags:  QueryPath 教程 php  jquery dom 抓取 
 Toc:no
 Status: public
 Position: 1
