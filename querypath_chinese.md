@@ -33,7 +33,10 @@ $qp = htmlqp($html, null, $qp_options)->find(".text")->find("p")->text();
 
 中文问题就解决了.看样子是在新版中修复了这个bug,并不需要去搞mb_convert_encoding了.吐槽一下querypath的手册,写的还是有点shit.
 
+ps: 如果是完整的HTML代码/网页,GBK编码也会有问题.这个是跟<meta http-equiv="Content-Type" content="text/html; charset=gbk" /> 有巨大关系的.需要把HTML的代码用mb_convert_encoding转换成UTF8,并把html中meta标签那个charset=gbk replace成charset=utf8,如此才能正确显示.编码问题真是坑爹啊.
+
 github的issue地址:https://github.com/technosophos/querypath/issues/94
+
 
 
 
