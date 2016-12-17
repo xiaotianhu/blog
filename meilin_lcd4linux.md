@@ -11,7 +11,7 @@ Position: 1
 
   效果很棒,如图 ![](images/lcd4linux.jpg)
 把下载的附件解压上传到路由.
-文件: ![http://rainyluo.net/downloads/LCD4LINUX_JFFS_02.zip](http://rainyluo.net/downloads/LCD4LINUX_JFFS_02.zip)
+文件: [http://rainyluo.net/downloads/LCD4LINUX_JFFS_02.zip](http://rainyluo.net/downloads/LCD4LINUX_JFFS_02.zip)
 ```
 1. 路由开启ssh
 2.WinSCP  拷贝LZ附件里面的3个文件夹到jffs。
