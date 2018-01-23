@@ -63,30 +63,31 @@ background.html
 </html>
 ```
 
-mainfest.json
+mainfest.json  
+
 ```
-...
 "background": {
     "persistent": true,
     "page": "background.html"
   },
  ...
  
- 权限我加入了"clipboardRead", "clipboardWrite","background"这几个,
- web_accessible_resources加入"background.html","background.js" 懒得去测每个值的影响了,反正都加上了
+权限我加入了"clipboardRead", "clipboardWrite","background"这几个,
+web_accessible_resources加入"background.html","background.js" 懒得去测每个值的影响了,反正都加上了
  
- ```
+``` 
  
- 在需要获取剪切板内容的方法里发消息:
- ```
- chrome.runtime.sendMessage({}, function (response){
+在需要获取剪切板内容的方法里发消息:
+
+```
+chrome.runtime.sendMessage({}, function (response){
      console.log(response);
- });
+});
            
- ```
- response中就可以获取到剪切板的内容了,搞定!
+```
+response中就可以获取到剪切板的内容了,搞定!
  
- PS:
- 调试background.html的时候,这里面引入的js的debug信息和console信息,是不会在普通的tab页面中显示的.导致我摸黑调试了半天,浪费了很多时间.background相关的调试信息,需要在chrome://extensions/里面打开 develop mode,然后在插件下面点击"Inspect views: background.html"在弹出的inspector里面就可以看到debug信息了.有了信息在debug就方便多了.
+PS:
+调试background.html的时候,这里面引入的js的debug信息和console信息,是不会在普通的tab页面中显示的.导致我摸黑调试了半天,浪费了很多时间.background相关的调试信息,需要在chrome://extensions/里面打开 develop mode,然后在插件下面点击"Inspect views: background.html"在弹出的inspector里面就可以看到debug信息了.有了信息在debug就方便多了.
 
 
