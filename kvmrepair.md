@@ -1,4 +1,10 @@
 # kvm/virsh 异常断电导致虚拟机无法启动的修复实战
+关键词:
+mount qcow2 on linux  
+xfs_repair  xfs磁盘修复  
+kvm virsh console  
+kvm虚拟机无法启动 故障排查 
+
 
 公司异常断电,导致2台kvm的虚拟机无法启动了.
 尝试修复的过程记录一下.
@@ -57,13 +63,18 @@ title CentOS (2.6.32-696.13.2.el6.x86_64)
 	kernel /vmlinuz-2.6.32-696.13.2.el6.x86_64 ro root=/dev/mapper/vg_2cloo-lv_root rd_NO_LUKS LANG=en_US.UTF-8 rd_LVM_LV=vg_2cloo/lv_swap rd_NO_MD SYSFONT=latarcyrheb-sun16 crashkernel=auto rd_LVM_LV=vg_2cloo/lv_root  KEYBOARDTYPE=pc KEYTABLE=us rd_NO_DM rhgb quiet console=ttyS0
 	initrd /initramfs-2.6.32-696.13.2.el6.x86_64.img
 ```
+
 这个每一项对应的是我们开机时候在屏幕上能够看到的启动项.在kernel一行 quiet参数后面加 console=ttyS0 
 即可.![](media/15652431791895/15652451533364.jpg)
 
 ### 对于centos 7
 centos7使用的是Grub2,推测跟grub类似应该.打开grub2/grub.cfg,发现文件内容完全不一样了,是shell形式的了
-稍微看了一下,形式差不多 也是定义了每个启动项,找到
-```linux16 /vmlinuz-3.10.0-514.2.2.el7.x86_64 root=/dev/mapper/centos-root ro ipv6.disable=1 crashkernel=auto rd.lvm.lv=centos/root rd.lvm.lv=centos/swap rhgb quiet console=ttyS0```
+稍微看了一下,形式差不多 也是定义了每个启动项,找到  
+
+``` 
+linux16 /vmlinuz-3.10.0-514.2.2.el7.x86_64 root=/dev/mapper/centos-root ro ipv6.disable=1 crashkernel=auto rd.lvm.lv=centos/root rd.lvm.lv=centos/swap rhgb quiet console=ttyS0
+```  
+
 在quiet后添加console=ttyS0好了  
 
 现在启动后,virsh console vm1 能成功进入console了,基本上成功一大半了.  
