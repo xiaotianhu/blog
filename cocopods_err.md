@@ -1,4 +1,4 @@
-Ttitle: cocopods重装解决framework not found Pods/no such module
+Title: cocopods重装解决framework not found Pods/no such module
 
 刚开始学习Swift ios开发。
 使用cocopods安装SnapKit, Xcode版本10.1 Swift4.2,按照Snapkit官网文档，修改Podfile之后Podinstall，中途一顿操作，结果不能用。  
