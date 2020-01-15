@@ -1,4 +1,5 @@
-# kvm/virsh 异常断电导致虚拟机无法启动的修复实战
+Title: kvm/virsh 异常断电导致虚拟机无法启动的修复实战
+
 关键词:
 mount qcow2 on linux  
 xfs_repair  xfs磁盘修复  
