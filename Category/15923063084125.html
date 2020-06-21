@@ -1,0 +1,407 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+    
+  iowait详解 - Rainyluo's BLOG
+  
+  </title>
+ <meta name="description" content="">
+ <link href="atom.xml" rel="alternate" title="Rainyluo's BLOG" type="application/atom+xml">
+    <link rel="stylesheet" href="asset/css/foundation.min.css" />
+    <link rel="stylesheet" href="asset/css/docs.css" />
+
+    <script src="asset/js/vendor/modernizr.js"></script>
+    <script src="asset/js/vendor/jquery.js"></script>
+    <script src="asset/highlightjs/highlight.pack.js"></script>
+    <link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+  </head>
+  <body class="antialiased hide-extras">
+    
+    <div class="marketing off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+
+
+<nav class="top-bar docs-bar hide-for-small" data-topbar>
+
+<div id="header">
+    <h1><a href="index.html">Rainyluo's BLOG</a></h1>
+</div>
+
+</nav>
+        <nav class="tab-bar show-for-small">
+  <a href="javascript:void(0)" class="left-off-canvas-toggle menu-icon">
+    <span> &nbsp; Rainyluo's BLOG</span>
+  </a>
+</nav>
+
+<aside class="left-off-canvas-menu">
+      <ul class="off-canvas-list">
+      <li><a href="index.html">Home</a></li>
+      
+        <li class="divider"></li>
+        <li><label>源码阅读</label></li>
+
+          
+            <li><a title="Hyperf源码阅读 - 框架初始化之Application" href="15919610280346.html">Hyperf源码阅读 - 框架初始化之Application</a></li>
+          
+            <li><a title="Hyperf源码阅读 - 框架初始化之容器初始化" href="15918404223001.html">Hyperf源码阅读 - 框架初始化之容器初始化</a></li>
+          
+            <li><a title="Hyperf源码阅读 - Router流程" href="15918401062183.html">Hyperf源码阅读 - Router流程</a></li>
+          
+
+      
+        <li class="divider"></li>
+        <li><label>随感</label></li>
+
+          
+            <li><a title="如何变得平庸" href="15923063082122.html">如何变得平庸</a></li>
+          
+            <li><a title="一个实用主义者的反思" href="15923063082072.html">一个实用主义者的反思</a></li>
+          
+            <li><a title="2018-08-01 感想" href="15923063081475.html">2018-08-01 感想</a></li>
+          
+            <li><a title="2019的成长" href="15923063084995.html">2019的成长</a></li>
+          
+            <li><a title="细节与功利主义：致那些同我一样想突破自己技术层级的朋友们" href="15771974682027.html">细节与功利主义：致那些同我一样想突破自己技术层级的朋友们</a></li>
+          
+            <li><a title="审美是一切美好追求的基础" href="15706010504336.html">审美是一切美好追求的基础</a></li>
+          
+            <li><a title="什么叫"回归初心" 以及技术成长突破的心态" href="15696591889118.html">什么叫"回归初心" 以及技术成长突破的心态</a></li>
+          
+
+      
+        <li class="divider"></li>
+        <li><label>其他</label></li>
+
+          
+            <li><a title="cocopods重装解决framework not found Pods/no such module" href="15923063082414.html">cocopods重装解决framework not found Pods/no such module</a></li>
+          
+            <li><a title="pts导入bts2.0教程" href="15923063083603.html">pts导入bts2.0教程</a></li>
+          
+            <li><a title="gopush代码分析-comet模块" href="15923063083769.html">gopush代码分析-comet模块</a></li>
+          
+            <li><a title="Chrome Extension扩展开发之复制粘贴" href="15923063083833.html">Chrome Extension扩展开发之复制粘贴</a></li>
+          
+            <li><a title="iowait详解" href="15923063084125.html">iowait详解</a></li>
+          
+            <li><a title="mac安装mysql-python(with XAMPP)" href="15923063084788.html">mac安装mysql-python(with XAMPP)</a></li>
+          
+            <li><a title="App内使用H5页面的一个安全问题" href="15923063086512.html">App内使用H5页面的一个安全问题</a></li>
+          
+            <li><a title="PHP 通过Apns给Ios设备推送Notification" href="15923063086602.html">PHP 通过Apns给Ios设备推送Notification</a></li>
+          
+            <li><a title="python中使用import加载目录中全部文件" href="15923063087292.html">python中使用import加载目录中全部文件</a></li>
+          
+            <li><a title="kvm/virsh 异常断电导致虚拟机无法启动的修复实战" href="15923063088164.html">kvm/virsh 异常断电导致虚拟机无法启动的修复实战</a></li>
+          
+            <li><a title="Synology office error: User home service is not enabled" href="15923063081281.html">Synology office error: User home service is not enabled</a></li>
+          
+            <li><a title="git commit后自动检查php文件语法" href="15923063081235.html">git commit后自动检查php文件语法</a></li>
+          
+            <li><a title="梅林固件/R6300V2 安装Lcd4Linux显示屏" href="15923063081215.html">梅林固件/R6300V2 安装Lcd4Linux显示屏</a></li>
+          
+
+      
+        <li class="divider"></li>
+        <li><label>About</label></li>
+
+          
+            <li><a title="Rainyluo's Blog" href="15923063081658.html">Rainyluo's Blog</a></li>
+          
+
+      
+        <li class="divider"></li>
+        <li><label>PHP</label></li>
+
+          
+            <li><a title="reactPHP + lumen性能简测" href="15923063083212.html">reactPHP + lumen性能简测</a></li>
+          
+            <li><a title="QueryPath中文乱码问题,UTF8乱码问题解决" href="15923063084242.html">QueryPath中文乱码问题,UTF8乱码问题解决</a></li>
+          
+            <li><a title="WorkerMan的restart命令的一个Bug修复记录" href="15923063084445.html">WorkerMan的restart命令的一个Bug修复记录</a></li>
+          
+            <li><a title="PHP的多线程Curl,rolling Curl实现与坑" href="15923063085282.html">PHP的多线程Curl,rolling Curl实现与坑</a></li>
+          
+            <li><a title="用PHP-CLI在SHELL中输出颜色" href="15923063085495.html">用PHP-CLI在SHELL中输出颜色</a></li>
+          
+            <li><a title="使用GITHUB+JustWriting搭建BLOG" href="15923063087852.html">使用GITHUB+JustWriting搭建BLOG</a></li>
+          
+            <li><a title="[原创翻译]QueryPath PHP的Jquery实现,QueryPath教程" href="15923063087972.html">[原创翻译]QueryPath PHP的Jquery实现,QueryPath教程</a></li>
+          
+            <li><a title="(伪)异步实现加速PHP接口的返回速度" href="15923063089153.html">(伪)异步实现加速PHP接口的返回速度</a></li>
+          
+            <li><a title="PHP调试技巧" href="15922725010749.html">PHP调试技巧</a></li>
+          
+            <li><a title="二维数组排序 array multisort" href="15756185241314.html">二维数组排序 array multisort</a></li>
+          
+
+      
+      </ul>
+    </aside>
+
+<a class="exit-off-canvas" href="#"></a>
+
+        <section id="main-content" role="main" class="scroll-container">
+
+          <div class="row">
+            <div class="large-3 medium-3 columns">
+              <div class="hide-for-small">
+                <div class="sidebar">
+                <nav>
+                  <ul id="side-nav" class="side-nav">
+
+                    
+                      <li class="side-title"><span>源码阅读</span></li>
+                        
+                          <li><a title="Hyperf源码阅读 - 框架初始化之Application" href="15919610280346.html">Hyperf源码阅读 - 框架初始化之Application</a></li>
+                        
+                          <li><a title="Hyperf源码阅读 - 框架初始化之容器初始化" href="15918404223001.html">Hyperf源码阅读 - 框架初始化之容器初始化</a></li>
+                        
+                          <li><a title="Hyperf源码阅读 - Router流程" href="15918401062183.html">Hyperf源码阅读 - Router流程</a></li>
+                        
+
+                    
+                      <li class="side-title"><span>随感</span></li>
+                        
+                          <li><a title="如何变得平庸" href="15923063082122.html">如何变得平庸</a></li>
+                        
+                          <li><a title="一个实用主义者的反思" href="15923063082072.html">一个实用主义者的反思</a></li>
+                        
+                          <li><a title="2018-08-01 感想" href="15923063081475.html">2018-08-01 感想</a></li>
+                        
+                          <li><a title="2019的成长" href="15923063084995.html">2019的成长</a></li>
+                        
+                          <li><a title="细节与功利主义：致那些同我一样想突破自己技术层级的朋友们" href="15771974682027.html">细节与功利主义：致那些同我一样想突破自己技术层级的朋友们</a></li>
+                        
+                          <li><a title="审美是一切美好追求的基础" href="15706010504336.html">审美是一切美好追求的基础</a></li>
+                        
+                          <li><a title="什么叫"回归初心" 以及技术成长突破的心态" href="15696591889118.html">什么叫"回归初心" 以及技术成长突破的心态</a></li>
+                        
+
+                    
+                      <li class="side-title"><span>其他</span></li>
+                        
+                          <li><a title="cocopods重装解决framework not found Pods/no such module" href="15923063082414.html">cocopods重装解决framework not found Pods/no such module</a></li>
+                        
+                          <li><a title="pts导入bts2.0教程" href="15923063083603.html">pts导入bts2.0教程</a></li>
+                        
+                          <li><a title="gopush代码分析-comet模块" href="15923063083769.html">gopush代码分析-comet模块</a></li>
+                        
+                          <li><a title="Chrome Extension扩展开发之复制粘贴" href="15923063083833.html">Chrome Extension扩展开发之复制粘贴</a></li>
+                        
+                          <li><a title="iowait详解" href="15923063084125.html">iowait详解</a></li>
+                        
+                          <li><a title="mac安装mysql-python(with XAMPP)" href="15923063084788.html">mac安装mysql-python(with XAMPP)</a></li>
+                        
+                          <li><a title="App内使用H5页面的一个安全问题" href="15923063086512.html">App内使用H5页面的一个安全问题</a></li>
+                        
+                          <li><a title="PHP 通过Apns给Ios设备推送Notification" href="15923063086602.html">PHP 通过Apns给Ios设备推送Notification</a></li>
+                        
+                          <li><a title="python中使用import加载目录中全部文件" href="15923063087292.html">python中使用import加载目录中全部文件</a></li>
+                        
+                          <li><a title="kvm/virsh 异常断电导致虚拟机无法启动的修复实战" href="15923063088164.html">kvm/virsh 异常断电导致虚拟机无法启动的修复实战</a></li>
+                        
+                          <li><a title="Synology office error: User home service is not enabled" href="15923063081281.html">Synology office error: User home service is not enabled</a></li>
+                        
+                          <li><a title="git commit后自动检查php文件语法" href="15923063081235.html">git commit后自动检查php文件语法</a></li>
+                        
+                          <li><a title="梅林固件/R6300V2 安装Lcd4Linux显示屏" href="15923063081215.html">梅林固件/R6300V2 安装Lcd4Linux显示屏</a></li>
+                        
+
+                    
+                      <li class="side-title"><span>About</span></li>
+                        
+                          <li><a title="Rainyluo's Blog" href="15923063081658.html">Rainyluo's Blog</a></li>
+                        
+
+                    
+                      <li class="side-title"><span>PHP</span></li>
+                        
+                          <li><a title="reactPHP + lumen性能简测" href="15923063083212.html">reactPHP + lumen性能简测</a></li>
+                        
+                          <li><a title="QueryPath中文乱码问题,UTF8乱码问题解决" href="15923063084242.html">QueryPath中文乱码问题,UTF8乱码问题解决</a></li>
+                        
+                          <li><a title="WorkerMan的restart命令的一个Bug修复记录" href="15923063084445.html">WorkerMan的restart命令的一个Bug修复记录</a></li>
+                        
+                          <li><a title="PHP的多线程Curl,rolling Curl实现与坑" href="15923063085282.html">PHP的多线程Curl,rolling Curl实现与坑</a></li>
+                        
+                          <li><a title="用PHP-CLI在SHELL中输出颜色" href="15923063085495.html">用PHP-CLI在SHELL中输出颜色</a></li>
+                        
+                          <li><a title="使用GITHUB+JustWriting搭建BLOG" href="15923063087852.html">使用GITHUB+JustWriting搭建BLOG</a></li>
+                        
+                          <li><a title="[原创翻译]QueryPath PHP的Jquery实现,QueryPath教程" href="15923063087972.html">[原创翻译]QueryPath PHP的Jquery实现,QueryPath教程</a></li>
+                        
+                          <li><a title="(伪)异步实现加速PHP接口的返回速度" href="15923063089153.html">(伪)异步实现加速PHP接口的返回速度</a></li>
+                        
+                          <li><a title="PHP调试技巧" href="15922725010749.html">PHP调试技巧</a></li>
+                        
+                          <li><a title="二维数组排序 array multisort" href="15756185241314.html">二维数组排序 array multisort</a></li>
+                        
+
+                    
+                  </ul>
+                </nav>
+                </div>
+              </div>
+            </div>
+            <div class="large-9 medium-9 columns">
+
+ <div class="markdown-body">
+<h1>iowait详解</h1>
+
+<p>Tags:  iowait linux <br/>
+Toc:no<br/>
+Status: public<br/>
+Position: 1</p>
+
+<h1 id="toc_0">iowait详解</h1>
+
+<blockquote>
+<p>翻译自<a href="https://blog.pregos.info/wp-content/uploads/2010/09/iowait.txt">https://blog.pregos.info/wp-content/uploads/2010/09/iowait.txt</a><br/>
+缘起:<a href="https://serverfault.com/questions/12679/can-anyone-explain-precisely-what-iowait-is">https://serverfault.com/questions/12679/can-anyone-explain-precisely-what-iowait-is</a></p>
+</blockquote>
+
+<p>So,到底什么是 &quot;iowait&quot;?</p>
+
+<p>一句话总结一下:iowait是CPU处于idle空闲状态,并且至少有1个I/O处在处理中状态的时间百分比.</p>
+
+<p>每个CPU可能处在以下四种状态中的一种:user,sys,idel,iowait;性能测试工具比如vmstat,iostat,sar,都可以把这四种状态以百分比的形式显示出来.sar工具可以通过-P参数显示每个CPU的基础信息,但是其他大部分工具都是显示所有CPU核心的平均值.这四种状态的百分比相加为100%.</p>
+
+<p>这些工具显示的统计信息,是通过内核周期性更新统计出来的.(对于AIX,CPU统计更新周期为每个时钟中断,10毫秒一次).当CPU发生时钟中断,内核会检查CPU是不是处于idle状态.如果不是idle状态,那么内核会判断正在执行的命令是用户态还是内核态,如果是用户态则吧&#39;user&#39;加一,如果是内核态则把&#39;sys&#39;加一.</p>
+
+<p>如果cpu处在idle状态,内核会判断是不是有IO读写正在进行,如果至少有一个IO正在执行,不管是本地磁盘读写还是远程磁盘读写(比如mount的NFS磁盘);如果有,那么&#39;iowait&#39;计数器就会加一.如果没有IO正在进行,&#39;idle&#39;计数器就加一.</p>
+
+<p>当运行性能测试工具,比如vmstat的时候,它读取的就是这四个状态的计数器,然后根据用户指定的时间睡眠几秒,然后在读取一次.然后vmstat会根据两次取值的绝对值,计算出这一段取样时间的变化值.vmstat知道每次时钟滴答都会改变计数器的值,它就可以算出每次时钟滴答内计数器的变化量.举个栗子,如果执行&quot;vmstat 2&quot;,vmstat就会每2秒钟对计数器进行一次取样.由于每次时钟循环时间在10ms,所以每秒有100次循环,2s就有200次时钟循环.每个计数器的差值除以循环周期的总统计次数,乘以100就得到了周期内的百分比.</p>
+
+<p>iowait在某些情况下,可以作为衡量系统吞吐能力的一个指标,但是在另外一些情况下,这个数值可能是毫无意义的.<br/>
+有一些例子来帮助解释一下这个情况.第一个例子,iowait是导致性能原因的直接因素:</p>
+
+<h3 id="toc_1">Example 1:</h3>
+
+<p>假设有一个程序,需要执行一组包含多个任务的事务.每个事务执行的过程中,需要执行10ms计算任务,然后把结果以同步的方式写入磁盘.由于要写入的文件是以同步方式打开的,所以只有当写入的I/O操作全部完成后,写入调用才会返回.假设磁盘系统没有cache缓存,并且每次写入的I/O操作需要20ms.在这种情况下,每次事务操作需要30ms.在1S内(1000ms)这个程序可以完成33次事务(33tps).如果这个程序是在单核心系统(1CPU)上运行的唯一的程序,那么CPU的使用率会是1/3处在忙(busy)状态,剩下的时间等待I/O - 所以是66%的iowait 和 34%的CPU busy.</p>
+
+<p>假设,对I/O系统进行了优化(比如增加了磁盘缓存),每次I/O操作只需要1ms,那么每次事务只需要11ms,那么程序每秒就可以执行90-91次事务了.这种情况下iowait大概在8%.因此更低的iowait时间直接影响了程序的执行能力(吞吐量).</p>
+
+<h3 id="toc_2">Example 2:</h3>
+
+<p>假设系统中有一个正在执行的程序,例如 &#39;dd&#39;程序,每次从磁盘读取4kb的数据.假设dd中的一个函数main()会调用read()方法来读取数据.main函数和read函数都是用户态的函数.read方法是libc.a提供的一个函数,这个函数会调用kread()系统调用,从而进入内核态.kread()会初始化设备并进行一次物理I/O,&#39;dd&#39;程序在此期间会睡眠(sleep)直到物理I/O完成.执行main,read,kread代码需要的时间很短 - 大概只需要50微秒,对于磁盘而言,完成I/O请求大概需要2-20ms,主要取决于磁盘的机械臂寻址的时间.因此,当时钟中断发生时,&#39;dd&#39;程序很可能在睡眠状态,I/O处在执行中的状态.因此,&#39;iowait&#39;计数器会增加.如果I/O在2ms完成,&#39;dd&#39;程序就继续执行下一次读操作.但是对比起来,50微秒要远远少于20ms,当时钟中断发生时,CPU更有可能还是处于idle状态,I/O任务仍然在进行中.因此,&#39;iowait&#39;还会增加.如果执行&#39; sar -P <cpunumber>&#39;来统计这个CPU的使用状态,iowait很可能处于97-98%.如果每次I/O需要20ms,那iowait可能会是99-100%.因此尽管I/O wait非常高,但是吞吐量依然比第一个例子中的情况要高10倍左右.</p>
+
+<h3 id="toc_3">Example 3</h3>
+
+<p>假设在同一个CPU上正在执行2个程序.其中一个&#39;dd&#39;负责从磁盘读取数据,另一个程序不会执行I/O操作,但是100%的时间都用来做计算工作.现在,假设I/O系统出现了故障,需要1s才能完成一次物理I/O操作.因此,当&#39;dd&#39;程序处于睡眠状态等待I/O结束时,另一个程序依然可以使用CPU.当时钟中断发生时,总会有一个程序处于用户态或内核态,因此 %idle和%iowait会是0.即便iowait是0,并不意味着就没有I/O问题,因为显然一次I/O执行超过了一秒是肯定有问题的.</p>
+
+<h3 id="toc_4">Example 4</h3>
+
+<p>假设在一个4核CPU的系统上有6个程序在执行.假设有4个程序,花费了70%的时间在等待物理I/O,还有30%时间真正使用了CPU.由于这四个程序需要进入内核态来执行kread系统调用,这就会花费部分比例的时间在内核中;假设有25%的时间是用户态,5%是内核态.</p>
+
+<p>另外,我们假设剩下的两个程序消耗100%的时间全部用来计算,没有I/O请求,所以CPU永远都会100%忙碌.其他4个程序只需要30%的CPU资源,这俩程序就可以使用剩下的CPU资源了.</p>
+
+<p>如果我们执行 &#39;sar -P ALL 1 10&#39;,通过每秒执行一次&#39;sar&#39;,一共10次,我们能够看到每次执行的结果如下:</p>
+
+<pre><code class="language-text">cpu    %user    %sys   %wio    %idle
+0        50       10     40       0
+1        50       10     40       0
+2        100      0       0       0 
+3        100      0       0       0
+-         75      5       20      0
+</code></pre>
+
+<p>注意一下,CPU使用的分配,75%为user,5%是sys,20%的iowait.如果通过&#39;vmstat&#39;或&#39;iostat&#39;等其他工具,看到的就是所有CPU的平均值.</p>
+
+<p>现在,让我们把同样的负载(同样的6个程序,同样的执行情况)放到另一台有6核CPU(同样的CPU速度和同样的IO系统)的机器上执行.现在,各个程序都可以在独立的一个CPU上执行了,因此CPU的使用情况如下:</p>
+
+<pre><code class="language-text">cpu    %user    %sys    %wio    %idle
+0         25       5      70        0
+1         25       5      70        0
+2         25       5      70        0
+3         25       5      70        0
+4        100       0       0        0
+5        100       0       0        0
+-         50       3      47        0
+</code></pre>
+
+<p>现在,平均的CPU使用率为50% user,3% sys, 47% iowait.注意一下,同样的负载情况,在另一台机器会导致iowait的值提高了2倍多.</p>
+
+<h3 id="toc_5">结论</h3>
+
+<p>iowait的结果对于衡量I/O性能可能有用,也可能没什么用.但是至少告诉了我们系统能负担更多的计算任务,因为CPU处在iowait状态不代表CPU就不能执行其他进程了;因此,iowait只是另一种idle的状态而已.</p>
+
+
+</div>
+
+<br /><br />
+<hr />
+
+<div class="row clearfix">
+  <div class="large-6 columns">
+	<div class="text-left" style="padding:15px 0px;">
+		
+	        <a href="15923063083833.html"  title="Previous Post: Chrome Extension扩展开发之复制粘贴">&laquo; Chrome Extension扩展开发之复制粘贴</a>
+	    
+	</div>
+  </div>
+  <div class="large-6 columns">
+	<div class="text-right" style="padding:15px 0px;">
+		
+	        <a href="15923063084242.html" 
+	        title="Next Post: QueryPath中文乱码问题,UTF8乱码问题解决">QueryPath中文乱码问题,UTF8乱码问题解决 &raquo;</a>
+	    
+	</div>
+  </div>
+</div>
+
+<div class="row">
+<div style="padding:0px 0.93em;" class="share-comments">
+
+</div>
+</div>
+<script type="text/javascript">
+	$(function(){
+		var currentURL = '15923063084125.html';
+		$('#side-nav a').each(function(){
+			if($(this).attr('href') == currentURL){
+				$(this).parent().addClass('active');
+			}
+		});
+	});
+</script>  
+</div></div>
+
+
+<div class="page-bottom">
+  <div class="row">
+  <hr />
+  <div class="small-9 columns">
+  <p class="copyright">Copyright &copy; 2015
+Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a>,&nbsp; 
+Theme used <a target="_blank" href="http://github.com">GitHub CSS</a>.</p>
+  </div>
+  <div class="small-3 columns">
+  <p class="copyright text-right"><a href="#header">TOP</a></p>
+  </div>
+   
+  </div>
+</div>
+
+        </section>
+      </div>
+    </div>
+    
+    
+    <script src="asset/js/foundation.min.js"></script>
+    <script src="asset/js/foundation/foundation.offcanvas.js"></script>
+    <script>
+      $(document).foundation();
+
+     
+    </script>
+    
+
+
+  </body>
+</html>

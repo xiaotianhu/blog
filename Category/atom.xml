@@ -1,0 +1,2183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Rainyluo's BLOG]]></title>
+  <link href="blog.v2cb.com/atom.xml" rel="self"/>
+  <link href="blog.v2cb.com/"/>
+  <updated>2020-06-21T15:53:03+08:00</updated>
+  <id>blog.v2cb.com/</id>
+  <author>
+    <name><![CDATA[]]></name>
+    
+  </author>
+  <generator uri="http://www.mweb.im">MWeb</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Rainyluo's Blog]]></title>
+    <link href="blog.v2cb.com/15923063081658.html"/>
+    <updated>2020-06-16T19:18:28+08:00</updated>
+    <id>blog.v2cb.com/15923063081658.html</id>
+    <content type="html"><![CDATA[
+<p>90后,帝都.  </p>
+
+<p>PHP研发工程师</p>
+
+<p>关注性能优化.喜欢研究产品,关注商业.</p>
+
+<p>喜欢思考,阅读,旅行.</p>
+
+<p>喜欢业余捣鼓一些Side Project.</p>
+
+<p>目前在一家互联网文学相关公司任职.</p>
+
+<p>Git    <a href="https://github.com/xiaotianhu">https://github.com/xiaotianhu</a><br/>
+Email  xiaotianhu@qq dot com<br/>
+Follow me @rainyluo(Sina)</p>
+
+<p><img src="media/15923063081658/15927253042599.jpg" alt=""/></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[如何变得平庸]]></title>
+    <link href="blog.v2cb.com/15923063082122.html"/>
+    <updated>2020-06-16T19:18:28+08:00</updated>
+    <id>blog.v2cb.com/15923063082122.html</id>
+    <content type="html"><![CDATA[
+<p>Tags:  随感<br/>
+Toc:no<br/>
+Status: public<br/>
+Position: 1</p>
+
+<p>最近这几个月,面了一些公司.总的来说,面试就如同上学时候的期中考试,不为了跳槽换工作,是为了检测一下自己,也是为了画画重点,看看市场需求.这不就获得了一些感受,记录一下.</p>
+
+<p>对平庸和伟大的认识更深刻了.平庸的反义词也不一定就是&quot;伟大&quot;,也可以是&quot;出色的&quot;或者&quot;特别厉害&quot;,姑且称之为&quot;伟大&quot;吧.比如在现阶段而言,对于我司这样的创业公司,和我们提供的产品,就很难说是伟大.人们说iPhone伟大,最开始是因为它的创新性带来的划时代变革, 那么如今的iPhone伟大更多的是因为在某个方面它依然是最出色的,比如稳定性,比如触摸的手感.而我们公司的产品,它提供了很多功能,别的同类App基本上也都有,但是我们没有什么方面做的特别好,对于核心功能也是一样.能用,但是没有特别出色的点.</p>
+
+<p>前几天听东吴同学会也说起这点,乔布斯的禅与哲学,很核心的一点就在于&quot;什么不做&quot;.如果要做,就一定要做到最好,这样的匠心精神,取舍的哲学,让iPhone成为我心中最伟大的手机,让日本这样的小国有今天的实力,这也是我们今天整个社会强调的&quot;认真&quot;的态度与精神.说到底,就是死磕一个事儿,做到极致.</p>
+
+<p>做公司如此,做产品如此,做人也是一样.而我就是那个&quot;懂得了很多道理,却依然过不好这一生&quot;的那个人.</p>
+
+<p>究其原因,道理都是对的,人人都知道.关键在于怎么执行,如何坚持.没有这两点,再牛逼的道理也是空谈,这就是人与人之间的差距比人与狗之间的差距还大的原因.反观我这几年的进步缓慢,其实也不能说是&quot;缓慢&quot;,而是方向性问题.从&quot;术&quot;的方面来说,新技术层出不穷,从大数据到AI,从机器学习到比特币,啥玩意出来了都觉得能发财,不想被时代落下,也不管这玩意的本质是啥就开始研究,看了几天入个门浪潮过了,新一波又来了.所以&quot;求求你们别更了,学不动了&quot;这句话才能引起这么多共鸣.从&quot;业&quot;的方面来说,13年那会儿创业浪潮,觉得在大公司混着没意思还是得去创业公司发大财,去了发现老板根本没打算带你发财.觉得自己是个人才还是得自己干,研究半天都不知道从哪儿开始,要啥没啥.创业的浪潮随着资本冷却也凉了,眼看自己不是这块料 ,大公司也回不去了,人也看不上你了.浑浑噩噩走到现在,眼见在猎豹的上市发财了,去小米的上市发财了,连炒比特币的好多人都发财了,觉得自己生不逢时啊,早生两年这好事儿不是我也能赶上.</p>
+
+<p>究其原因,这个社会的问题,我的问题,不是选择太少,而是选择太多.就像平庸的公司与平庸的产品,什么都想做,什么都做不好.眼看别人做这个火了,我也要整一个,人的精力是有限的,哪怕一家公司一个产品,其实核心决策也就在于那么一两个人,都是有限的.然后这个时代因为选择的极大丰富,人们更多的是需要某一方面&quot;伟大&quot;的东西,而不是一个&quot;啥都能干,都一般&quot;的东西.为什么会这样?短视,功利,甚至&quot;实用主义&quot;,&quot;够用,能用就好&quot;的想法,都在让我,公司,产品,变得平庸.</p>
+
+<p>取舍是需要大智慧的.就像地上有一张50元和一张100元,你怎么选?大部分人会觉得我可以两张都捡起来,这是&quot;生意&quot;;可现实的潜规则往往是,捡了一张另一张就没了,甚至更可能是你在中间抓了一把,却什么都没抓住,一分钱也没捞到.然后呢,后悔,迷茫,惋惜,当初我应该捡起那个50的,也不错啊... <br/>
+  所以做出正确选择的前提是对自己有清晰,客观的认识.又有多少人能做到这一点呢?哪个人照照镜子不觉得自己没那么丑,或者至少还是&quot;有一点可取之处&quot;的?</p>
+
+<p>诶,平庸的人 ...</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[cocopods重装解决framework not found Pods/no such module]]></title>
+    <link href="blog.v2cb.com/15923063082414.html"/>
+    <updated>2020-06-16T19:18:28+08:00</updated>
+    <id>blog.v2cb.com/15923063082414.html</id>
+    <content type="html"><![CDATA[
+<p>刚开始学习Swift ios开发。<br/>
+使用cocopods安装SnapKit, Xcode版本10.1 Swift4.2,按照Snapkit官网文档，修改Podfile之后Podinstall，中途一顿操作，结果不能用。  </p>
+
+<p>发现我原来是忘记在需要的地方import SnapKit了。  </p>
+
+<p>加上这行后，Xcode报 no such module。一顿折腾无果，找到一个解决方案：<a href="https://stackoverflow.com/questions/29865899/ld-framework-not-found-pods">https://stackoverflow.com/questions/29865899/ld-framework-not-found-pods</a></p>
+
+<p>重新初始化pods的好方法：</p>
+
+<pre><code class="language-text">Xcode 9, 10, 11
+
+install https://github.com/CocoaPods/cocoapods-deintegrate
+
+pod deintegrate
+then
+
+pod install
+</code></pre>
+
+<p>完美解决，import SnapKit就可以了。</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[reactPHP + lumen性能简测]]></title>
+    <link href="blog.v2cb.com/15923063083212.html"/>
+    <updated>2020-06-16T19:18:28+08:00</updated>
+    <id>blog.v2cb.com/15923063083212.html</id>
+    <content type="html"><![CDATA[
+<p>Tags:  react PHP lumen<br/>
+Toc:no<br/>
+Status: public<br/>
+Position: 1</p>
+
+<p>工作需要,新项目用Lumen框架来做.因为后端API,用Laravel感觉更大了,用Lumen还能轻量一点.接口写的差不多了,就研究捣鼓一下性能.Lumen本身的性能还是很捉鸡,不光Composer载入一大坨依赖,自己的框架就很复杂,虽然容器的思路真的很棒,对于工程而言是非常好的设计,但是性能比简单框架还是差一些的.</p>
+
+<p>开始想着上Swoole,有第三方的lumen-swoole的包:</p>
+
+<pre><code class="language-text">composer require encore/lumen-swoole 5.3.x-dev
+</code></pre>
+
+<p>但是我swoole版本太高了,懒得重新编译swoole了,把这个项目直接clone到lumen项目的packages文件夹(自己建一个),然后修改composer.json</p>
+
+<pre><code class="language-text">&quot;repositories&quot;: [
+    {
+        &quot;type&quot;: &quot;path&quot;,
+        &quot;url&quot;: &quot;packages/lumen-swoole&quot;
+    }
+]
+
+手动修改一下lumen-swoole的swoole依赖版本号,然后 
+composer require &quot;encore/lumen-swoole:*@dev&quot;
+
+然后就可以用本地修改过的lumen-swoole 来安装了.
+</code></pre>
+
+<p>运行会报错,发现目录是ln过去的,有点问题<br/><br/>
+直接把 packages/lumen-swoole 拷贝到vendor/encore/lumen-swoole下<br/><br/>
+运行:<br/><br/>
+./vendor/encore/lumen-swoole/bin/lumen-swoole -s /home/luo/git/lumen_api/bootstrap/app.php --worker_num 50<br/><br/>
+就启动成功了~</p>
+
+<p>总觉得swoole这种扩展的方式略麻烦,给运维和部署都带来一点麻烦.想起来之前看过的ReactPHP,寻寻觅觅找到了PHP-PM这个项目:</p>
+
+<pre><code class="language-text">https://github.com/php-pm/php-pm 
+</code></pre>
+
+<p>这个就是给ReactPHP做了个多进程的管理器,跟PHP-FPM的感觉差不多.然而这货支持Laravel却不能用Lumen5.2,真是坑爹.折腾了一天多那个HttpKernel也没能给Lumen跑起来,各种问题;转而一想直接用ReactPHP试试吧,正好后续我还需要用websocket做点事儿;</p>
+
+<pre><code class="language-text">https://github.com/reactphp/react 
+</code></pre>
+
+<p>这货的介绍很简单:Nuclear Reactor written in PHP. <a href="http://reactphp.org">http://reactphp.org</a></p>
+
+<p>本质上就是拿PHP写的一个异步非阻塞框架,如果有Libevent扩展就会用Libevent相关函数来做,没有的话他们拿PHP写了个事件循环,用stream_select来调度事件,性能会比用libevent/libev差一些了,不过Lumen的性能瓶颈并不在此;主要还是频繁初始化框架消耗的资源太多;</p>
+
+<p>安装比较简单:</p>
+
+<pre><code class="language-text">composer require react/react 
+</code></pre>
+
+<p>在lumen/public下新建个server.php作为启动服务器的入口,代码如下</p>
+
+<pre><code class="language-text">&lt;code&gt;
+&lt;?php
+require &#39;../vendor/autoload.php&#39;;
+
+function processUri($query) {
+    if(empty($query[&#39;c&#39;]) || empty($query[&#39;a&#39;])) return false;
+    foreach($query as $key=&gt;$val) {
+        if($key != &#39;a&#39; &amp;&amp; $key != &#39;c&#39;) $_GET[$key] = $val;
+    }
+    return &quot;/{$query[&#39;c&#39;]}/{$query[&#39;a&#39;]}&quot;;
+}
+
+$lumenApp = require __DIR__.&#39;/../bootstrap/app.php&#39;;
+$app = function ($request, $response) use ($lumenApp){
+    $_SERVER[&quot;ENV_STATUS&quot;]     = &#39;dev&#39;;
+    $_SERVER[&quot;REQUEST_URI&quot;]    = processUri($request-&gt;getQuery());
+    if(empty($_SERVER[&quot;REQUEST_URI&quot;])) return false;
+    $_SERVER[&quot;REQUEST_METHOD&quot;] = $request-&gt;getMethod();
+    $lumenApp-&gt;instance(&#39;StreamResponse&#39;, $response);
+    $lumenApp-&gt;run();
+};
+
+
+$loop        = React\EventLoop\Factory::create();
+$socket      = new React\Socket\Server($loop);
+$http        = new React\Http\Server($socket);
+
+$http-&gt;on(&#39;request&#39;, $app);
+
+$socket-&gt;listen(1338, &quot;0.0.0.0&quot;);
+$loop-&gt;run();
+&lt;/code&gt;
+</code></pre>
+
+<p>为了跑起来简单一写,没有优化;因为没有nginx所以rewrite也没有的,访问的时候需要用127.0.0.1:1338/index.php?c=controller&amp;a=function&amp;a=b这样的格式来访问;返回的话,可以写一个Middleware来拦截Response返回:</p>
+
+<pre><code class="language-text">public function handle($request, Closure $next)
+{
+    $response = $next($request);
+    if (!($response instanceof Response)) {
+        $response = response($response);
+    }
+    $resContent = $response-&gt;getContent();
+    //reactPHP response
+    $r = app(&#39;StreamResponse&#39;);
+    $r-&gt;writeHead(200, [&#39;Content-Type&#39; =&gt; &#39;application/json;charset=UTF-8&#39;]);
+    $r-&gt;write($resContent);
+    $r-&gt;end();
+}
+</code></pre>
+
+<p>如果是接口有统一的返回方法也可以直接在返回方法中写;对于静态文件,可以参考这个库:</p>
+
+<pre><code class="language-text">https://github.com/phly/react2psr7
+</code></pre>
+
+<p>我是直接拿来用了,没有按照示例的那么啰嗦:</p>
+
+<pre><code class="language-text">Server.php
+
+....
+
+use React2Psr7\StaticFiles;
+$staticFiles = new React2Psr7\StaticFiles(dirname(__DIR__).&quot;/public&quot;);
+
+$loop        = React\EventLoop\Factory::create();
+$socket      = new React\Socket\Server($loop);
+$http        = new React\Http\Server($socket);
+
+$handler = function($request, $response) use ($lumenApp, $staticFiles){
+    return $staticFiles($request, $response, $lumenApp);
+};
+$http-&gt;on(&#39;request&#39;, $handler);
+
+....
+
+</code></pre>
+
+<p>捣鼓差不多了,直接php server.php启动,开始测试.上几个测试图吧</p>
+
+<p><img src="media/blog/swoole50worker.png" alt=""/><br/>
+swoole 50个worker的效果,性能确实牛逼</p>
+
+<p><img src="media/blog/swoole1worker.png" alt=""/><br/>
+swoole 1个worker,为了跟reactPHP对比</p>
+
+<p><img src="media/blog/reactphp.png" alt=""/><br/>
+reactPHP的性能;可以看出来,单核心性能跟swoole不相上下,但是稳定性还是有点略差,有一定的timeout和崩溃等等情况的概率,所以后面有空捣鼓一下phppm,就跟swoole一样有进程管理机制,应该就好多了.BTW,变量就要记得释放,要不然泄露起来也真是麻烦啊,很难找嘞</p>
+
+<p>这个接口,用NGINX+PHP-FPM 50个进程,RPS大概是60;没法比啊没法比...</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[pts导入bts2.0教程]]></title>
+    <link href="blog.v2cb.com/15923063083603.html"/>
+    <updated>2020-06-16T19:18:28+08:00</updated>
+    <id>blog.v2cb.com/15923063083603.html</id>
+    <content type="html"><![CDATA[
+<p>Tags:  bts<br/>
+Toc:no<br/>
+Status: public<br/>
+Position: 1</p>
+
+<p>随着bts价格一路走高,很多人都开始研究起bts了.当年bts通过pts众筹的时候,估计很多人都挖过pts,然后可以看到很多人在pts导入bts2.0的时候都失败了.我也是其中之一,经过N天的尝试-放弃-尝试,终于成功了.把一些经验和关键点分享一下.  </p>
+
+<p>首先感谢HIPDA论坛的lcjin哥们.在我放弃的时候,指点了我半天.最重要的是叫我不要放弃,让我给开发团队写信,给了我信心.坚持找了半天资料,最终成功,功夫不负啊!  </p>
+
+<p>基本的套路不多讲了,pts.dat备份文件导入到053版本bts钱包,然后在导入093c版本后导出json备份(注意用console),然后导入2.0版本的钱包.网上的教程  <a href="http://btsabc.org/download/%E5%8E%9F%E5%A7%8B%E8%82%A1%EF%BC%88PTS%E3%80%81AGS%EF%BC%89%E5%85%91%E6%8D%A2BTS%E3%80%81PLS%E3%80%81MUSE%20%E6%95%99%E7%A8%8B.pdf(PTS%E3%80%81AGS">http://btsabc.org/download/%E5%8E%9F%E5%A7%8B%E8%82%A1%EF%BC%88PTS%E3%80%81AGS%EF%BC%89%E5%85%91%E6%8D%A2BTS%E3%80%81PLS%E3%80%81MUSE%20%E6%95%99%E7%A8%8B.pdf(PTS、AGS</a> 兑换BTS、PLS、MUSE - 比特股中文网) 写的还是很清楚的.  </p>
+
+<p>最关键的问题,在于导入2.0后如何声明的问题.按照教程,把093c的json导入到2.0版本bts钱包,然后在钱包里查询来自1.0的余额,显示没有未领取.各种尝试都不行.<br/>
+<img src="media/blog/no_blances.jpg" alt=""/></p>
+
+<p>后来读到一篇帖子,核心问题讲的很明白了,地址如下</p>
+
+<pre><code class="language-text">https://bitsharestalk.org/index.php/topic,24124.msg305890.html#msg305890
+</code></pre>
+
+<p>抄录一下解决的核心思路</p>
+
+<pre><code class="language-text">Sorry for late reply. I am not great at elaborating stuffs. 
+
+When FLuxer helped me, I learned a few things that i have not tried before.  1st, you need to make a wallet account. 2nd, make a backup after importing the keys to your wallet account (make sure to add &quot;dot&quot; BIN on the file name.) I will be making a video and will post it here. 
+
+If, however, you only have a wallet.dat file, you will need to
+1. install BitShares 0.9.3
+2. create an account in the BitShares 0.9.3 wallet 
+3. import the wallet.dat file into your account (Import your Bitcoin wallet.dat)
+     https://drive.google.com/open?id=0B7288nKEgxRJRXdNX0lmeTljQTg
+
+4. Then Export your keys: 
+     Export via the console
+navigate to the console: Account List -&gt; Advanced Settings -&gt; Console
+type: wallet_export_keys [full path to the file]/[file name].json e.g. on Windows: wallet_export_keys C:\Users\[your user name]\Desktop\keys.json e.g. on Mac: wallet_export_keys /Users/[your user name]/Desktop/keys.json e.g. on Linux: wallet_export_keys /home/[your user name]/Desktop/keys.json
+Please replace [your user name] with your Windows account name.
+and hit Enter 
+     http://docs.bitshares.eu/_images/export-wallet-console.png
+
+5. Now Proceed to Bitshares 2.0. Create a wallet account model. 
+
+6. Go to settings and Restore/Import: https://drive.google.com/open?id=0B7288nKEgxRJNVBhUzUyUTFETDg
+
+7. Go to Wallet and Click Lookup Balance: https://drive.google.com/open?id=0B7288nKEgxRJU0ZETHZXc20xeTg
+
+8. Create Backup (Make sure you add .BIN when saving the file): https://drive.google.com/open?id=0B7288nKEgxRJTWpiOVRSb3NjeDg
+     See the difference: https://drive.google.com/open?id=0B7288nKEgxRJMTVqd3V6NmRnREU
+
+9.  You may need to make a new account or change your wallet profile, but the next step is to go to restore/import and import the BIN file. 
+https://drive.google.com/open?id=0B7288nKEgxRJMkd4QUNVb05IODg
+
+10 Repeat Step 7. you should be able to see your keys. Then Claim it. 
+
+11. Donate to luther-10 if you find this helpful. If you want me to make a video, someone should lend  me their unclaim private keys and i will make it into video to help everyone.  
+</code></pre>
+
+<p>总结一下2.0操作套路</p>
+
+<pre><code class="language-text">新建本地钱包,导入093c的备份,此时没有unclaimed blances
+备份本地钱包(bin格式)
+新建一个新的本地钱包账户
+在新建的钱包里面导入老的bin备份
+此时lookup for unclaimed blance就应该有了
+</code></pre>
+
+<p><img src="media/blog/lookupblances.jpg" alt=""/></p>
+
+<pre><code class="language-text">我是用web的在线钱包操作成功的
+https://bitshares.openledger.info/
+</code></pre>
+
+<p>so,good luck everyone</p>
+
+<p>有疑问的可以email: <a href="mailto:xiaotianhu@qq.com">xiaotianhu@qq.com</a></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[gopush代码分析-comet模块]]></title>
+    <link href="blog.v2cb.com/15923063083769.html"/>
+    <updated>2020-06-16T19:18:28+08:00</updated>
+    <id>blog.v2cb.com/15923063083769.html</id>
+    <content type="html"><![CDATA[
+<p>Tags:  go 推送 <br/>
+Toc:no<br/>
+Status: public<br/>
+Position: 1</p>
+
+<p>=<mark>Comet模块</mark>=</p>
+
+<blockquote>
+<p>负责SOCKET连接处理,支持TCP SOCKET与WEBSOCKET两种协议,数据传输采用REDIS的序列化协议</p>
+</blockquote>
+
+<p>main启动后,初始化如下<br/>
+InitConfig()<br/>
+perf.Init(Conf.PprofBind)<br/>
+NewChannelList()<br/>
+StartStats()<br/>
+StartRPC()<br/>
+StartComet()<br/>
+InitZK()<br/>
+InitSignal()</p>
+
+<p>其中,NewChannelList()根据 Conf.ChannelBucket指定的数量,初始化一定量的 &amp;ChannelBucket对象,并把这些bucket加入到&amp;ChannelList中.整个ChannelList的结构很简单:</p>
+
+<pre><code class="language-text">type ChannelList struct {
+    Channels []*ChannelBucket
+}
+</code></pre>
+
+<p>Bucket可以理解为一个池,初始化好这个池后,每一个新进来的链接,都会根据MruMruHash算法,把SeqChannel平均分配加入到Bucket这个池子中,这个后面会讲到.</p>
+
+<p>先从主体开始说起吧,StartComet()当然是主要的了,根据配置里的proto协议,分别或者全部启动TCP与WEBSOCKET监听,此处拿TCP监听为例.StartTCP()后,根据Conf.TCPBind的配置,启动多个TCP监听routine:</p>
+
+<pre><code class="language-text">go tcpListen(bind)
+</code></pre>
+
+<p>开始Listen后,在for循环中不停的开始Accept,并且设置了TCP相应的参数,每个新进入的连接,开启一个新的routine处理:</p>
+
+<pre><code class="language-text">for{
+    conn.SetKeepAlive(Conf.TCPKeepalive)
+    conn.SetReadBuffer(Conf.RcvbufSize)
+    conn.SetWriteBuffer(Conf.SndbufSize)
+    conn.SetReadDeadline(time.Now().Add(fitstPacketTimedoutSec))
+    go handleTCPConn(conn, rc)
+}
+</code></pre>
+
+<p>进入处理SOCKET数据的阶段了,BufIoReader读取SOCKET的数据,解析参数 </p>
+
+<pre><code class="language-text">parseCmd(rd)
+</code></pre>
+
+<p>值得一说的是GoPush采用的(REDIS的协议)[<a href="http://redis.io/topics/protocol%5D,%E8%BF%99%E7%AF%87%E8%AF%B4%E6%98%8E%E5%86%99%E7%9A%84%E5%BE%88%E8%AF%A6%E7%BB%86%E4%BA%86.%E5%B0%B1%E6%98%AF%E4%B8%80%E4%B8%AA%E7%B1%BB%E4%BC%BCJSON%E7%9A%84%E5%BA%8F%E5%88%97%E5%8C%96%E5%8D%8F%E8%AE%AE,%E6%94%AF%E6%8C%81%E6%95%B0%E7%BB%84/%E5%AD%97%E7%AC%A6%E4%B8%B2/%E6%95%B0%E5%AD%97/%E9%94%99%E8%AF%AF%E4%BF%A1%E6%81%AF/%E5%87%A0%E7%A7%8D%E7%AE%80%E5%8D%95%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%9A%84%E4%BC%A0%E9%80%92,%E6%AF%94%E8%BE%83%E5%8F%8B%E5%A5%BD%E6%98%8E%E6%96%87%E5%8F%AF%E8%AF%BB,%E5%B9%B6%E4%B8%94%E8%A7%A3%E6%9E%90%E6%95%88%E7%8E%87%E9%AB%98,%E5%A0%AA%E6%AF%942%E8%BF%9B%E5%88%B6%7E">http://redis.io/topics/protocol],这篇说明写的很详细了.就是一个类似JSON的序列化协议,支持数组/字符串/数字/错误信息/几种简单数据结构的传递,比较友好明文可读,并且解析效率高,堪比2进制~</a></p>
+
+<p>args[0]代表命令,默认必须是sub,否则报错.这块的逻辑跟Redis的PUB/SUB模型比较类似,都是Client订阅某个Channel,然后等待消息推送过来.<br/>
+接下来对args中的几个参数,key/heartbeat/token/version进行判断,然后新建一个用于通讯的channel:</p>
+
+<pre><code class="language-text">UserChannel.Get(key, true)
+</code></pre>
+
+<p>这个UserChannel.Get()方法又做了一些事 比较复杂.之前在初始化的时候,新建了一个ChannelList,里面保存了一组初始化好的Bucket,用来做Channel的池.Get方法,先验证一下Client需要Sub的Key是不是属于这个Comet节点的:</p>
+
+<pre><code class="language-text">node := CometRing.Hash(key)
+if Conf.ZookeeperCometNode != node {
+    log.Warn(&quot;user_key:\&quot;%s\&quot; node:%s not match this node:%s&quot;, key, node, Conf.ZookeeperCometNode)
+    return ErrChannelKey
+}
+
+</code></pre>
+
+<p>CometRing.Hash 就是采用ketama(ketama:libketama-style consistent hashing in Go)的一致性哈希算法,<a href="https://github.com/mncaudill/ketama">ketama项目地址</a><br/>
+验证通过后,从ChannelList的Bucket中,获取这个Key对应的SeqChannel,如果没有则新建</p>
+
+<pre><code class="language-text">b := l.Bucket(key)
+if c, ok := b.Data[key]; !ok {
+    if !Conf.Auth &amp;&amp; newOne {
+        c = NewSeqChannel()
+        b.Data[key] = c
+        ...
+        return c, nil
+    } else {
+      ...       
+    }
+} else {
+    ...
+    return c, nil
+}
+</code></pre>
+
+<p>SeqChannel是外部与Client沟通的通道,比如从Web发过来的消息,通过RPC传给Comet模块,在通过SeqChannel发给Client,另外还有Token验证的功能,比较简单一看就好了</p>
+
+<p>接下来就是在这个routine中持续监听Socket数据流并发送心跳了,如果产生错误就break并删除SeqChannel.</p>
+
+<pre><code class="language-text">for {
+    conn.SetReadDeadline(time.Now().Add(time.Second * time.Duration(heartbeat)))
+    conn.Read(reply)    
+    if string(reply) == Heartbeat {
+        ...
+        conn.Write(HeartbeatReply) //服务器发来心跳,并写一个心跳回去
+    }
+    end = time.Now().UnixNano() //更新SOCKET超时时间
+}
+</code></pre>
+
+<blockquote>
+<p>到此,主要的Socket监听/通讯/心跳就完成了.</p>
+</blockquote>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Chrome Extension扩展开发之复制粘贴]]></title>
+    <link href="blog.v2cb.com/15923063083833.html"/>
+    <updated>2020-06-16T19:18:28+08:00</updated>
+    <id>blog.v2cb.com/15923063083833.html</id>
+    <content type="html"><![CDATA[
+<p>Tags:  chrome extension 粘贴<br/>
+Toc:no<br/>
+Status: public<br/>
+Position: 1</p>
+
+<p>最近在研究Chrome Extension扩展开发.想实现一个功能,选中文本后写入到插件弹层的div中.<br/><br/>
+一开始想的方案,用Selection来实现.钻研了好几天的Selection,总是有莫名其妙的问题,在某些页面选中文本后Selection对象里面无法获取到文本内容,感觉跟过于复杂的DOM结构有点关系.灵机一动,用复制粘贴不就解决了嘛,鼠标选中文本后自动复制,然后在弹出的div层中把文本粘贴回来就行了,如此简单的方案 岂不美滋滋.说干就干</p>
+
+<p>翻了翻方案,读写clipboard两条命令搞定:</p>
+
+<pre><code class="language-text">document.execcommand(&#39;copy&#39;)
+document.execcommand(&#39;paste&#39;)
+</code></pre>
+
+<p>然后在onmouseup里面调用一下copy,复制就搞定了,美滋滋<br/><br/>
+然而,paste却死活不行.调用document.execcommand(&#39;paste&#39;),返回值总是false,死活不行.查了半天,Chrome因为安全问题禁用了读取剪切板内容...这不坑爹了</p>
+
+<p>不信邪 一顿操作猛如虎,找到两个solution</p>
+
+<pre><code class="language-text">https://stackoverflow.com/questions/7144702/the-proper-use-of-execcommandpaste-in-a-chrome-extension
+
+https://gist.github.com/srsudar/e9a41228f06f32f272a2
+</code></pre>
+
+<p>stackoverflow讲的不是很明白,但是信息是明确的:Chrome的Extension里面是可以调用这个方法的,这个路子肯定是没问题的.大方向没问题,就开始折腾.</p>
+
+<p>开始在Content Script(就是注入到页面的js)各种折腾,各种失败.继续搜了半天,只有在background.js里面才有权限.</p>
+
+<p>那么,思路基本上是:必须在background.js里面调用paste拿到剪贴板内容,然后传给页面里的JS.<br/>
+开始在页面js里面调用chrome.extension.getBackgroundPage(),死活也不行.翻官方手册,貌似可以用传Message的方式进行通讯.一顿尝试,最终成功,必须记录一下了.</p>
+
+<p>background.js:</p>
+
+<pre><code class="language-text">chrome.runtime.onMessage.addListener(
+    function(request, sender, sendResponse){
+        var result = &#39;&#39;;
+        var sandbox = document.getElementById(&#39;sandbox&#39;);
+        sandbox.value = &#39;&#39;;
+        sandbox.select();
+        if (document.execCommand(&#39;paste&#39;)) {
+            result = sandbox.value;
+        }
+        sandbox.value = &#39;&#39;;
+        sendResponse({clipboard: result});
+    }
+)
+</code></pre>
+
+<p>background.html</p>
+
+<pre><code class="language-text">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+    &lt;head&gt;
+        &lt;script src=&quot;background.js&quot;&gt;&lt;/script&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+        &lt;textarea id=&quot;sandbox&quot;&gt;&lt;/textarea&gt;
+    &lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre>
+
+<p>mainfest.json  </p>
+
+<pre><code class="language-text">&quot;background&quot;: {
+    &quot;persistent&quot;: true,
+    &quot;page&quot;: &quot;background.html&quot;
+  },
+ ...
+ 
+权限我加入了&quot;clipboardRead&quot;, &quot;clipboardWrite&quot;,&quot;background&quot;这几个,
+web_accessible_resources加入&quot;background.html&quot;,&quot;background.js&quot; 懒得去测每个值的影响了,反正都加上了
+ 
+</code></pre>
+
+<p>在需要获取剪切板内容的方法里发消息:</p>
+
+<pre><code class="language-text">chrome.runtime.sendMessage({}, function (response){
+     console.log(response);
+});
+           
+</code></pre>
+
+<p>response中就可以获取到剪切板的内容了,搞定!</p>
+
+<p>PS:<br/>
+调试background.html的时候,这里面引入的js的debug信息和console信息,是不会在普通的tab页面中显示的.导致我摸黑调试了半天,浪费了很多时间.background相关的调试信息,需要在chrome://extensions/里面打开 develop mode,然后在插件下面点击&quot;Inspect views: background.html&quot;在弹出的inspector里面就可以看到debug信息了.有了信息在debug就方便多了.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[iowait详解]]></title>
+    <link href="blog.v2cb.com/15923063084125.html"/>
+    <updated>2020-06-16T19:18:28+08:00</updated>
+    <id>blog.v2cb.com/15923063084125.html</id>
+    <content type="html"><![CDATA[
+<p>Tags:  iowait linux <br/>
+Toc:no<br/>
+Status: public<br/>
+Position: 1</p>
+
+<h1 id="toc_0">iowait详解</h1>
+
+<blockquote>
+<p>翻译自<a href="https://blog.pregos.info/wp-content/uploads/2010/09/iowait.txt">https://blog.pregos.info/wp-content/uploads/2010/09/iowait.txt</a><br/>
+缘起:<a href="https://serverfault.com/questions/12679/can-anyone-explain-precisely-what-iowait-is">https://serverfault.com/questions/12679/can-anyone-explain-precisely-what-iowait-is</a></p>
+</blockquote>
+
+<p>So,到底什么是 &quot;iowait&quot;?</p>
+
+<p>一句话总结一下:iowait是CPU处于idle空闲状态,并且至少有1个I/O处在处理中状态的时间百分比.</p>
+
+<p>每个CPU可能处在以下四种状态中的一种:user,sys,idel,iowait;性能测试工具比如vmstat,iostat,sar,都可以把这四种状态以百分比的形式显示出来.sar工具可以通过-P参数显示每个CPU的基础信息,但是其他大部分工具都是显示所有CPU核心的平均值.这四种状态的百分比相加为100%.</p>
+
+<p>这些工具显示的统计信息,是通过内核周期性更新统计出来的.(对于AIX,CPU统计更新周期为每个时钟中断,10毫秒一次).当CPU发生时钟中断,内核会检查CPU是不是处于idle状态.如果不是idle状态,那么内核会判断正在执行的命令是用户态还是内核态,如果是用户态则吧&#39;user&#39;加一,如果是内核态则把&#39;sys&#39;加一.</p>
+
+<p>如果cpu处在idle状态,内核会判断是不是有IO读写正在进行,如果至少有一个IO正在执行,不管是本地磁盘读写还是远程磁盘读写(比如mount的NFS磁盘);如果有,那么&#39;iowait&#39;计数器就会加一.如果没有IO正在进行,&#39;idle&#39;计数器就加一.</p>
+
+<p>当运行性能测试工具,比如vmstat的时候,它读取的就是这四个状态的计数器,然后根据用户指定的时间睡眠几秒,然后在读取一次.然后vmstat会根据两次取值的绝对值,计算出这一段取样时间的变化值.vmstat知道每次时钟滴答都会改变计数器的值,它就可以算出每次时钟滴答内计数器的变化量.举个栗子,如果执行&quot;vmstat 2&quot;,vmstat就会每2秒钟对计数器进行一次取样.由于每次时钟循环时间在10ms,所以每秒有100次循环,2s就有200次时钟循环.每个计数器的差值除以循环周期的总统计次数,乘以100就得到了周期内的百分比.</p>
+
+<p>iowait在某些情况下,可以作为衡量系统吞吐能力的一个指标,但是在另外一些情况下,这个数值可能是毫无意义的.<br/>
+有一些例子来帮助解释一下这个情况.第一个例子,iowait是导致性能原因的直接因素:</p>
+
+<h3 id="toc_1">Example 1:</h3>
+
+<p>假设有一个程序,需要执行一组包含多个任务的事务.每个事务执行的过程中,需要执行10ms计算任务,然后把结果以同步的方式写入磁盘.由于要写入的文件是以同步方式打开的,所以只有当写入的I/O操作全部完成后,写入调用才会返回.假设磁盘系统没有cache缓存,并且每次写入的I/O操作需要20ms.在这种情况下,每次事务操作需要30ms.在1S内(1000ms)这个程序可以完成33次事务(33tps).如果这个程序是在单核心系统(1CPU)上运行的唯一的程序,那么CPU的使用率会是1/3处在忙(busy)状态,剩下的时间等待I/O - 所以是66%的iowait 和 34%的CPU busy.</p>
+
+<p>假设,对I/O系统进行了优化(比如增加了磁盘缓存),每次I/O操作只需要1ms,那么每次事务只需要11ms,那么程序每秒就可以执行90-91次事务了.这种情况下iowait大概在8%.因此更低的iowait时间直接影响了程序的执行能力(吞吐量).</p>
+
+<h3 id="toc_2">Example 2:</h3>
+
+<p>假设系统中有一个正在执行的程序,例如 &#39;dd&#39;程序,每次从磁盘读取4kb的数据.假设dd中的一个函数main()会调用read()方法来读取数据.main函数和read函数都是用户态的函数.read方法是libc.a提供的一个函数,这个函数会调用kread()系统调用,从而进入内核态.kread()会初始化设备并进行一次物理I/O,&#39;dd&#39;程序在此期间会睡眠(sleep)直到物理I/O完成.执行main,read,kread代码需要的时间很短 - 大概只需要50微秒,对于磁盘而言,完成I/O请求大概需要2-20ms,主要取决于磁盘的机械臂寻址的时间.因此,当时钟中断发生时,&#39;dd&#39;程序很可能在睡眠状态,I/O处在执行中的状态.因此,&#39;iowait&#39;计数器会增加.如果I/O在2ms完成,&#39;dd&#39;程序就继续执行下一次读操作.但是对比起来,50微秒要远远少于20ms,当时钟中断发生时,CPU更有可能还是处于idle状态,I/O任务仍然在进行中.因此,&#39;iowait&#39;还会增加.如果执行&#39; sar -P <cpunumber>&#39;来统计这个CPU的使用状态,iowait很可能处于97-98%.如果每次I/O需要20ms,那iowait可能会是99-100%.因此尽管I/O wait非常高,但是吞吐量依然比第一个例子中的情况要高10倍左右.</p>
+
+<h3 id="toc_3">Example 3</h3>
+
+<p>假设在同一个CPU上正在执行2个程序.其中一个&#39;dd&#39;负责从磁盘读取数据,另一个程序不会执行I/O操作,但是100%的时间都用来做计算工作.现在,假设I/O系统出现了故障,需要1s才能完成一次物理I/O操作.因此,当&#39;dd&#39;程序处于睡眠状态等待I/O结束时,另一个程序依然可以使用CPU.当时钟中断发生时,总会有一个程序处于用户态或内核态,因此 %idle和%iowait会是0.即便iowait是0,并不意味着就没有I/O问题,因为显然一次I/O执行超过了一秒是肯定有问题的.</p>
+
+<h3 id="toc_4">Example 4</h3>
+
+<p>假设在一个4核CPU的系统上有6个程序在执行.假设有4个程序,花费了70%的时间在等待物理I/O,还有30%时间真正使用了CPU.由于这四个程序需要进入内核态来执行kread系统调用,这就会花费部分比例的时间在内核中;假设有25%的时间是用户态,5%是内核态.</p>
+
+<p>另外,我们假设剩下的两个程序消耗100%的时间全部用来计算,没有I/O请求,所以CPU永远都会100%忙碌.其他4个程序只需要30%的CPU资源,这俩程序就可以使用剩下的CPU资源了.</p>
+
+<p>如果我们执行 &#39;sar -P ALL 1 10&#39;,通过每秒执行一次&#39;sar&#39;,一共10次,我们能够看到每次执行的结果如下:</p>
+
+<pre><code class="language-text">cpu    %user    %sys   %wio    %idle
+0        50       10     40       0
+1        50       10     40       0
+2        100      0       0       0 
+3        100      0       0       0
+-         75      5       20      0
+</code></pre>
+
+<p>注意一下,CPU使用的分配,75%为user,5%是sys,20%的iowait.如果通过&#39;vmstat&#39;或&#39;iostat&#39;等其他工具,看到的就是所有CPU的平均值.</p>
+
+<p>现在,让我们把同样的负载(同样的6个程序,同样的执行情况)放到另一台有6核CPU(同样的CPU速度和同样的IO系统)的机器上执行.现在,各个程序都可以在独立的一个CPU上执行了,因此CPU的使用情况如下:</p>
+
+<pre><code class="language-text">cpu    %user    %sys    %wio    %idle
+0         25       5      70        0
+1         25       5      70        0
+2         25       5      70        0
+3         25       5      70        0
+4        100       0       0        0
+5        100       0       0        0
+-         50       3      47        0
+</code></pre>
+
+<p>现在,平均的CPU使用率为50% user,3% sys, 47% iowait.注意一下,同样的负载情况,在另一台机器会导致iowait的值提高了2倍多.</p>
+
+<h3 id="toc_5">结论</h3>
+
+<p>iowait的结果对于衡量I/O性能可能有用,也可能没什么用.但是至少告诉了我们系统能负担更多的计算任务,因为CPU处在iowait状态不代表CPU就不能执行其他进程了;因此,iowait只是另一种idle的状态而已.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[QueryPath中文乱码问题,UTF8乱码问题解决]]></title>
+    <link href="blog.v2cb.com/15923063084242.html"/>
+    <updated>2020-06-16T19:18:28+08:00</updated>
+    <id>blog.v2cb.com/15923063084242.html</id>
+    <content type="html"><![CDATA[
+<p>最近研究Spider,找到了PHP的QueryPath库.之前用Python的BeautifulSoup也挺方便,这个跟Python的那个库还是蛮像的.</p>
+
+<p>但是用起来的时候就蛋疼了,发现UTF8的中文总是乱码.研究了好久,尝试了mb_convert_encoding各种姿势,还是不能解锁</p>
+
+<p>最终在github的一个issue里发现了,这个issue有人提出来了.按着lz的参数配置,传给qp()方法:</p>
+
+<pre><code class="language-text">$qp_options = array(
+        &#39;convert_from_encoding&#39; =&gt; &#39;UTF-8&#39;,
+        &#39;convert_to_encoding&#39; =&gt; &#39;UTF-8&#39;,
+        &#39;strip_low_ascii&#39; =&gt; FALSE,
+        );
+
+$qp = htmlqp($html, null, $qp_options)-&gt;find(&quot;.text&quot;)-&gt;find(&quot;p&quot;)-&gt;text();
+</code></pre>
+
+<p>并且记得,如果是HTML的片段,没有完整的HTML,还是要自己给补全一下HTML才能正确识别.</p>
+
+<pre><code class="language-text">$html = &#39;&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;&#39;;
+$html .= &#39;&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;head&gt;&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;&lt;/head&gt;&lt;body&gt;&#39;;
+$html .= $htmlString;
+$html .= &#39;&lt;/body&gt;&lt;/html&gt;&#39;;
+$qp = htmlqp($html, null, $qp_options)-&gt;find(&quot;.text&quot;)-&gt;find(&quot;p&quot;)-&gt;text();
+</code></pre>
+
+<p>中文问题就解决了.看样子是在新版中修复了这个bug,并不需要去搞mb_convert_encoding了.吐槽一下querypath的手册,写的还是有点shit.</p>
+
+<p>ps: 如果是完整的HTML代码/网页,GBK编码也会有问题.这个是跟<meta http-equiv="Content-Type" content="text/html; charset=gbk" /> 有巨大关系的.需要把HTML的代码用mb_convert_encoding转换成UTF8,并把html中meta标签那个charset=gbk replace成charset=utf8,如此才能正确显示.编码问题真是坑爹啊.</p>
+
+<p>github的issue地址:<a href="https://github.com/technosophos/querypath/issues/94">https://github.com/technosophos/querypath/issues/94</a></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[WorkerMan的restart命令的一个Bug修复记录]]></title>
+    <link href="blog.v2cb.com/15923063084445.html"/>
+    <updated>2020-06-16T19:18:28+08:00</updated>
+    <id>blog.v2cb.com/15923063084445.html</id>
+    <content type="html"><![CDATA[
+<p>最近一个项目更新之后总是出问题,守护进程总是自己会挂掉,日志显示重启失败,之前一直好好的.周末一个下午DEBUG,终于搞定了.记录一下.</p>
+
+<pre><code class="language-text">前情提要:
+    用PHP的WorkerMan写了一个Worker进程,监听Redis队列,另外的项目往队列里塞URL然后异步执行.很简单,一直运行稳定.但是以防万一,最近上线写了一个watcher,通过crontab每分钟监控这个队列往队列写入一个任务,如果执行超时,就调用WorkerMan的restart命令进行重启.
+    除此之外还有一个Worker,监听数据库执行定时任务,原理类似.
+    程序入口文件 StartWorker.php代码大致如下
+
+    $task = new Worker();
+    $task-&gt;onWorkerStart = function($task)
+    {
+        $dispatch = new dispatch();
+        $dispatch-&gt;run();
+    };
+    $cronQueue = new Worker();
+    $cronQueue-&gt;onWorkerStart = function($task)
+    {
+        $cronjob = new cron();
+        $cronjob-&gt;run();
+    };
+    Worker::runAll();
+
+    启动成功后,Workerman生成三个进程,一个master,两个Worker
+</code></pre>
+
+<p>通过Log判断,是watcher在对Workerman执行restart的时候出现了问题.Log中重复的都是</p>
+
+<pre><code class="language-text">Workerman[./StartServer.php] restart
+Workerman[./StartServer.php] is stoping ...
+Workerman[./StartServer.php] stop fail
+</code></pre>
+
+<p>所以从WorkerMan执行restart看起吧.</p>
+
+<p>watcher,调用restart命令:./StartServer.php restart -d </p>
+
+<p>从WorkerMan的执行流程看起:</p>
+
+<pre><code class="language-text">public static function runAll()
+    {
+        // 初始化环境变量
+        self::init();
+        // 解析命令
+        self::parseCommand();
+        // 尝试以守护进程模式运行
+        self::daemonize();
+        // 初始化所有worker实例，主要是监听端口
+        self::initWorkers();
+        //  初始化所有信号处理函数
+        self::installSignal();
+        // 保存主进程pid
+        self::saveMasterPid();
+        // 创建子进程（worker进程）并运行
+        self::forkWorkers();
+        // 展示启动界面
+        self::displayUI();
+        // 尝试重定向标准输入输出
+        self::resetStd();
+        // 监控所有子进程（worker进程）
+        self::monitorWorkers();
+    }
+</code></pre>
+
+<p>parseCommand这一步,解析了命令中的restart命令.伪代码</p>
+
+<pre><code class="language-text">parseCmd (){
+    switch
+    case: restart
+    case: stop
+        $master_pid = @file_get_contents(self::$pidFile);
+        $master_pid &amp;&amp; posix_kill($master_pid, SIGINT);//向正在运行的WorkerMan的Master发送SIGINT信号让其退出
+        while(1) {  
+            // 检查主进程是否存活
+            $master_is_alive = $master_pid &amp;&amp; posix_kill($master_pid, 0);
+            if($master_is_alive){
+                //等待5s 超时则说明master进程没有退出,continue 继续while循环
+            }
+        }
+        
+</code></pre>
+
+<p>所以restart命令就是通过向正在运行的Master进程发送SIGINT让原来的Master和Worker全部退出,然后自己启动接替原来的工作.log中一直stop失败,通过ps aux | grep WorkerMan可以发现,原来的Master还在运行,但是Worker已经全部退出了.<br/>
+<img src="media/blog/workerman_grep1.png" alt=""/></p>
+
+<p>继续研究,向Master进程发送SIGINT的时候执行了什么呢?</p>
+
+<p>启动的时候,通过installSignal()定义了处理signal的方法</p>
+
+<pre><code class="language-text">pcntl_signal(SIGINT,  array(&#39;\Workerman\Worker&#39;, &#39;signalHandler&#39;), false);
+</code></pre>
+
+<p>发现SIGINT信号对应的处理方法是self::stopAll();</p>
+
+<p>StopAll的伪代码如下:</p>
+
+<pre><code class="language-text">self::$_status = self::STATUS_SHUTDOWN;
+if(self::$_masterPid === posix_getpid())
+{
+    //如果是master 则向Worker发送SIGINT信号
+    $worker_pid_array = self::getAllWorkerPids();
+    foreach($worker_pid_array as $worker_pid)
+    {
+        posix_kill($worker_pid, SIGINT);
+    }
+} else {
+    //如果是Worker 则执行stop方法进行清理并退出
+    foreach(self::$_workers as $worker)
+    {
+        $worker-&gt;stop();
+    }
+    exit(0);
+}
+
+</code></pre>
+
+<p>这一步应该是ok的,因为ps aux|grep Worker ,child已经没有了,只剩下master了.<br/>
+此处并没有Master退出的相关代码,但是可以看到,做了status的标记,所以一定在其他地方实现了对status的监控.<br/>
+搜索STATUS_SHUTDOWN,发现在879行,monitorWorkers()函数里.开始分析这个函数:</p>
+
+<pre><code class="language-text">while(1)
+{
+    //此处会suspand阻塞,直到有Worker退出,并返回退出的Worker的pid
+    $status = 0;
+    $pid = pcntl_wait($status, WUNTRACED);
+    if($pid &gt; 0)
+    {
+        //pid&gt;0说明退出的是子进程 需要判断当前的status状态决定是否需要启动新的Worker来补充退出的Worker  ﻿
+        foreach(self::$_pidMap as $worker_id =&gt; $worker_pid_array)
+        {
+            if(isset($worker_pid_array[$pid]))
+            { 
+                //log
+                // 清除退出的Worker信息
+                unset(self::$_pidMap[$worker_id][$pid]);
+            }
+        }
+        // 如果不是关闭状态，则补充新的进程
+        if(self::$_status !== self::STATUS_SHUTDOWN) self::forkWorkers();
+    } else {
+        // 如果是关闭状态，并且所有进程退出完毕，则主进程退出
+        if(!self::getAllWorkerPids()) self::exitAndClearAll();
+    }
+}
+</code></pre>
+
+<p>这个函数是启动后执行的最后一个函数,是master进程执行的.这个函数通过while(1)循环来保证master一直运行,通过</p>
+
+<pre><code class="language-text">    $pid = pcntl_wait($status, WUNTRACED);
+</code></pre>
+
+<p>来同步子进程的退出状态.pcntl_wait函数会一直阻塞直到有子进程退出,然后会返回子进程的PID.<br/>
+master检测到有子进程退出后记录子进程退出的status到日志中,然后重点来了</p>
+
+<pre><code class="language-text">    // 如果不是关闭状态，则补充新的进程
+    if(self::$_status !== self::STATUS_SHUTDOWN)
+</code></pre>
+
+<p>也就是,在此检查self::$_status变量,之前在stopAll方法中,已经设置了这个变量为self::STATUS_SHUTDOWN<br/>
+如果status不是SHUTDOWN状态,则在此新建worker进程来替补掉退出的Worker进程.此处不管,我们要看的是退出部分</p>
+
+<pre><code class="language-text">    // 如果是关闭状态，并且所有进程退出完毕，则主进程退出
+    if(!self::getAllWorkerPids())
+    {
+        self::exitAndClearAll();
+    }
+</code></pre>
+
+<p>在此打印了一下,果然有返回值,所以此处的self::exitAndClearAll();并没有执行,master也就没有退出.为啥有child退出了但是没有清除自己的pid信息呢?继续研究一下</p>
+
+<p>之前有写,在调用posix_kill($master_pid, 0);后会有一个5s的超时时间,如果在这个时间内master还没有被kill完成重启则显示失败.把这块注释掉,让它一直发送kill信号试试</p>
+
+<p>此刻ps一下是这样的:<br/>
+<img src="media/blog/workerman_grep2.png" alt=""/></p>
+
+<p>我了个擦,child还都在.strace一下24776,在不断的发送kill<br/>
+    kill(24773, SIG_0)                      = 0<br/>
+而接收kill信号的24773当然是在不断的写入log,child not stopping.这不科学啊,明显死锁了<br/>
+重来,把timeout改长一点,100s试试<br/>
+这次是这样的:<br/>
+<img src="media/blog/workerman_grep3.png" alt=""/><br/>
+25010进程是手动执行restart的进程,strace后发现在不断发送kill信号给24934.<br/>
+而24934则是上一次启动的master,需要被干掉的,strace -p 24934如下</p>
+
+<pre><code class="language-text">open(&quot;/tmp/worker.txt&quot;, O_WRONLY|O_CREAT|O_APPEND, 0666) = 3
+fstat(3, {st_mode=S_IFREG|0666, st_size=16862, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+write(3, &quot;{\&quot;24936\&quot;:24936}\r\n&quot;, 17)   = 17
+</code></pre>
+
+<p>也就是master还是能不断获取到24936这个child,worker在退出的时候,没有把自己注册在self::\(_pidMap中的变量清除掉.<br/>
+启动后,打印一下self::\)_pidMap 结果如下</p>
+
+<pre><code class="language-text">{&quot;0000000006ee73ef00000000161a6a05&quot;:{&quot;25379&quot;:25379},&quot;0000000006ee73ed00000000161a6a05&quot;:{&quot;25380&quot;:25380}}
+</code></pre>
+
+<p>说明这个数组是没问题的.<br/>
+搜索这个数组,在874行,stopAll里面有清除的方法,子进程在退出的时候,会完成这一步.</p>
+
+<pre><code class="language-text">    // 清除子进程信息
+    unset(self::$_pidMap[$worker_id][$pid]);
+</code></pre>
+
+<p>在此调试,发现问题出现在monitorWorkers的pcntl_wait()上.<br/>
+然而在此打印pid,返回了三次 分别是<br/>
+-1<br/>
+-1<br/>
+25683<br/>
+说明有一个进程的pid没有返回,在master中monitorWorkers时,通过pcntl_wait监控子进程退出,然而返回了-1错误.所以这个子进程已经退了,master还以为它没退,就只好一直等着它退出,就卡死了.思考了半天,在monitorWorkers中,if的判断是通过self::getAllWorkerPids()函数来获取所有的Worker的pid的,这个函数很简单:</p>
+
+<pre><code class="language-text">foreach(self::$_pidMap as $worker_pid_array)
+{
+    foreach($worker_pid_array as $worker_pid)
+    {
+        $pid_array[$worker_pid] = $worker_pid;
+    }
+}
+</code></pre>
+
+<p>基本上就是返回了self::$_pidMap中的值,然而master没有收到正确的Worker退出的pid,而是收到了-1,所以这个数组就一直不是空的.那么稍微改造一下,让这个方法只返回&quot;活着的Worker&quot;,可以通过posix_kill来实现:</p>
+
+<pre><code class="language-text"> foreach($worker_pid_array as $worker_pid)
+{
+    if(posix_kill($worker_pid, 0)) $pid_array[$worker_pid] = $worker_pid;
+}
+</code></pre>
+
+<p>如此一来,Master就不会在获取僵尸Worker了,能够顺利退出,问题解决了.</p>
+
+<p>PS:至于为什么子进程退出了,pcntl_wait还是返回了-1,这一块还是没有很清楚.得继续试验一下了.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[mac安装mysql-python(with XAMPP)]]></title>
+    <link href="blog.v2cb.com/15923063084788.html"/>
+    <updated>2020-06-16T19:18:28+08:00</updated>
+    <id>blog.v2cb.com/15923063084788.html</id>
+    <content type="html"><![CDATA[
+<p>继续研究flask框架,SQL部分准备用SQLAlchemy.调用的时候报错:</p>
+
+<pre><code class="language-text">ImportError: No module named MySQLdb
+</code></pre>
+
+<p>搜了一下,需要安装mysql-python :<a href="http://stackoverflow.com/questions/25459386/mac-os-x-environmenterror-mysql-config-not-found">http://stackoverflow.com/questions/25459386/mac-os-x-environmenterror-mysql-config-not-found</a></p>
+
+<pre><code class="language-text">sudo pip install mysql-python
+</code></pre>
+
+<p>安装的时候,报错 找不到mysql_config.想到之前装过XAMPP,里面是包含mysql的.</p>
+
+<pre><code class="language-text">$ locate mysql_config
+/Applications/XAMPP/xamppfiles/bin/mysql_config
+
+</code></pre>
+
+<p>果然有.加入到PATH里就能找到了</p>
+
+<pre><code class="language-text">export PATH=$PATH:/Applications/XAMPP/xamppfiles/bin/
+</code></pre>
+
+<p>装好之后运行,还是报错:</p>
+
+<pre><code class="language-text">Reason: unsafe use of relative rpath libmysqlclient.18.dylib in /Library/Python/2.7/site-packages/_mysql.so with restricted binary
+</code></pre>
+
+<p>搜了一下,跟新macos EICapitan的安全机制有关系:<a href="http://stackoverflow.com/questions/31343299/mysql-improperly-configured-reason-unsafe-use-of-relative-path">http://stackoverflow.com/questions/31343299/mysql-improperly-configured-reason-unsafe-use-of-relative-path</a></p>
+
+<p>按着答案,执行</p>
+
+<pre><code class="language-text">sudo install_name_tool -change libmysqlclient.18.dylib /Applications/XAMPP/xamppfiles/lib/libmysqlclient.18.dylib /Library/Python/2.7/site-packages/_mysql.so
+</code></pre>
+
+<p>终于执行成功了.</p>
+
+<p>总结:stackoverflow真是个好东西.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[2018-08-01反思]]></title>
+    <link href="blog.v2cb.com/15923063084891.html"/>
+    <updated>2020-06-16T19:18:28+08:00</updated>
+    <id>blog.v2cb.com/15923063084891.html</id>
+    <content type="html"><![CDATA[
+<p>上班路上,开始听&quot;东吴同学会&quot;这个有声节目了,之前觉得东吴相对论讲的一般,三年后的复出不知道怎么样.结果听了一下,发现对我的感触挺深,总结一下.</p>
+
+<p>听的这期讲的是&quot;文字之道&quot;,讲写字的事儿.说现在互联网内容行业,能写好&quot;文章&quot;的人,要求不高,能把话讲明白事儿理顺了的人,比程序员还稀缺.为什么呢,因为现在移动互联网太过发达,人们每天接触的看到的生活的都是碎片化的,一个视频从一小时短到一分钟短到十五秒,人们已经很难在深入的线性化的思考一个事儿并进行表述了,所以互联网其实从根本上改变了我们的思维模式,让人退化了.</p>
+
+<p>虽然这个问题已经是老生常谈了,但是我最近一段时间里做的反思,发现这也是我的一个问题之一. 碎片化带来的问题.除了思维逻辑上不够连贯以至于思考不够深入,还一个恶果就是视野的分散导致精力的不够聚焦,并且由此引发的一系列焦虑等等问题.所谓的视野,每天所看所思,其实很多东西不是我们主动去寻找的,现在的各种互联网产品都在拼命抓你的注意力,一个东西一不小心看到了 因为好奇就可能会点开.虽然明知道是标题党,还是想进去看看的冲动肯定每个人都会有,这是人性.由此我获取了很多不必要的信息,成都发大水了,台风要来了,北京出租车撞人了,乱七八糟的东西极大的分散了注意力,而精力 恰恰是最宝贵的财富之一.</p>
+
+<p>除了时间,&quot;精力&quot; 其实是更重要的资产,我觉得&quot;精力&quot;的定义可以算做是&quot;有效时间&quot;,一天虽然在公司坐了十个小时,但是真正有效的时间,也就是&quot;精力&quot;,肯定要打折扣的.然后光有这个认识还不行,得学会去对抗人性,那就是&quot;不见为净&quot;.之前整天刷的论坛,本质上跟抖音头条是一路东西,虽然有用的信息不能说一点没有,但是相对投入来说产出还是不值得.最近已经逐步改掉了,每天起床和累了休息的一些固定时间刷一下,平时控制住自己.</p>
+
+<p>除了控制信息源,还有一个学习的方式问题.面过很多人,包括我自己,所谓的&quot;在工作中学习&quot;,无外乎是遇到问题百度/谷歌一下解决方案,是一种比较急功近利的思路.一方面,谷歌出来的各种&quot;文章&quot;和Blog的作者水平可能就不咋地,而且互相之间也是抄来抄去,获取信息的效率与准确性是有问题的.而且这也是一种&quot;碎片化&quot;的学习,由此带来的知识体系不够系统的问题,对于工程师而言肯定是不健康的.这方面我觉得刘未鹏在暗时间里面说的自己的学习方法就靠谱一些,每个领域的书找几本基本上就都能覆盖到了,然后快速阅读做索引,在需要的时候能根据索引快速找到自己需要的东西,毕竟出书的作者水平一般还是要比博客作者的水平高一些,而且会更严谨.</p>
+
+<p>工作这几年,一直很在意的是&quot;生产效率&quot;,却一直忽略了&quot;学习效率&quot;的总结反思,觉得现在学点东西的速度还是不够快,很多习惯还是上学时候的习惯.想想自己一直这么在意效率却忽略了这一块的效率,实在是不应该的,所以必须持续反思和修改自己的学习方法来提升效率,是为记.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[PHP的多线程Curl,rolling Curl实现与坑]]></title>
+    <link href="blog.v2cb.com/15923063085282.html"/>
+    <updated>2020-06-16T19:18:28+08:00</updated>
+    <id>blog.v2cb.com/15923063085282.html</id>
+    <content type="html"><![CDATA[
+<p>Tags:  PHP curl mutil_curl 多线程<br/>
+Toc:no<br/>
+Status: public<br/>
+Position: 1</p>
+
+<p>最近需要做群发推送,之前的推送只有单发的API,因为分IOS跟安卓平台,最简单的实现还是塞到队列去一个一个发,毕竟用户不多也就几万个.之前的请求队列没用多线程请求,每次一个.然而这个推送接口速度太挫,ios经常要2-3s才返回,几万个单线程请求得等死了.于是开始研究PHP的多线程Curl<br/>
+  之前知道有mutil_curl可以实现,以为很简单.实际操作起来,坑还是相当多的.</p>
+
+<p>php手册参考：</p>
+
+<blockquote>
+<p><a href="http://php.net/manual/zh/book.curl.php">http://php.net/manual/zh/book.curl.php</a></p>
+</blockquote>
+
+<p>curl_multi_init()相关：</p>
+
+<blockquote>
+<p><a href="http://php.net/manual/zh/function.curl-multi-init.php">http://php.net/manual/zh/function.curl-multi-init.php</a></p>
+</blockquote>
+
+<p>手册说的很简单，并附了一个演示脚本，如下。</p>
+
+<pre><code class="language-text">&lt;?php
+// 创建一对cURL资源
+$ch1 = curl_init();
+$ch2 = curl_init();
+ 
+// 设置URL和相应的选项
+curl_setopt($ch1, CURLOPT_URL, &quot;http://www.example.com/&quot;);
+curl_setopt($ch1, CURLOPT_HEADER, 0);
+curl_setopt($ch2, CURLOPT_URL, &quot;http://www.php.net/&quot;);
+curl_setopt($ch2, CURLOPT_HEADER, 0);
+ 
+// 创建批处理cURL句柄
+$mh = curl_multi_init();
+ 
+// 增加2个句柄
+curl_multi_add_handle($mh,$ch1);
+curl_multi_add_handle($mh,$ch2);
+ 
+$running=null;
+// 执行批处理句柄
+do {
+    usleep(10000);
+    curl_multi_exec($mh,$running);
+} while ($running &gt; 0);
+ 
+// 关闭全部句柄
+curl_multi_remove_handle($mh, $ch1);
+curl_multi_remove_handle($mh, $ch2);
+curl_multi_close($mh);
+</code></pre>
+
+<p>演示脚本说明了工作流程。</p>
+
+<p>1、curl_multi_init，初始化多线程curl批处理会话。</p>
+
+<p>2、curl_multi_add_handle，将具体执行任务的curl添加到multi_curl批处理会话。</p>
+
+<p>3、curl_multi_exec，真正开始执行curl任务。</p>
+
+<p>4、curl_multi_getcontent，获取执行结果。</p>
+
+<p>5、curl_multi_remove_handle，将完成了的curl移出批处理会话。</p>
+
+<p>6、curl_multi_close，关闭curl批处理会话。</p>
+
+<p>mutil_curl相对于传统curl,最重要的还是理解几个概念.mutil_curl相当于一个请求线程池,这里的每一个请求都是一个单独的curl对象,跟传统的curl一样.curl_multi_add_handle方法就是往线程池里添加新的curl对象,但是并不执行.curl_multi_exec则会从线程池中拿一个curl去请求,这个时候是异步非阻塞的,所以很多请求也可以一下发出去,效率高多了.请求有返回了咋办呢,官方例子写的不好,其实有更好的方法.通过curl_multi_select方法,系统会阻塞直到有请求返回.这不就是回调通知么.而且curl_multi_select支持超时,所以非常好用.代码写出来如下:</p>
+
+<pre><code class="language-text">&lt;?php
+//bad example. 错误的例子
+$start_time = microtime();
+date_default_timezone_set(&#39;PRC&#39;);
+ 
+$targets = array();//150个网址，自行添加目标
+ 
+$total = count($targets);
+echo &quot;共有{$total}个目标:\n&quot;;
+ 
+$mh = curl_multi_init();
+ 
+$opt = array ();
+$opt[CURLOPT_HEADER] = false;
+$opt[CURLOPT_CONNECTTIMEOUT] = 15;
+$opt[CURLOPT_TIMEOUT] = 30;
+$opt[CURLOPT_AUTOREFERER] = true;
+$opt[CURLOPT_RETURNTRANSFER] = true;
+$opt[CURLOPT_FOLLOWLOCATION] = true;
+$opt[CURLOPT_MAXREDIRS] = 10;
+ 
+foreach($targets as $target){
+    $ch = curl_init($target);
+    curl_setopt_array($ch, $opt);
+    curl_multi_add_handle($mh, $ch);//要设置每个curl实例的属性
+    unset($ch);
+}
+ 
+$index = 1;
+do{
+    do{
+        curl_multi_exec($mh, $running);
+        curl_multi_select($mh, 1.0);
+    }while($running);
+ 
+    while($info = curl_multi_info_read($mh)){
+            $ch = $info[&#39;handle&#39;];
+            $url = curl_getinfo($ch, CURLINFO_EFFECTIVE_URL);
+     
+    if($info[&#39;result&#39;] == CURLE_OK){
+                $content = curl_multi_getcontent($ch);
+                $detail = getTitle($content);
+            }else
+                $detail =  &#39;cURL Error(&#39; . curl_error($ch) . &quot;).&quot;;
+     
+    echo &quot;[$index][&quot;, date(&#39;H:i:s&#39;), &quot;]{$url}:{$detail}\n&quot;;
+            $index++;
+    }
+ 
+}while($running);
+ 
+curl_multi_close($mh);
+ 
+function getTitle($html){
+    preg_match(&quot;/&lt;title&gt;(.*)&lt;\/title&gt;/isU&quot;, $html, $title);
+    return empty($title[1]) ? &#39;未能获取标题&#39; : $title[1];
+}
+ 
+echo &quot;抓取完成!\n&quot;;
+$end_time = microtime();
+$start_time = explode(&quot; &quot;, $start_time);
+$end_time = explode(&quot; &quot;,$end_time);
+$execute_time = round(($end_time[0] - $start_time[0] + $end_time[1] - $start_time[1]) * 1000) / 1000;
+$execute_time = sprintf(&quot;%s&quot;, $execute_time);
+echo &quot;脚本运行时间：{$execute_time} 秒\n&quot;;
+</code></pre>
+
+<p>curl_multi_select()这个方法的返回值,手册上是这样写的:</p>
+
+<blockquote>
+<p>成功时返回描述符集合中描述符的数量。失败时，select失败时返回-1，否则返回超时(从底层的select系统调用).</p>
+</blockquote>
+
+<p>但是其实curl_multi_select可能会一直返回-1,所以这时候并不是真失败了,建议写的是继续执行curl_multi_exec.所以会写在一个while循环里.注意这些问题除了受代码编写的影响，还受php和libcurl版本的影响，总而言之升级版本吧。<br/>
+  至于像 CURLM_CALL_MULTI_PERFORM 之类的预定义常量，php方面并没有详细解释，多半靠看名字猜，呵呵。</p>
+
+<p>其实这些常量是由libcurl库定义的，参考地址：<br/>
+  <a href="http://curl.haxx.se/libcurl/c/libcurl-errors.html">http://curl.haxx.se/libcurl/c/libcurl-errors.html</a><br/>
+  CURLM_CALL_MULTI_PERFORM (-1)</p>
+
+<p>This is not really an error. It means you should call curl_multi_perform again without doing select() or similar in between. Before version 7.20.0 this could be returned by curl_multi_perform, but in later versions this return code is never used.<br/>
+  当返回值为-1时，并不意味着这是一个错误，只是说明select时没有并没有完成excute，描述给的建议是不要执行select等阻塞操作，立即exec。<br/>
+但是在libcurl的7.20版本之后，不再使用这个返回值了，原因是这个循环libcurl自己做了，就不再需要我们手动循环了。<br/>
+同时注意curl_multi_select，其实还有第二个参数timeout，根据语焉不详的手册，这货应该是自带阻塞，所以就不再需要手动sleep了。</p>
+
+<p>整个脚本的执行时间就是30秒多一点，刚好是为每个curl设置的超时时间.想了一下,这样写是每次把所有请求都发出去,相当于有多少请求就开多少线程,那如果一次搞几万请求 系统还不挂了.而且其实php并不能很好的处理这150个线程，导致很多目标获取标题失败了。</p>
+
+<p>这就需要自己实现一个线程池，来掌控任务进度。<br/>
+  思路就是用curl_multi_remove_handle一次添加n个url到multi_curl中，这个n就是线程数，这n个的组合队列就是线程池。</p>
+
+<p>每执行完毕一个任务，就将对应的curl移除队列并销毁，同时加入新的目标，直至150个对象依次执行完毕。这样做的好处是，能保证线程池中始终有n个任务在进行，不必等这n个任务执行完毕后再执行下n个任务。<br/>
+  思路有了，所以我们的代码看来是这样的：</p>
+
+<pre><code class="language-text">&lt;?php
+$start_time = microtime();
+date_default_timezone_set(&#39;PRC&#39;);
+ 
+$targets = array();//150个网址，自行添加目标
+ 
+$total = count($targets);
+ 
+$mh_pool = array();
+$threads = 10;
+$total_time = 0;
+echo &quot;共有{$total}个目标:\n&quot;;
+echo &quot;线程数：{$threads}\n&quot;;
+ 
+$mh = curl_multi_init();
+ 
+$opt = array ();
+$opt[CURLOPT_HEADER] = false;
+$opt[CURLOPT_CONNECTTIMEOUT] = 15;
+$opt[CURLOPT_TIMEOUT] = 30;
+$opt[CURLOPT_AUTOREFERER] = true;
+$opt[CURLOPT_RETURNTRANSFER] = true;
+$opt[CURLOPT_FOLLOWLOCATION] = true;
+$opt[CURLOPT_MAXREDIRS] = 10;
+ 
+if($total &lt; $threads)
+    $threads = $total;
+ 
+for($i=0;$i&lt;$threads;$i++){
+    $task = curl_init(array_pop($targets));
+    curl_setopt_array($task, $opt);
+    curl_multi_add_handle($mh, $task);//要设置每个curl实例的属性
+    unset($task);
+}
+ 
+$index = 1;
+ 
+do{
+    do{
+        curl_multi_exec($mh, $running);
+        if(curl_multi_select($mh, 1.0) &gt; 0)
+            break;
+    }while($running);
+ 
+    while($info = curl_multi_info_read($mh)){
+        $ch = $info[&#39;handle&#39;];
+        $url = curl_getinfo($ch, CURLINFO_EFFECTIVE_URL);
+        $total_time += curl_getinfo($ch, CURLINFO_TOTAL_TIME);
+         
+        if($info[&#39;result&#39;] == CURLE_OK){
+            $content = curl_multi_getcontent($ch);
+            $detail = getTitle($content);
+        }else
+            $detail =  &#39;cURL Error(&#39; . curl_error($ch) . &quot;).&quot;;
+         
+        echo &quot;[$index][&quot;, date(&#39;H:i:s&#39;), &quot;]{$url}:{$detail}\n&quot;;
+        $index++;
+         
+        curl_multi_remove_handle($mh, $ch);
+        curl_close($ch);
+        unset($ch);
+         
+        if($targets){
+            $new_task = curl_init(array_pop($targets));
+            curl_setopt_array($new_task, $opt);
+            curl_multi_add_handle($mh, $new_task);//要设置每个curl实例的属性
+        }
+    }
+ 
+}while($running);
+ 
+curl_multi_close($mh);
+ 
+function getTitle($html){
+    preg_match(&quot;/&lt;title&gt;(.*)&lt;\/title&gt;/isU&quot;, $html, $title);
+    return empty($title[1]) ? &#39;未能获取标题&#39; : $title[1];
+}
+ 
+echo &quot;抓取完成!\n&quot;;
+$end_time = microtime();
+$start_time = explode(&quot; &quot;, $start_time);
+$end_time = explode(&quot; &quot;, $end_time);
+$execute_time = round(($end_time[0] - $start_time[0] + $end_time[1] - $start_time[1]) * 1000) / 1000;
+$execute_time = sprintf(&quot;%s&quot;, $execute_time);
+echo &quot;http请求时间：{$total_time} 秒\n&quot;;
+echo &quot;脚本运行时间：{$execute_time} 秒\n&quot;;
+</code></pre>
+
+<p>为了细化处理多线程curl每个请求的执行结果，我在curl_multi_select的返回值大于0的时候也跳出了当前exec循环，并通过curl_multi_info_read来获取已经完成的任务信息。这里封装下就可以做个回调，精细化处理每个任务。</p>
+
+<p>另一个地方就是注意curl_multi_info_read需要多次调用。这个函数每次调用返回已经完成的任务信息，直至没有已完成的任务。问题4产生的原因就是因为我当时用了if没用while，这是一个小坑，但坑了我相当长的时间。当时非常无奈的解决方式是监控了整个执行过程，在所有任务完成后清点队列，把遗漏的再取出来。。。</p>
+
+<p>这样搞之后,发现几百个请求已经很ok了,公司网络不是很好,请求1000次百度大概要几十秒.而且同时开起的$threads进程数量也不是越多越好,根据网络和CPU核数自己测试估计能取得个平衡.把请求队列扩大,搞到5000次,发现问题来了.</p>
+
+<p>5000次请求,基本只有1500-1800次能成功,这肯定是有问题了.然而跟超时时间并没有关系.在每个环节打了log发现,在任务结束的时候$targets并没有全部pop出去.也就是说,剩下的请求根本就没发.这特么,是有错误还是停止条件的问题?</p>
+
+<p>通过log记录每个请求之后的\(running值,也就是停止条件,发现\)running确实是变成0了,所以会退出循环.这个$running是这样来的:</p>
+
+<blockquote>
+<p>curl_multi_exec(\(mh, \)running);</p>
+</blockquote>
+
+<p>手册写的是:</p>
+
+<pre><code class="language-text">int curl_multi_exec ( resource $mh , int &amp;$still_running )
+处理在栈中的每一个句柄。无论该句柄需要读取或写入数据都可调用此方法。
+
+参数
+mh              由 curl_multi_init() 返回的 cURL 多个句柄。
+still_running   一个用来判断操作是否仍在执行的标识的引用。
+</code></pre>
+
+<p>这特么说了没说一样啊.谁知道是啥意思. 通过log不断的观察,发现这个值,表示的是 &quot;正在进行中的线程数量&quot;,也就是当前有多少请求正在执行.然后就发现,这个值并不是每次都会减少1...有时候会有多个请求一起返回了,所以会减少多个.但是每次往池子里添加的新请求都是1,这样肯定越来越少了,最后$running就变成0了,但是请求任务还没有完...<br/>
+  最终写了一个class,凑合撸吧.这样基本没问题了.</p>
+
+<pre><code class="language-text">&lt;?php 
+/*
+ * Multi curl in PHP 
+ * @author  rainyluo 
+ * @date    2016-04-15
+ */
+class MultiCurl {
+    //urls needs to be fetched 
+    public $targets = array();
+    //parallel running curl threads 
+    public $threads = 10;
+    //curl options 
+    public $curlOpt = array();
+    //callback function 
+    public $callback = null;
+    //debug ,will show log using echo 
+    public $debug = true;
+    
+    //multi curl handler
+    private $mh = null;
+    //curl running signal 
+    private $runningSig = null;
+
+
+    public function __construct() {
+        $this-&gt;mh = curl_multi_init();
+        $this-&gt;curlOpt             = array(
+            CURLOPT_HEADER         =&gt; false,
+            CURLOPT_CONNECTTIMEOUT =&gt; 10,
+            CURLOPT_TIMEOUT        =&gt; 10,
+            CURLOPT_AUTOREFERER    =&gt; true,
+            CURLOPT_RETURNTRANSFER =&gt; true,
+            CURLOPT_FOLLOWLOCATION =&gt; true,
+            CURLOPT_MAXREDIRS      =&gt; 5,
+        );
+        $this-&gt;callback = function($html) {
+            echo md5($html);
+            echo &quot;fetched&quot;; 
+            echo &quot;\r\n&quot;;
+        };
+    }
+
+    public function setTargets($urls) {
+        $this-&gt;targets = $urls;
+        return $this;
+    }
+    public function setThreads($threads) {
+        $this-&gt;threads = intval($threads);
+        return $this;
+    }
+    public function setCallback($func) {
+        $this-&gt;callback = $func;
+        return $this;
+    }
+    /* 
+     * start running 
+     */
+    public function run() {
+        $this-&gt;initPool();
+        $this-&gt;runCurl(); 
+    }
+
+    /*
+     * run multi curl 
+     */
+    private function runCurl() {
+        do{
+            //start request thread and wait for return,if there&#39;s no return in 1s,continue add request thread 
+            do{
+                curl_multi_exec($this-&gt;mh, $this-&gt;runningSig);
+                $this-&gt;log(&quot;exec results...running sig is&quot;.$this-&gt;runningSig);
+                $return = curl_multi_select($this-&gt;mh, 1.0);
+                if($return &gt; 0){
+                    $this-&gt;log(&quot;there is a return...$return&quot;);
+                    break;
+                }
+                unset($return);
+            } while ($this-&gt;runningSig&gt;0);
+
+            //if there is return,read it 
+            while($returnInfo = curl_multi_info_read($this-&gt;mh)) {
+                $handler = $returnInfo[&quot;handle&quot;];
+                if($returnInfo[&quot;result&quot;] == CURLE_OK) {
+                    $url = curl_getinfo($handler, CURLINFO_EFFECTIVE_URL);
+                    $this-&gt;log($url.&quot;returns data&quot;);
+                    $callback = $this-&gt;callback;
+                    $callback(curl_multi_getcontent($handler));
+                } else {
+                    $url = curl_getinfo($handler, CURLINFO_EFFECTIVE_URL);
+                    $this-&gt;log(&quot;$url fetch error.&quot;.curl_error($handler));
+                }
+                curl_multi_remove_handle($this-&gt;mh, $handler);
+                curl_close($handler);
+                unset($handler);
+                //add new targets into curl thread 
+                if($this-&gt;targets) {
+                    $threadsIdel = $this-&gt;threads - $this-&gt;runningSig;
+                    $this-&gt;log(&quot;idel threads:&quot;.$threadsIdel);
+                    if($threadsIdel &lt; 0) continue;
+                    for($i=0;$i&lt;$threadsIdel;$i++) {
+                        $t = array_pop($this-&gt;targets);
+                        if(!$t) continue;
+                        $task = curl_init($t);
+                        curl_setopt_array($task, $this-&gt;curlOpt);
+                        curl_multi_add_handle($this-&gt;mh, $task);
+                        $this-&gt;log(&quot;new task adds!&quot;.$task);
+                        $this-&gt;runningSig += 1;
+                        unset($task);
+                    }
+
+                } else {
+                    $this-&gt;log(&quot;targets all finished&quot;);
+                }
+            }
+        }while($this-&gt;runningSig);
+    }
+
+    /*
+     * init multi curl pool
+     */
+    private function initPool() {
+        if(count($this-&gt;targets) &lt; $this-&gt;threads) $this-&gt;threads = count($this-&gt;targets);
+        //init curl handler pool ...
+        for($i=1;$i&lt;=$this-&gt;threads;$i++) {
+            $task = curl_init(array_pop($this-&gt;targets));
+            curl_setopt_array($task, $this-&gt;curlOpt);
+            curl_multi_add_handle($this-&gt;mh, $task);
+            $this-&gt;log(&quot;init pool thread one&quot;);
+            unset($task);
+        }
+        $this-&gt;log(&quot;init pool done&quot;);
+    }
+
+    private function log($log) {
+        if(!$this-&gt;debug) return false;
+        ob_start();
+        echo &quot;---------- &quot;.date(&quot;Y-m-d H:i&quot;,time()).&quot;-------------&quot;;
+        if(is_array($log)) {
+            echo json_encode($log);
+        } else {
+            echo $log;
+        }
+        $m = memory_get_usage();
+        echo &quot;memory:&quot;.intval($m/1024).&quot;kb\r\n&quot;;
+        echo &quot;\r\n&quot;;
+        flush();
+        ob_end_flush();
+        unset($log);
+    }
+    public function __destruct(){
+        $this-&gt;log(&quot;curl ends.&quot;);
+        curl_multi_close($this-&gt;mh);
+    }
+    
+
+}
+</code></pre>
+
+<p>用法:</p>
+
+<pre><code class="language-text">$mu = new MultiCurl();
+$callback = function($html) {
+    var_dump($html);
+};
+$mu-&gt;setTargets($urls)-&gt;setCallback($callback)-&gt;setThreads(5)-&gt;run();
+</code></pre>
+
+<p>PS:一个插曲<br/>
+  代码写的差不多的时候发现,每次请求快到2k的时候就崩溃了,报segmentation fault.这不坑爹呢么,上GDB看Coredump,捣鼓半天发现应该是跟内存回收有关系,找了半天也没有相关的解决方案,迷迷糊糊的.想想还是老路子,打log吧.每一步的内存都打出来,发现内存占用越来越多啊,每次请求要十几k的往上涨,最后一百多M了就挂了.这有问题啊,肯定有啥没释放的地方.把不用的变量都unset掉,猛然发现少了curl_multi_remove_handle(\(this-&gt;mh, \)handler);跟curl_close($handler) 这不坑爹呢么...链接忘了close,肯定不是释放了啊.终归还是对curl_mutil的内部不是很熟悉.估计里面的每个curl对象都是独立的,只有close之后才会被回收释放吧.改好之后,10个threads一起跑,基本上内存占用十几m不到,5k的请求也一会搞定了.妈蛋,充实的一天 自己给自己挖坑啊.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[用PHP-CLI在SHELL中输出颜色]]></title>
+    <link href="blog.v2cb.com/15923063085495.html"/>
+    <updated>2020-06-16T19:18:28+08:00</updated>
+    <id>blog.v2cb.com/15923063085495.html</id>
+    <content type="html"><![CDATA[
+<p>Tags:  PHP CLI <br/>
+Toc:no<br/>
+Status: public<br/>
+Position: 1</p>
+
+<p>刚才找PHP的手册,发现一个评论挺有意思.在PHP的CLI模式,也就是SHELL中,输出颜色.<br/>
+写简单的脚本,Log什么的时候,有个颜色 ,看起来舒服多了.一直黑白的看的脑袋晕乎乎的.</p>
+
+<pre><code class="language-text">&lt;? 
+$_colors = array( 
+        &#39;LIGHT_RED&#39;      =&gt; &quot;[1;31m&quot;, 
+        &#39;LIGHT_GREEN&#39;     =&gt; &quot;[1;32m&quot;, 
+        &#39;YELLOW&#39;     =&gt; &quot;[1;33m&quot;, 
+        &#39;LIGHT_BLUE&#39;     =&gt; &quot;[1;34m&quot;, 
+        &#39;MAGENTA&#39;     =&gt; &quot;[1;35m&quot;, 
+        &#39;LIGHT_CYAN&#39;     =&gt; &quot;[1;36m&quot;, 
+        &#39;WHITE&#39;     =&gt; &quot;[1;37m&quot;, 
+        &#39;NORMAL&#39;     =&gt; &quot;[0m&quot;, 
+        &#39;BLACK&#39;     =&gt; &quot;[0;30m&quot;, 
+        &#39;RED&#39;         =&gt; &quot;[0;31m&quot;, 
+        &#39;GREEN&#39;     =&gt; &quot;[0;32m&quot;, 
+        &#39;BROWN&#39;     =&gt; &quot;[0;33m&quot;, 
+        &#39;BLUE&#39;         =&gt; &quot;[0;34m&quot;, 
+        &#39;CYAN&#39;         =&gt; &quot;[0;36m&quot;, 
+        &#39;BOLD&#39;         =&gt; &quot;[1m&quot;, 
+        &#39;UNDERSCORE&#39;     =&gt; &quot;[4m&quot;, 
+        &#39;REVERSE&#39;     =&gt; &quot;[7m&quot;, 
+
+); 
+
+function termcolored($text, $color=&quot;NORMAL&quot;, $back=1){ 
+    global $_colors; 
+    $out = $_colors[&quot;$color&quot;]; 
+    if($out == &quot;&quot;){ $out = &quot;[0m&quot;; } 
+    if($back){ 
+        return chr(27).&quot;$out$text&quot;.chr(27).chr(27).&quot;[0m&quot;.chr(27); 
+    }else{ 
+        echo chr(27).&quot;$out$text&quot;.chr(27).chr(27).&quot;[0m&quot;.chr(27); 
+    }//fi 
+}// end function 
+
+foreach ($_colors as $key=&gt;$v) {
+    echo termcolored(&quot;colors&quot;, $key);
+    echo &quot;\r\n&quot;;
+}
+?&gt;
+</code></pre>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[App内使用H5页面的一个安全问题]]></title>
+    <link href="blog.v2cb.com/15923063086512.html"/>
+    <updated>2020-06-16T19:18:28+08:00</updated>
+    <id>blog.v2cb.com/15923063086512.html</id>
+    <content type="html"><![CDATA[
+<p>Tags:  app<br/>
+Toc:no<br/>
+Status: public<br/>
+Position: 1</p>
+
+<p>最近研究北京交警办理进京证这个东西的时候,发现了一个关于H5页面的安全问题,想到公司的App内也有这种情况,觉得这个漏洞真是很简单,记录一下,让同事们后面开发的时候一定要注意了.</p>
+
+<p>介绍一下北京交警App,这里面的大部分业务都是用HTML5写的,包括办理进京证的业务.这样干的好处就是灵活,调整起来比较快,开发成本估计也低;问题就是不安全,虽然都是HTTPS,自己拿电脑上charles一抓包底裤都让人扒干净了,各种逻辑一下看到了.最近 进京证办理是越来越麻烦,谷歌一搜,果然是有不少同行各种脚本攻击人家.我一直懒得研究,一方面是觉得精力放在这个上有点浪费;更重要的是,这东西就好比当年的12306一样,大家都守法买票的时候 官方也不会整太多手段来限制你;然后就总有自私的人,为了自己爽 拿各种工具搞人家,想自动办证,结果频率控制不对 加上人多,估计跟DDOS差不多,搞得正常的用户打不开卡的很.然后就是现在这样,官方生气了 好嘛大家都别用了,白天直接关闭了 谁来访问都是302跳到错误页面,这下大家开心了.</p>
+
+<p>被逼无奈掏出Charles开始抓包,发现他们H5的模式基本上还是那样,研究了一下JS,加密就靠JS与App之间交互 靠App算出Sign后通过JS获取Sign.想想我司的App基本也是这个套路,看起来 拿App来加密的方案是很靠谱的,不反编译App你也拿不到我的算法,也没法搞我了.</p>
+
+<p>继续研究,无意中想起Charles是可以改包的.翻了翻其他人的思路,就是这样了!拿Charles拦截掉H5和JS,把自己的JS插入进去返回给App,这样就相当于有了任意执行的漏洞了.通过这种方式用自己的JS去实现自动提交,不要太容易啊.</p>
+
+<p>更重要的是,我根本不Care你的sign算法.如果App考虑的不周全没有过滤和验证,那么任意的接口Url通过JS发给App,都能获得对应的Token,这简直太Easy了,完全不需要反编译 你的App接口基本上就是裸奔的了.想想这个洞都好严重,有经验的基本上个把小时就搞定了,成本非常低.</p>
+
+<p>给开发讲了一下这玩意的原理,至少先要弄个白名单了.后面在考虑一下,上HTTP/2应该也是个不错的选择,安全性能更好速度还能快一些了.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[PHP 通过Apns给Ios设备推送Notification]]></title>
+    <link href="blog.v2cb.com/15923063086602.html"/>
+    <updated>2020-06-16T19:18:28+08:00</updated>
+    <id>blog.v2cb.com/15923063086602.html</id>
+    <content type="html"><![CDATA[
+<p>前几天折腾Gopush,是没有通过Apns推送IOS实现的,找了几个Golang的实现都有问题,转而寻找PHP的实现方法,发现还是蛮简单的<br/>
+Apns推送的原理懒得看,基本就是通过Http请求Apns然后苹果去给IOS设备发推送,所以只要请求苹果的服务器就好了.先弄证书</p>
+
+<p>开发给我的都是p12结尾的证书,openssl搞一下</p>
+
+<pre><code class="language-text">openssl pkcs12 -clcerts -nokeys -out cer.pem -in cer.pkcs12
+openssl pkcs12 -nocerts -out key.pem -inkey.p12 
+</code></pre>
+
+<p>然后把key转换为不带密码的pem证书</p>
+
+<pre><code class="language-text">openssl rsa -in key.pem -out key.unencrypted.pem
+</code></pre>
+
+<p>最后合并一下两个证书</p>
+
+<pre><code class="language-text">cat cer.pem key.unencrypted.pem &gt; ck.pem
+</code></pre>
+
+<p>PHP代码如下:</p>
+
+<pre><code class="language-text">&lt;?php
+// 这里是我们上面得到的deviceToken，直接复制过来（记得去掉空格）
+$deviceToken = &#39;device token&#39;;
+// Put your alert message here:
+$message = &#39;My first push test!.&#39;;
+$ctx = stream_context_create();
+stream_context_set_option($ctx, &#39;ssl&#39;, &#39;local_cert&#39;, &#39;ck.pem&#39;);
+//stream_context_set_option($ctx, &#39;ssl&#39;, &#39;passphrase&#39;, $passphrase);
+// Open a connection to the APNS server
+//这个为正是的发布地址
+ //$fp = stream_socket_client(&quot;ssl://gateway.push.apple.com:2195&quot;, $err, $errstr, 60, STREAM_CLIENT_CONNECT, $ctx);
+//这个是沙盒测试地址，发布到appstore后记得修改哦
+$fp = stream_socket_client(&#39;ssl://gateway.sandbox.push.apple.com:2195&#39;, $err,$errstr, 60, STREAM_CLIENT_CONNECT|STREAM_CLIENT_PERSISTENT, $ctx);
+
+if (!$fp)
+exit(&quot;Failed to connect: $err $errstr&quot; . PHP_EOL);
+echo &#39;Connected to APNS&#39; . PHP_EOL;
+
+// Create the payload body
+$body[&#39;aps&#39;] = array(
+&#39;alert&#39; =&gt; $message,
+&#39;sound&#39; =&gt; &#39;default&#39;
+);
+
+// Encode the payload as JSON
+$payload = json_encode($body);
+
+// Build the binary notification
+$msg = chr(0) . pack(&#39;n&#39;, 32) . pack(&#39;H*&#39;, $deviceToken) . pack(&#39;n&#39;, strlen($payload)) . $payload;
+// Send it to the server
+$result = fwrite($fp, $msg, strlen($msg));
+
+if (!$result)
+echo &#39;Message not delivered&#39; . PHP_EOL;
+else
+echo &#39;Message successfully delivered&#39; . PHP_EOL;
+var_dump($result);
+// Close the connection to the server
+fclose($fp);
+?&gt;
+</code></pre>
+
+<p>运行一下 ,然后就收到啦~</p>
+
+<p>注意:<br/>
+记得判断好,app是sendbox的还是正式的,对不上也收不到推送</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[python中使用import加载目录中全部文件]]></title>
+    <link href="blog.v2cb.com/15923063087292.html"/>
+    <updated>2020-06-16T19:18:28+08:00</updated>
+    <id>blog.v2cb.com/15923063087292.html</id>
+    <content type="html"><![CDATA[
+<p>Tags:  经验<br/>
+Toc:no<br/>
+Status: public<br/>
+Position: 1</p>
+
+<p>最近准备换用Flask,于是开始研究Python了.py的包导入机制,没有PHP那么直观,直接写文件名字就行.虽然学习起来有一些难度,不过能够有效的避免大型项目的命名空间问题,相比PHP 等到实在不行了引入一个namespace反而更乱了.</p>
+
+<p>关于import 的基本用法就不说了,这个教程很多了.想要从其他文件夹里面import文件,需要在文件夹中建立一个__init__.py的文件用于初始化和声明,这个文件是空的也ok,不过在import的时候会自动执行这个文件,也可以做初始化来使用.</p>
+
+<p>不过虽然建立了这个文件,在其他地方引用的时候还是只能每次通过from xx import xx加载一个文件,不是很方便.标准的用法是,修改目录下的__init__.py文件,用这个来实现加载全部文件的目的.</p>
+
+<p>手动的方法:</p>
+
+<pre><code class="language-text">import a
+import b
+</code></pre>
+
+<p>或者:</p>
+
+<pre><code class="language-text">__all__ = [&quot;a&quot;, &quot;b&quot;]
+
+</code></pre>
+
+<p>这样会自动加载目录下的a.py和b.py文件了.</p>
+
+<p>来个终极懒人的方法:</p>
+
+<pre><code class="language-text">from os.path import dirname, basename, isfile
+import glob
+modules = glob.glob(dirname(__file__)+&quot;/*.py&quot;)
+__all__ = [ basename(f)[:-3] for f in modules if isfile(f)]
+
+</code></pre>
+
+<p>自动加载目录下的全部文件.再一次感叹py的简洁和强大的表达能力.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[使用GITHUB+JustWriting搭建BLOG]]></title>
+    <link href="blog.v2cb.com/15923063087852.html"/>
+    <updated>2020-06-16T19:18:28+08:00</updated>
+    <id>blog.v2cb.com/15923063087852.html</id>
+    <content type="html"><![CDATA[
+<p>最近觉得需要写一个BLOG了.至于为什么有这种感觉,后面再说了.</p>
+
+<blockquote>
+<p><strong>Why not Wordpress</strong></p>
+</blockquote>
+
+<p>写BLOG之前都是用Wordpress,又大又慢比较蛋疼,而且树大招风,漏洞比较多.经常被人攻击挂马,烦.整天研究插件主题乱七八糟的东西,耗时耗精力,不专注.因为vps不固定,备份也是个问题,文件需要打包,数据库也要单独备份,麻烦.这次在公司使用的开源WIKI软件 dokuWiki,不用数据库直接用文件来保存数据,这种做法深得我心,简单方便.换个环境,基本上配置好NGINX扔那解析过去就能跑,而且从源头上杜绝了SQL Injection的问题,安全.于是目标就是寻找一个不用数据库的博客系统.</p>
+
+<blockquote>
+<p><strong>PHP BLOG Engine With no Database</strong></p>
+</blockquote>
+
+<p>之前见过的一个方案是拿github搭博客,总觉得这样比较蛋疼,而且VPS也浪费了,可能也不利于搜索引擎过来抓,所以放弃了.</p>
+
+<p>google一下,blog with no database,第一个结果出来的是dropplets,看着官网还不错.兴冲冲装上,根本不知道怎么用啊,看了看代码,写的一坨屎,觉得不怎么安全.放弃了</p>
+
+<p>继续找,无意中发现了<a href="https://github.com/hjue/JustWriting">JustWriting</a>,star很多 这就是口碑的保证啊.看文档,直接把md文件扔上去就能显示,符合需求.默认主题不难看,而且国人开发,github开源,就这个了.</p>
+
+<p>作者推荐的是通过Dropbox来同步md文件,因为GFW的问题dp在国内也不好用,好麻烦.todo里面写着未来预计支持百度网盘,然而这么久过去估计也没信儿了.想了想,直接用github来搞,VPS上clone下来仓库,写个脚本每分钟拉一次,在本地写好了push上去 就能显示了,so easy.搞起来</p>
+
+<p>git先建个仓库,<a href="http://www.cnblogs.com/smilejinge/p/3589479.html">教程可以看这个</a>,弄好之后把服务器上代码里的posts目录干掉,clone自己的仓库然后mv成posts,随便找个目录写个pull.sh脚本保存一下:</p>
+
+<pre><code class="language-text">#!/bin/bash
+cd /home/wwwroot/blog/posts
+git pull origin master
+</code></pre>
+
+<p>crontab -e,用vim添加:</p>
+
+<pre><code class="language-text">*/1 * * * *  source /home/wwwroot/fetch.sh
+</code></pre>
+
+<p>每分钟pull一次git,妥妥够了.</p>
+
+<p>然后在自己电脑上clone一下,写好了commit&amp;push就搞定啦~<br/>
+注意,测试了一下,中文文件名会有问题,所以记得要用英文文件名.</p>
+
+<p>ps:另外发现一个在线编辑Markdown文本的地方:<a href="https://stackedit.io/">stackedit</a>, 支持直接发布git和ssh server,但是觉得图片问题不好解决,得找好图床然后做外链,不方便.等有空给JustWriteing写一个上传图片的工具 应该就ok了</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[[原创翻译]QueryPath PHP的Jquery实现,QueryPath教程]]></title>
+    <link href="blog.v2cb.com/15923063087972.html"/>
+    <updated>2020-06-16T19:18:28+08:00</updated>
+    <id>blog.v2cb.com/15923063087972.html</id>
+    <content type="html"><![CDATA[
+<p>Tags:  QueryPath 教程 php  jquery dom 抓取 <br/>
+Toc:no<br/>
+Status: public<br/>
+Position: 1</p>
+
+<h1 id="toc_0">QueryPath PHP的Jquery实现</h1>
+
+<p>HTML,HTTP和XML,是WEB技术领域无可争议的三大基础支柱技术.然而对于PHP开发者来说,在使用这三种技术的时候可能会比较麻烦.新出现的QueryPath库,是一个使用PHP实现的如同Jquery的类库,提供了方便强大的处理XML,HTTP,HTML的类库.无论是WEB网页,WEB service,SVG或者SPAARQL,RDF,Atom,QueryPath都能处理,并且用PHP语言提供了健壮并简单易用的API.在本文中,介绍了如何构建QueryPath对象,如何遍历并处理XML和HTML.</p>
+
+<h3 id="toc_1">QueryPath</h3>
+
+<p>从使用简单方面,QueryPath的语法很简洁,方法的名字都很短并且语义化,很容易知道是做什么的(比如text(),append(),remove()).因为很多方法返回的都是QueryPath对象,方法的调用是支持链式调用的.这种用法有时候也叫做流式接口.为了符合Javascript开发者的习惯,QueryPath实现了Jquery主要的遍历方法和操作方法.</p>
+
+<p>从健壮性来说,QueryPath提供了载入,读取,搜索,写入XML与HTML的工具.尽管不考虑类库的大小,通用的接口还是很难满足所有的需求,QueryPath提供了扩展开发接口,可以给QueryPath添加新的方法.同时其扩展也包含了数据库支持,模板支持,以及额外的XML支持.</p>
+
+<p>或许你也会说,为啥还需要一个XML或HTML的轮子?PHPv5已经提供了很实用的XML工具,也有DOM实现和SimpleXML类库了.答案很简单:QueryPath被设计作为一个通用的工具.DOM API复杂并且笨重.虽然它的对象模型可能很强大,但是即便实现最简单的功能都需要写很多行代码.SimpleXML,对于许多需求来说又太过简陋了.除非XML是完全确定的,使用SimpleXML来操作文档才比较简单.<br/>
+    QueryPath正是力求在DOM的功能性与SimpleXML的简单之间找到一个平衡点.</p>
+
+<h3 id="toc_2">需求:</h3>
+
+<p>QueryPath是纯PHP的类库,所以可以直接从官方网站下载后使用</p>
+
+<p>QueryPath的系统要求很少,只要PHPv5版本并且开启DOM扩展就可以.大部分的PHPv5发行版都符合开箱即用的需求.QueryPath不支持遗弃多年的PHPv4.</p>
+
+<h3 id="toc_3">链式调用:</h3>
+
+<p>QueryPaht有四个基本的概念:</p>
+
+<pre><code class="language-text">* 一个QueryPath对象总是会与一个XML或HTML文档关联
+* QueryPath可以查询文档,并生成一个匹配的结果集
+* QueryPath可以操作文档,可以对文档进行新增,修改,删除操作.
+* QueryPath的方法支持链式调用,所以一行语句可以执行多个方法.只需几行代码就可以对文档进行载入和增删改查等操作
+</code></pre>
+
+<p>上代码,包含如上的特点:</p>
+
+<pre><code class="language-text">    &lt;?php
+    require &#39;QueryPath/QueryPath.php&#39;;
+
+    qp(&#39;sample.html&#39;)-&gt;find(&#39;title&#39;)-&gt;text(&#39;Hello World&#39;)-&gt;writeHTML();
+    ?&gt;
+</code></pre>
+
+<p>例子中只包含了一个文件,QueryPath/QueryPath.php ,这就是使用QueryPath需要包含的唯一的文件,除非还用到了QueryPath的其他扩展.</p>
+
+<p>下面一行代码就是QueryPath的链式调用,其做了如下事情:</p>
+
+<pre><code class="language-text">* 新建一个QueryPath对象,并指向sample.html文档.当qp()方法执行的时候,就会创建一个新的QueryPath对象,用于之后对其进行载入和解析.
+* 通过find()方法对文档进行搜索,使用CSS3选择器寻找所有&lt;title&gt;&lt;/title&gt;元素 
+* title的text值设置为了Hello World,当执行到此,title的子节点都会被替换成CDATA字符串Hello World.所有的内容都会被销毁.
+* 所有文档都会通过writeHTML()方法写入到标准输出.
+</code></pre>
+
+<p>上面的例子还可以简化,qp()方法支持把CSS选择器作为可选的第二个参数传入.下面是简化后的版本:</p>
+
+<pre><code class="language-text">    &lt;?php
+    require &#39;QueryPath/QueryPath.php&#39;;
+
+    qp(&#39;sample.html&#39;, &#39;title&#39;)-&gt;text(&#39;Hello World&#39;)-&gt;writeHTML();
+    ?&gt;
+
+</code></pre>
+
+<p>假设sample.html是空白的HTML文档,上面的例子输出会跟下面的内容差不多:</p>
+
+<pre><code class="language-text">    &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot; &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;
+    &lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        &lt;title&gt;Hello World&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+</code></pre>
+
+<blockquote>
+<p>这些简单的例子展示了QueryPath可以实现的功能.下面介绍一些其他的方法:</p>
+</blockquote>
+
+<h3 id="toc_4">qp()工厂方法:</h3>
+
+<p>在QueryPath中最常用的基础方法就是qp()方法.这个方法会生成一个新的QueryPath对象,就像传统的constructor构造方法做的事情一样.</p>
+
+<p>如果你对面向对象的开发模式比较熟悉,你可能会发现qp()方法实现了工厂模式.QueryPath采用了一个方法,而不是通过定义工厂类的构造方法来实现工厂模式.这样干能节省一些代码量,更重要的是这种实现使得QueryPath更接近jQuery,如果你对jQuery比较熟悉,学习难度曲线会降低一些吧.</p>
+
+<p>一个QueryPath对象必须与一个XML或者HTML文档关联,一旦对象创建好,他们就会绑定在一起.qp()方法支持三个参数,都是可选的:</p>
+
+<pre><code class="language-text">    #文档#  可以是文件名,URL,XML或者HTML字符串,DOM文档或者DOM元素,SimpleXML元素,或者一个DOM元素数组.如果不是这些支持的类型,则会创建一个空的XML文档.
+
+    #CSS3选择器#  如果传了这个参数,载入文档的时候QueryPath会同时使用这个选择器查询文档
+
+    #选项数组#  可以针对这个QueryPath实例,传一组配置参数进行配置.API文档有此处支持的参数的详细说明
+</code></pre>
+
+<p>qp()方法的第一个参数支持数量众多的类型的文档,从而可以很简单的创建一个QueryPath对象.QueryPath可以通过文件名或URL来载入文档.如果传的是XML/HTML字符串,也可以直接解析内容.同时,也支持DOM和SimpleXML这两种常见的XML文档.下面的例子展示了直接传XML字符串的用法:</p>
+
+<pre><code class="language-text">    &lt;?php
+    require &#39;QueryPath/QueryPath.php&#39;;
+
+    $xml = &#39;&lt;?xml version=&quot;1.0&quot;?&gt;&lt;doc&gt;&lt;item/&gt;&lt;/doc&gt;&#39;;
+    $qp  = qp($xml);
+    ?&gt;
+</code></pre>
+
+<p>执行上面的代码,$qp会指向一个经过解析XML的QueryPath对象.如果PHP的配置中允许HTTP/HTTPS流式封装,(大部分PHPv5发行版都支持),则也可以通过HTTP URL来载入内容.</p>
+
+<pre><code class="language-text">    &lt;?php
+    require &#39;QueryPath/QueryPath.php&#39;;
+
+    $qp = qp(&#39;http://example.com/file.xml&#39;);
+    ?&gt;
+</code></pre>
+
+<p>因此,QueryPath也可以用来解析Web Services.创建新文档的时候,有一种方便的载入HTML样板的方式:</p>
+
+<pre><code class="language-text">    &lt;?php
+    require &#39;QueryPath/QueryPath.php&#39;;
+
+    $qp = qp(QueryPath::HTML_STUB);
+    ?&gt;
+</code></pre>
+
+<p>QueryPath::HTML_STUB包含了一个最基本的HTML样板,内容如下:</p>
+
+<pre><code class="language-text">    &lt;?xml version=&quot;1.0&quot;?&gt;
+    &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot;
+      &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;
+    &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+    &lt;head&gt;
+        &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;/&gt;
+        &lt;title&gt;Untitled&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;&lt;/body&gt;
+    &lt;/html&gt;
+</code></pre>
+
+<p>通过样板文件,可以更快捷的创建一个新的HTML文档.</p>
+
+<h3 id="toc_5">遍历文档</h3>
+
+<p>打开一个文档之后,会需要对文档进行遍历来找到需要的内容.QueryPath在这方面的设计非常易用.为了满足大部分遍历的需求,QueryPath提供了多种方法,大部分都支持使用CSS3选择器来找到对应的节点.</p>
+
+<p><img src="media/blog/QueryPath_1.gif" alt=""/></p>
+
+<p>上图总结了最常用的遍历方法.下面有具体对应的描述.除此之外还有别的方法,这些介绍的是最常用的方法.</p>
+
+<blockquote>
+<p>find() <br/>
+    在当前的节点内选择符合selector的元素(支持CSS选择器)</p>
+
+<p>xpath()<br/>
+    选择符合Xpath表达式的节点(不支持CSS选择器)</p>
+
+<p>top()<br/>
+    选择文档的根节点元素(不支持CSS选择器)</p>
+
+<p>parents()<br/>
+    选择任意多个父节点(支持CSS选择器)</p>
+
+<p>parent()<br/>
+    选择一个父节点(支持CSS选择器)</p>
+
+<p>siblings()<br/>
+    选择所有兄弟节点,前后都包括(支持CSS选择器)</p>
+
+<p>next()<br/>
+    选择下一个兄弟节点(支持CSS选择器)</p>
+
+<p>nextAll()<br/>
+    选择当前节点之后的所有兄弟节点(支持CSS选择器)</p>
+
+<p>prev()<br/>
+    选择上一个兄弟节点(支持CSS选择器)</p>
+
+<p>prevAll()<br/>
+    选择所有前面的兄弟节点(支持CSS选择器)</p>
+
+<p>children()<br/>
+    选择该节点的子节点(支持CSS选择器)</p>
+
+<p>deepest()<br/>
+    选择该节点最深的子节点或该节点下的所有子节点(不支持CSS选择器)</p>
+</blockquote>
+
+<p>QueryPath的许多方法都可以精确的查询到指定的元素,上面列出来的大部分方法都支持CSS3选择器参数.只有top()和deepest()方法是不带参数的查询方法.</p>
+
+<p>来看一个简单的关于遍历的例子.假设有如下的XML文档:</p>
+
+<pre><code class="language-text">    &lt;?xml version=&quot;1.0&quot;?&gt;
+    &lt;root&gt;
+      &lt;child id=&quot;one&quot;/&gt;
+      &lt;child id=&quot;two&quot;/&gt;
+      &lt;child id=&quot;three&quot;/&gt;
+      &lt;ignore/&gt;
+    &lt;/root&gt;
+</code></pre>
+
+<p><root/>元素有四个子元素,有三个名为<child/>的元素,还有一个<ignore/>.可以通过QueryPath方法来选择<root/>的全部子元素</p>
+
+<pre><code class="language-text">    &lt;?php 
+    require &#39;QueryPath/QueryPath.php&#39;;
+
+    $xml = &#39;&lt;?xml version=&quot;1.0&quot;?&gt;
+    &lt;root&gt;
+      &lt;child id=&quot;one&quot;/&gt;
+      &lt;child id=&quot;two&quot;/&gt;
+      &lt;child id=&quot;three&quot;/&gt;
+      &lt;ignore/&gt;
+    &lt;/root&gt;&#39;;
+
+    $qp = qp($xml, &#39;root&#39;)-&gt;children();
+    print $qp-&gt;size();
+    ?&gt;
+</code></pre>
+
+<p>children()方法会选择<root/>下的所有子元素,最后一行代码,打印了全部符合条件的元素,所以是4</p>
+
+<p>如果只想选定前三个<child/>元素而忽略<ignore/>元素,代码如下</p>
+
+<pre><code class="language-text">    &lt;?php 
+    require &#39;QueryPath/QueryPath.php&#39;;
+
+    $xml = &#39;&lt;?xml version=&quot;1.0&quot;?&gt;
+    &lt;root&gt;
+    &lt;child id=&quot;one&quot;/&gt;
+    &lt;child id=&quot;two&quot;/&gt;
+    &lt;child id=&quot;three&quot;/&gt;
+    &lt;ignore/&gt;
+    &lt;/root&gt;&#39;;
+
+    $qp = qp($xml, &#39;root&#39;)-&gt;children(&#39;child&#39;);
+
+    print $qp-&gt;size();
+    ?&gt;
+</code></pre>
+
+<p>最后一行打印了符合条件的全部元素,共有3个.在QueryPath内部会保存这三个元素作为当前的上下文数据.如果想做进一步的查询,则会从这三个元素开始,如果插入数据 也会插入到这三个元素内.</p>
+
+<h1 id="toc_6">CSS选择器</h1>
+
+<p>CSS选择器是CSS表达式的一部分,用来确定样式会作用在哪些元素上.CSS选择器也可以在文档外部作为样式表的一部分来使用.QueryPath使用选择器作为查询的描述语言,并且支持在CSS3选择器标准中定义的特性和方法.</p>
+
+<p>CSS选择器在QueryPath中相当重要,上面介绍了十个支持CSS选择器作为参数的方法,虽然到目前我们用过的还只是简单的tag名字查询的方法,然而CSS3选择器远比这些列举的简单例子要强大的多.更详细的描述本文不做过多介绍,只列举一些常用的例子如下</p>
+
+<pre><code class="language-text">    选择器:p 
+    描述  :找到所有标签为&lt;p/&gt;的元素 
+    匹配  : &lt;p/&gt; 
+</code></pre>
+
+<pre><code class="language-text">    选择器:.container 
+    描述  :找到所有class属性为container 的元素 
+    匹配  :&lt;div class=&quot;container&quot;&gt;
+</code></pre>
+
+<pre><code class="language-text">    选择器:#menu 
+    描述  :找到所有id属性为menu的元素.
+    匹配  :&lt;div id=&quot;menu&quot;&gt;
+</code></pre>
+
+<pre><code class="language-text">    选择器:[type=&quot;inline&quot;]
+    描述  :所有type属性为inline的元素
+    匹配  :&lt;code type=&quot;inline&quot;/&gt;
+</code></pre>
+
+<pre><code class="language-text">    选择器:tr &gt; th 
+    描述  :选择所有父元素为tr的th元素
+    匹配  :&lt;tr&gt;&lt;th/&gt;&lt;/tr&gt; 
+</code></pre>
+
+<pre><code class="language-text">    选择器:table td 
+    描述  :选择祖先(如父元素或祖父元素)为table的所有td元素
+    匹配  :&lt;table&gt;&lt;tr&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;
+</code></pre>
+
+<pre><code class="language-text">    选择器: li:first
+    描述  : 选择第一个&lt;li&gt;元素.除了:first 还支持:last  :even  :odd
+    匹配  : &lt;li/&gt;
+</code></pre>
+
+<p>这些常见的选择器可以组合起来使用,从而组成复杂的查询.比如</p>
+
+<blockquote>
+<p>div.content ul&gt;li:first</p>
+</blockquote>
+
+<pre><code class="language-text">这个语句会选择全部class为content的div,在div内部搜索全部的&lt;ul/&gt;,返回每个&lt;ul/&gt;内部的第一个&lt;li/&gt;元素.
+</code></pre>
+
+<h1 id="toc_7">在返回结果中遍历</h1>
+
+<p>上面已经介绍了两种遍历文档的方法,QueryPath内置方法和CSS3选择器.下面介绍一下如何遍历查询结果.</p>
+
+<p>一个QueryPath对象是可以遍历的,在PHP里面来讲,是可以作为迭代器遍历的.传统的PHP循环结构就可以对QueryPath的匹配结果对象进行遍历.</p>
+
+<p>如果想要独立的处理每个元素,也很容易.下面的例子,展示了QueryPath作为迭代器的用法.</p>
+
+<pre><code class="language-text">    &lt;?php 
+        require &#39;QueryPath/QueryPath.php&#39;;
+
+        $xml = &#39;&lt;?xml version=&quot;1.0&quot;?&gt;
+        &lt;root&gt;
+        &lt;child id=&quot;one&quot;/&gt;
+        &lt;child id=&quot;two&quot;/&gt;
+        &lt;child id=&quot;three&quot;/&gt;
+        &lt;ignore/&gt;
+        &lt;/root&gt;&#39;;
+
+        $qp = qp($xml, &#39;root&#39;)-&gt;children(&#39;child&#39;);
+
+        foreach ($qp as $child) {
+          print $child-&gt;attr(&#39;id&#39;) . PHP_EOL;
+        }
+    ?&gt;
+</code></pre>
+
+<p>foreach循环的每个结果会赋值给\(child变量,但\)child变量不只是一个元素,它是一个指向当前元素的QueryPath对象,所以可以对其使用QueryPath提供的那些方法.<br/>
+为了与Jquery的Api保持一致,QueryPath也提供了一些读取和修改的方法.单个的方法,可以根据传递参数的不同,既能获取数据也可以修改数据.比如 attr()方法,qp()-&gt;attr(&quot;name&quot;)会获取name属性的值,qp()-&gt;attr(&quot;name&quot;,&quot;value&quot;)则会把name属性的值设置为value.其他一些方法,诸如text(),html(),xml(),都可以这样既能读取又能修改属性的值.</p>
+
+<p>由于所有的循环结果都包装在QUeryPath对象里,所以这些$child都可以调用QueryPath的方法,比如上面的attr(),来读取或者修改元素属性.</p>
+
+<p>上面介绍了使用QueryPath方法,CSS3选择器,迭代器来遍历文档,下面介绍一下如何用QueryPath修改文档.</p>
+
+<h1 id="toc_8">修改文档</h1>
+
+<p>遍历文档之后,接下来就可以对文档进行增删改查的操作了.再来看一下上面的例子.</p>
+
+<pre><code class="language-text">    &lt;?php
+    require &#39;QueryPath/QueryPath.php&#39;;
+
+    qp(&#39;sample.html&#39;)-&gt;find(&#39;title&#39;)-&gt;text(&#39;Hello World&#39;)-&gt;writeHTML();
+    ?&gt;
+</code></pre>
+
+<p>在这个例子中,使用了text()方法来修改了&lt;\title&gt;元素的内容.QueryPath提供了一堆这样的方法来修改文档. 下图展示了这些方法作用的地方,这些方法都可以用来新增或是修改数据.绿色的标签表示当前选中的元素:</p>
+
+<p><img src="media/blog/QueryPath_2.gif" alt=""/></p>
+
+<p>这些方法都是用来处理字符串的,通常用在HTML或者XML文档中,用来往文档中插入数据.插入后的数据立刻就可以访问和操作.</p>
+
+<p>实际上,有两种类型的方法,其中一种可以操作XML片段,如下:</p>
+
+<pre><code class="language-text">    append():  在当前选中的元素中插入数据作为最后一个子元素 
+    prepend(): 在当前选中的元素中插入一个元素并作为第一个子元素
+    after():   在当前选中的元素后插入新的元素 
+    before():  在当前选中的元素前插入新的元素
+    html():    用一段HTML代码替换当前元素的子元素
+    xml():     用一段XML代码替换当前元素的子元素
+</code></pre>
+
+<p>上面列举的方法,参数都需要传格式化好的XML或者HTML数据.下面展示一个html()方法的例子:</p>
+
+<pre><code class="language-text">    &lt;?php
+    require &#39;QueryPath/QueryPath.php&#39;;
+
+    qp($file)-&gt;find(&#39;div.content&#39;)-&gt;html(&#39;&lt;ul&gt;&lt;li&gt;One&lt;/li&gt;&lt;/ul&gt;&#39;);
+    ?&gt;
+</code></pre>
+
+<p>上面图片列举的操作方法没有包括remove()方法,这玩意实在是没法画出来.这个方法是从文档中删除元素用的,如果调用的时候不传参数,则会把当前选中的元素干掉.但是,就像其他QueryPath的方法一样,remove()也可以传CSS3选择器参数,然后把所有符合条件的元素删掉.</p>
+
+<p>另一类方法,是用来操作元素属性的,只有两个:</p>
+
+<pre><code class="language-text">    attr():      获取/设置所有选中元素的属性
+    addClass():  为当前选中的所有元素添加一个类
+</code></pre>
+
+<p>也有其他一些跟属性相关的方法,比如removeClass(),可以传一个类名,然后会把元素中相关的类删掉.removeAttr()方法,可以传一个属性名作为参数,然后把当前所有选中元素的属性删掉.</p>
+
+<p>如此这般,把这些基本的工具组合在一起,就能实现强大的功能了.下面的例子是基于Twitter的,就不翻译啦.</p>
+
+<p>原文地址:<a href="http://www.ibm.com/developerworks/library/os-php-querypath/">http://www.ibm.com/developerworks/library/os-php-querypath/</a></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[kvm/virsh 异常断电导致虚拟机无法启动的修复实战]]></title>
+    <link href="blog.v2cb.com/15923063088164.html"/>
+    <updated>2020-06-16T19:18:28+08:00</updated>
+    <id>blog.v2cb.com/15923063088164.html</id>
+    <content type="html"><![CDATA[
+<p>关键词:<br/>
+mount qcow2 on linux<br/><br/>
+xfs_repair  xfs磁盘修复<br/><br/>
+kvm virsh console<br/><br/>
+kvm虚拟机无法启动 故障排查 </p>
+
+<p>公司异常断电,导致2台kvm的虚拟机无法启动了.<br/>
+尝试修复的过程记录一下.</p>
+
+<p>首先看报错,log一般都在/var/log/libvirt/qemu下面.<br/>
+发现log很简单,没什么内容,也没有异常.谷歌一番发现可以打开debug的错误:</p>
+
+<blockquote>
+<p>修改/etc/libvirt/libvirtd.conf<br/><br/>
+将日志级别设置为 1（调试）<br/><br/>
+log_level = 1<br/><br/>
+指定日志输出文件名称<br/><br/>
+log_outputs=&quot;1:file:/var/log/libvirt/libvirtd.log&quot;<br/><br/>
+重启libvirtd (systemctl restart libvirtd)  </p>
+</blockquote>
+
+<p>结果打出一堆虚拟机的debug log,并不是我想要的,没什么用.<br/><br/>
+猜想是磁盘问题,但是console连接不了,virsh console vm1 之后没有反应.<br/><br/>
+思路上,还是得能看到虚拟机的输出才好知道怎么办.于是尝试VNC连接,<br/><br/>
+结果对着教程弄了半天,mac的VNC客户端还是连不上,一闪就断了.只能放弃了  </p>
+
+<p>此时没信心了,寻思得重装了吧.先把文件恢复了.<br/><br/>
+谷歌一下(mount qcow2 on linux),找到一篇很棒的教程:<a href="http://ask.xmodulo.com/mount-qcow2-disk-image-linux.html">http://ask.xmodulo.com/mount-qcow2-disk-image-linux.html</a>  </p>
+
+<p>我们的虚拟机用的qcow2的格式,有一台是ext4有一台是xfs的文件系统.<br/><br/>
+推荐用guestmount的方式,nbd方式还得编译内核才能挂载nbd模块,我这台宿主机centos7就没有nbd模块.后来我编译了一下挂载了,感觉也没什么大优势还挺麻烦.  </p>
+
+<pre><code class="language-text">yum install libguestfs-tools
+</code></pre>
+
+<p>装好之后 guestmount -a /path/to/qcow2/image -m <device> /path/to/mount/point<br/><br/>
+就可以把image里面的文件系统挂载到指定目录去,就可以看到文件了.<br/><br/>
+eg:  </p>
+
+<pre><code class="language-text">guestmount -a /var/lib/libvirt/images/xenserver.qcow2 -m /dev/sda1 /mnt
+</code></pre>
+
+<p>这个device,/dev/sda1可以随便打,然后会提示你正确的有哪几个.还挺方便的.<br/><br/>
+能看到文件了,重装至少心里有底了.还是不满足,想看到虚拟机到底什么情况.着手研究console  </p>
+
+<p>找到的教程(<a href="https://blog.csdn.net/lemontree1945/article/details/80461037">https://blog.csdn.net/lemontree1945/article/details/80461037</a> 还有<a href="https://www.oldboyedu.com/zuixin_wenzhang/index/id/366.html">https://www.oldboyedu.com/zuixin_wenzhang/index/id/366.html</a>) 都是得进入系统才行的.但是现在进不去系统,而且我见过console是可以显示进去系统前的启动log的,所以肯定不是系统打开的TTY Console.那么猜测就是Grub的问题了.    </p>
+
+<p>谷歌,关键词(kvm grub console),基本上学习了一圈之后总结如下:<br/>
+前提:文件系统能通过guestmount成功mount,主要mount的boot分区(不是root),这个分区一般存的都是引导文件和grub的配置文件.在能正常启动的机器上,就是对应的/boot 目录.文件内容如下<br/><br/>
+<img src="media/15652431791895/15652448513923.jpg" alt=""/>  </p>
+
+<p>对应的关系  </p>
+
+<p><img src="media/15652431791895/15652449131835.jpg" alt=""/>  </p>
+
+<p>在用guestmount 的时候提示你挂载哪个磁盘的时候都写的很清楚,挂载boot这个就ok了.这个盘一般也不会坏,都能挂成功.  </p>
+
+<h3 id="toc_0">对于Centos6</h3>
+
+<p>我司centos6用的是grub(没有2).挂载好后,修改 grub/grub.conf 文件</p>
+
+<pre><code class="language-text">title CentOS (2.6.32-696.13.2.el6.x86_64)
+    root (hd0,0)
+    kernel /vmlinuz-2.6.32-696.13.2.el6.x86_64 ro root=/dev/mapper/vg_2cloo-lv_root rd_NO_LUKS LANG=en_US.UTF-8 rd_LVM_LV=vg_2cloo/lv_swap rd_NO_MD SYSFONT=latarcyrheb-sun16 crashkernel=auto rd_LVM_LV=vg_2cloo/lv_root  KEYBOARDTYPE=pc KEYTABLE=us rd_NO_DM rhgb quiet console=ttyS0
+    initrd /initramfs-2.6.32-696.13.2.el6.x86_64.img
+</code></pre>
+
+<p>这个每一项对应的是我们开机时候在屏幕上能够看到的启动项.在kernel一行 quiet参数后面加 console=ttyS0 <br/>
+即可.<img src="media/15652431791895/15652451533364.jpg" alt=""/></p>
+
+<h3 id="toc_1">对于centos 7</h3>
+
+<p>centos7使用的是Grub2,推测跟grub类似应该.打开grub2/grub.cfg,发现文件内容完全不一样了,是shell形式的了<br/>
+稍微看了一下,形式差不多 也是定义了每个启动项,找到  </p>
+
+<pre><code class="language-text">linux16 /vmlinuz-3.10.0-514.2.2.el7.x86_64 root=/dev/mapper/centos-root ro ipv6.disable=1 crashkernel=auto rd.lvm.lv=centos/root rd.lvm.lv=centos/swap rhgb quiet console=ttyS0
+</code></pre>
+
+<p>在quiet后添加console=ttyS0好了  </p>
+
+<p>现在启动后,virsh console vm1 能成功进入console了,基本上成功一大半了.<br/><br/>
+然后dmesg看一下启动log,发现xfs挂载有问题,进入了centos emergency mode紧急模式.<br/><br/>
+对于xfs系统来说:<br/><br/>
+/sbin/xfs_repair /dev/mapper/centos-root看一下,一般会提示有错误.<br/><br/>
+然后加-L 参数修复错误.修复之前最好备份一下虚拟机, virsh destroy vm1然后把img文件复制一个出来好了.  </p>
+
+<p>执行/sbin/xfs_repair -L /dev/mapper/centos-root,有很多不一致的情况都修复好了.然后reboot 系统就起来了,美滋滋.<br/><br/>
+对于ext4格式的系统,可以  </p>
+
+<pre><code class="language-text">umount /
+fsck.ext4 -y /dev/sda1
+</code></pre>
+
+<p>尝试修复就ok了  </p>
+
+]]></content>
+  </entry>
+  
+</feed>
