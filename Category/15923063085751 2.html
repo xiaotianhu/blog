@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
     
-  源码阅读 - Rainyluo's BLOG
+  Date: 2019-03-27 - Rainyluo's BLOG
   
   </title>
  <meta name="description" content="">
@@ -44,14 +44,12 @@
       <li><a href="index.html">Home</a></li>
       
         <li class="divider"></li>
-        <li><label>源码阅读</label></li>
+        <li><label>Hyperf</label></li>
 
           
-            <li><a title="Hyperf源码阅读 - 框架初始化之Application" href="15919610280346.html">Hyperf源码阅读 - 框架初始化之Application</a></li>
+            <li><a title="# Hyperf源码阅读 第二章 HTTP服务初始化" href="15932480961729.html"># Hyperf源码阅读 第二章 HTTP服务初始化</a></li>
           
-            <li><a title="Hyperf源码阅读 - 框架初始化之容器初始化" href="15918404223001.html">Hyperf源码阅读 - 框架初始化之容器初始化</a></li>
-          
-            <li><a title="Hyperf源码阅读 - Router流程" href="15918401062183.html">Hyperf源码阅读 - Router流程</a></li>
+            <li><a title="Hyperf源码阅读 第一章 初始化" href="15928236190986.html">Hyperf源码阅读 第一章 初始化</a></li>
           
 
       
@@ -78,6 +76,8 @@
         <li class="divider"></li>
         <li><label>其他</label></li>
 
+          
+            <li><a title="理解矩阵" href="15936798966495.html">理解矩阵</a></li>
           
             <li><a title="cocopods重装解决framework not found Pods/no such module" href="15923063082414.html">cocopods重装解决framework not found Pods/no such module</a></li>
           
@@ -119,6 +119,10 @@
         <li><label>PHP</label></li>
 
           
+            <li><a title="二维数组排序 array multisort" href="15756185241314.html">二维数组排序 array multisort</a></li>
+          
+            <li><a title="PHP中的闭包理解" href="15931630289738.html">PHP中的闭包理解</a></li>
+          
             <li><a title="reactPHP + lumen性能简测" href="15923063083212.html">reactPHP + lumen性能简测</a></li>
           
             <li><a title="QueryPath中文乱码问题,UTF8乱码问题解决" href="15923063084242.html">QueryPath中文乱码问题,UTF8乱码问题解决</a></li>
@@ -137,8 +141,6 @@
           
             <li><a title="PHP调试技巧" href="15922725010749.html">PHP调试技巧</a></li>
           
-            <li><a title="二维数组排序 array multisort" href="15756185241314.html">二维数组排序 array multisort</a></li>
-          
 
       
       </ul>
@@ -156,13 +158,11 @@
                   <ul id="side-nav" class="side-nav">
 
                     
-                      <li class="side-title"><span>源码阅读</span></li>
+                      <li class="side-title"><span>Hyperf</span></li>
                         
-                          <li><a title="Hyperf源码阅读 - 框架初始化之Application" href="15919610280346.html">Hyperf源码阅读 - 框架初始化之Application</a></li>
+                          <li><a title="# Hyperf源码阅读 第二章 HTTP服务初始化" href="15932480961729.html"># Hyperf源码阅读 第二章 HTTP服务初始化</a></li>
                         
-                          <li><a title="Hyperf源码阅读 - 框架初始化之容器初始化" href="15918404223001.html">Hyperf源码阅读 - 框架初始化之容器初始化</a></li>
-                        
-                          <li><a title="Hyperf源码阅读 - Router流程" href="15918401062183.html">Hyperf源码阅读 - Router流程</a></li>
+                          <li><a title="Hyperf源码阅读 第一章 初始化" href="15928236190986.html">Hyperf源码阅读 第一章 初始化</a></li>
                         
 
                     
@@ -185,6 +185,8 @@
 
                     
                       <li class="side-title"><span>其他</span></li>
+                        
+                          <li><a title="理解矩阵" href="15936798966495.html">理解矩阵</a></li>
                         
                           <li><a title="cocopods重装解决framework not found Pods/no such module" href="15923063082414.html">cocopods重装解决framework not found Pods/no such module</a></li>
                         
@@ -222,6 +224,10 @@
                     
                       <li class="side-title"><span>PHP</span></li>
                         
+                          <li><a title="二维数组排序 array multisort" href="15756185241314.html">二维数组排序 array multisort</a></li>
+                        
+                          <li><a title="PHP中的闭包理解" href="15931630289738.html">PHP中的闭包理解</a></li>
+                        
                           <li><a title="reactPHP + lumen性能简测" href="15923063083212.html">reactPHP + lumen性能简测</a></li>
                         
                           <li><a title="QueryPath中文乱码问题,UTF8乱码问题解决" href="15923063084242.html">QueryPath中文乱码问题,UTF8乱码问题解决</a></li>
@@ -240,8 +246,6 @@
                         
                           <li><a title="PHP调试技巧" href="15922725010749.html">PHP调试技巧</a></li>
                         
-                          <li><a title="二维数组排序 array multisort" href="15756185241314.html">二维数组排序 array multisort</a></li>
-                        
 
                     
                   </ul>
@@ -251,78 +255,126 @@
             </div>
             <div class="large-9 medium-9 columns">
 
- 
+ <div class="markdown-body">
+<h1>Date: 2019-03-27</h1>
 
+<p>Title: Nginx做负载均衡流量分配不均衡的一次故障分析<br/>
+Tags:  nginx upstream 负载均衡 流量<br/>
+Toc:no<br/>
+Status: public<br/>
+Position: 1</p>
 
-	
-		<div class="markdown-body">
-		<h1>Hyperf源码阅读 - 框架初始化之Application</h1>
+<p>公司的一个业务,LNMP架构.前端SLB+2台NGINX做负载均衡,流量分发到后端五台ECS的WEB服务器上,WEB服务主要是PHP(PHP7.1+Laravel5.5)</p>
 
-		<p>Application的入口在bin/hyperf.php中:</p>
+<p>之前流量不大的时候没有特别关注.最近流量起来了,开发同学手动添加了一个新的ECS节点,并加入负载均衡的Upstream池里面.结果这台机器始终是没有流量,其他机器的负载很高,也不给这台机器分配流量.很是诡异, 我觉得很有意思,花了两天时间终于研究明白问题了, 记录一下</p>
 
-<pre><code class="language-php">$application = $container-&gt;get(\Hyperf\Contract\ApplicationInterface::class);
-$application-&gt;run();
+<p>先说表现,深入观察后发现,后端原来的五台机器,负载分配也不是很均衡.总是有1-2台机器很高,其他机器却很低的情况.查看Nginx主要配置如下</p>
+
+<pre><code class="language-text">upstream web {
+        server 192.168.1.66 weight=10;
+        server 192.168.1.67 weight=10;
+        server 192.168.1.63 weight=10;
+        server 192.168.1.77 weight=10;
+        server 192.168.1.78 weight=10;
+        server 192.168.1.84 weight=10;#新添加
+
+        check interval=100 fall=1 rise=3 timeout=5000 type=http default_down=false;
+        check_http_send &quot;HEAD /ok HTTP/1.0\r\n\r\n&quot;;
+        check_http_expect_alive http_2xx;
+}
+server
+{
+    listen 80 ;
+    server_name foo.bar.com;
+    index index.html index.htm index.php;
+    location / {
+                add_header  X-Upstream  $upstream_addr;
+                proxy_pass http://$web;
+                proxy_set_header Host $host;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_next_upstream http_500 http_502 http_503 error timeout invalid_header;
+                proxy_buffering on;
+                proxy_redirect off;
+                proxy_connect_timeout 300s;
+                proxy_send_timeout 300s;
+                proxy_read_timeout 300s;
+                proxy_buffer_size 64k;
+                proxy_buffers 4 64k;
+                proxy_busy_buffers_size 64k;
+                proxy_temp_file_write_size 64k;
+                proxy_max_temp_file_size 1024m;
+                proxy_ignore_client_abort on;
+        }
+    access_log  logs/access.log main;
+}
 </code></pre>
 
-<p>拿到Application,然后run().<br/>
-找到ApplicationInterface的绑定关系,在</p>
+<p>做了很多猜测和验证,都没有结果.仔细分析负载均衡的配置,对着文档研究,发现这行配置很诡异:</p>
 
-<pre><code class="language-text">vendor/hyperf/framework/src/ConfigProvider.php中
-
-ApplicationInterface::class =&gt; ApplicationFactory::class
-
+<pre><code class="language-text">proxy_next_upstream http_500 http_502 http_503 error timeout invalid_header;
 </code></pre>
 
-<p>核心实现在ApplicationFactory了.来看工厂类</p>
+<p>查看官网的说明:</p>
 
-<p><strong>__invoke()</strong><br/>
-先dispatch了一个BootApplication的Event.看一下这个Event在vendor/hyperf/framework/src/Event目录下面,这里定义的是框架的各个事件.</p>
+<pre><code class="language-text">Syntax: proxy_next_upstream error | timeout | invalid_header | http_500 | http_502 | http_503 | http_504 | http_403 | http_404 | http_429 | non_idempotent | off ...;
+Default:    
+proxy_next_upstream error timeout;
+Context:    http, server, location
+Specifies in which cases a request should be passed to the next server:
+</code></pre>
 
-<p>通过Config管理对象获取全部的$commands,这个commands就是框架支持的一些命令,或者用户自己定义的一些命令.<br/>
-后面继续加载通过注解annotation定义的commands</p>
+<p>就是指定,在什么情况下,会把请求发给下一台机器重试.<br/>
+cat一下accesslog,发现因为业务问题,有不少500的请求错误.<br/>
+那就很好理解了,Nginx把请求先给A机器,发现有500,转给B,B出错继续给C,就导致了负载不均衡,总是有机器负载比较高.<br/>
+至于为啥新加入的机器没有负载,可能还得看源码才能明白具体的算法了.</p>
 
-<p>\(application对象是Symfony\Component\Console\Application,直接new生成对象,然后把SymfonyEventDispatcher注入进application依赖.<br/>
-每一个命令字符串,通过\)Container拿到最终的对象,通过add方法加入到application里面,工厂的任务就结束了<br/>
-最终把依赖都注入到$application后返回</p>
+<p>去掉这一行配置,果然立马好了.整个集群内不停重试的请求也少了,集群的负载瞬间下来了.看图感受一下</p>
 
-<p><strong>$application-&gt;run()</strong><br/>
-start命令执行的入口.<br/>
-先设置了一些基本的环境,Excenption处理的Handler之类.</p>
+<p><img src="media/blog/WX20190328-174541.png" alt=""/></p>
 
-<ul>
-<li>configureIO()<br/>
-解析基本的输入命令,设置报错等级</li>
-<li>doRun()<br/>
-执行命令 套在一个try catch finally里面,最上层的catch,同时在finally里面做一些清理</li>
-</ul>
-
-<p>运行成功会返回0;失败返回error code.</p>
-
-<p><strong>Application-&gt;doRun()</strong><br/>
-执行命令前 也是先dispatch一些Event<br/>
-最终调用$command-&gt;run()方法<br/>
-如果有Throwable的错误在catch一下<br/>
-执行后dispatch一个TerminalEvent</p>
-
-<p><strong>StartServer.php</strong><br/>
-启动时输入的命令 start 最终执行的类在<br/>
-vendor/hyperf/server/src/Command/StartServer.php</p>
-
-<p>先拿到Hyperf\Server\ServerFactory<br/>
-注入EventDispatcher和Logger依赖</p>
+<p>proxy_next_upstream 的使用还是很容易入坑的.想想集群平白浪费了很多性能就很蛋疼.运维同学在配置这个的时候估计也没有想到这个坑.<br/>
+我们使用openresty,用upstream的check模块其实就能解决很大一部分问题了.</p>
 
 
-		</div>
-	
+</div>
 
- 
-	
+<br /><br />
+<hr />
 
- 
-	
+<div class="row clearfix">
+  <div class="large-6 columns">
+	<div class="text-left" style="padding:15px 0px;">
+		
+	        <a href="15923063084995.html"  title="Previous Post: 2019的成长">&laquo; 2019的成长</a>
+	    
+	</div>
+  </div>
+  <div class="large-6 columns">
+	<div class="text-right" style="padding:15px 0px;">
+		
+	        <a href="15922725010749.html" 
+	        title="Next Post: PHP调试技巧">PHP调试技巧 &raquo;</a>
+	    
+	</div>
+  </div>
+</div>
 
-  
-  
+<div class="row">
+<div style="padding:0px 0.93em;" class="share-comments">
+
+</div>
+</div>
+<script type="text/javascript">
+	$(function(){
+		var currentURL = '15923063085751.html';
+		$('#side-nav a').each(function(){
+			if($(this).attr('href') == currentURL){
+				$(this).parent().addClass('active');
+			}
+		});
+	});
+</script>  
 </div></div>
 
 

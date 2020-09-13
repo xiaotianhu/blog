@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
     
-  Hyperf源码阅读 - 框架初始化之Application - Rainyluo's BLOG
+  用PHP-CLI在SHELL中输出颜色 - Rainyluo's BLOG
   
   </title>
  <meta name="description" content="">
@@ -44,14 +44,12 @@
       <li><a href="index.html">Home</a></li>
       
         <li class="divider"></li>
-        <li><label>源码阅读</label></li>
+        <li><label>Hyperf</label></li>
 
           
-            <li><a title="Hyperf源码阅读 - 框架初始化之Application" href="15919610280346.html">Hyperf源码阅读 - 框架初始化之Application</a></li>
+            <li><a title="# Hyperf源码阅读 第二章 HTTP服务初始化" href="15932480961729.html"># Hyperf源码阅读 第二章 HTTP服务初始化</a></li>
           
-            <li><a title="Hyperf源码阅读 - 框架初始化之容器初始化" href="15918404223001.html">Hyperf源码阅读 - 框架初始化之容器初始化</a></li>
-          
-            <li><a title="Hyperf源码阅读 - Router流程" href="15918401062183.html">Hyperf源码阅读 - Router流程</a></li>
+            <li><a title="Hyperf源码阅读 第一章 初始化" href="15928236190986.html">Hyperf源码阅读 第一章 初始化</a></li>
           
 
       
@@ -78,6 +76,8 @@
         <li class="divider"></li>
         <li><label>其他</label></li>
 
+          
+            <li><a title="理解矩阵" href="15936798966495.html">理解矩阵</a></li>
           
             <li><a title="cocopods重装解决framework not found Pods/no such module" href="15923063082414.html">cocopods重装解决framework not found Pods/no such module</a></li>
           
@@ -119,6 +119,10 @@
         <li><label>PHP</label></li>
 
           
+            <li><a title="二维数组排序 array multisort" href="15756185241314.html">二维数组排序 array multisort</a></li>
+          
+            <li><a title="PHP中的闭包理解" href="15931630289738.html">PHP中的闭包理解</a></li>
+          
             <li><a title="reactPHP + lumen性能简测" href="15923063083212.html">reactPHP + lumen性能简测</a></li>
           
             <li><a title="QueryPath中文乱码问题,UTF8乱码问题解决" href="15923063084242.html">QueryPath中文乱码问题,UTF8乱码问题解决</a></li>
@@ -137,8 +141,6 @@
           
             <li><a title="PHP调试技巧" href="15922725010749.html">PHP调试技巧</a></li>
           
-            <li><a title="二维数组排序 array multisort" href="15756185241314.html">二维数组排序 array multisort</a></li>
-          
 
       
       </ul>
@@ -156,13 +158,11 @@
                   <ul id="side-nav" class="side-nav">
 
                     
-                      <li class="side-title"><span>源码阅读</span></li>
+                      <li class="side-title"><span>Hyperf</span></li>
                         
-                          <li><a title="Hyperf源码阅读 - 框架初始化之Application" href="15919610280346.html">Hyperf源码阅读 - 框架初始化之Application</a></li>
+                          <li><a title="# Hyperf源码阅读 第二章 HTTP服务初始化" href="15932480961729.html"># Hyperf源码阅读 第二章 HTTP服务初始化</a></li>
                         
-                          <li><a title="Hyperf源码阅读 - 框架初始化之容器初始化" href="15918404223001.html">Hyperf源码阅读 - 框架初始化之容器初始化</a></li>
-                        
-                          <li><a title="Hyperf源码阅读 - Router流程" href="15918401062183.html">Hyperf源码阅读 - Router流程</a></li>
+                          <li><a title="Hyperf源码阅读 第一章 初始化" href="15928236190986.html">Hyperf源码阅读 第一章 初始化</a></li>
                         
 
                     
@@ -185,6 +185,8 @@
 
                     
                       <li class="side-title"><span>其他</span></li>
+                        
+                          <li><a title="理解矩阵" href="15936798966495.html">理解矩阵</a></li>
                         
                           <li><a title="cocopods重装解决framework not found Pods/no such module" href="15923063082414.html">cocopods重装解决framework not found Pods/no such module</a></li>
                         
@@ -222,6 +224,10 @@
                     
                       <li class="side-title"><span>PHP</span></li>
                         
+                          <li><a title="二维数组排序 array multisort" href="15756185241314.html">二维数组排序 array multisort</a></li>
+                        
+                          <li><a title="PHP中的闭包理解" href="15931630289738.html">PHP中的闭包理解</a></li>
+                        
                           <li><a title="reactPHP + lumen性能简测" href="15923063083212.html">reactPHP + lumen性能简测</a></li>
                         
                           <li><a title="QueryPath中文乱码问题,UTF8乱码问题解决" href="15923063084242.html">QueryPath中文乱码问题,UTF8乱码问题解决</a></li>
@@ -240,8 +246,6 @@
                         
                           <li><a title="PHP调试技巧" href="15922725010749.html">PHP调试技巧</a></li>
                         
-                          <li><a title="二维数组排序 array multisort" href="15756185241314.html">二维数组排序 array multisort</a></li>
-                        
 
                     
                   </ul>
@@ -252,60 +256,55 @@
             <div class="large-9 medium-9 columns">
 
  <div class="markdown-body">
-<h1>Hyperf源码阅读 - 框架初始化之Application</h1>
+<h1>用PHP-CLI在SHELL中输出颜色</h1>
 
-<p>Application的入口在bin/hyperf.php中:</p>
+<p>Tags:  PHP CLI <br/>
+Toc:no<br/>
+Status: public<br/>
+Position: 1</p>
 
-<pre><code class="language-php">$application = $container-&gt;get(\Hyperf\Contract\ApplicationInterface::class);
-$application-&gt;run();
+<p>刚才找PHP的手册,发现一个评论挺有意思.在PHP的CLI模式,也就是SHELL中,输出颜色.<br/>
+写简单的脚本,Log什么的时候,有个颜色 ,看起来舒服多了.一直黑白的看的脑袋晕乎乎的.</p>
+
+<pre><code class="language-text">&lt;? 
+$_colors = array( 
+        &#39;LIGHT_RED&#39;      =&gt; &quot;[1;31m&quot;, 
+        &#39;LIGHT_GREEN&#39;     =&gt; &quot;[1;32m&quot;, 
+        &#39;YELLOW&#39;     =&gt; &quot;[1;33m&quot;, 
+        &#39;LIGHT_BLUE&#39;     =&gt; &quot;[1;34m&quot;, 
+        &#39;MAGENTA&#39;     =&gt; &quot;[1;35m&quot;, 
+        &#39;LIGHT_CYAN&#39;     =&gt; &quot;[1;36m&quot;, 
+        &#39;WHITE&#39;     =&gt; &quot;[1;37m&quot;, 
+        &#39;NORMAL&#39;     =&gt; &quot;[0m&quot;, 
+        &#39;BLACK&#39;     =&gt; &quot;[0;30m&quot;, 
+        &#39;RED&#39;         =&gt; &quot;[0;31m&quot;, 
+        &#39;GREEN&#39;     =&gt; &quot;[0;32m&quot;, 
+        &#39;BROWN&#39;     =&gt; &quot;[0;33m&quot;, 
+        &#39;BLUE&#39;         =&gt; &quot;[0;34m&quot;, 
+        &#39;CYAN&#39;         =&gt; &quot;[0;36m&quot;, 
+        &#39;BOLD&#39;         =&gt; &quot;[1m&quot;, 
+        &#39;UNDERSCORE&#39;     =&gt; &quot;[4m&quot;, 
+        &#39;REVERSE&#39;     =&gt; &quot;[7m&quot;, 
+
+); 
+
+function termcolored($text, $color=&quot;NORMAL&quot;, $back=1){ 
+    global $_colors; 
+    $out = $_colors[&quot;$color&quot;]; 
+    if($out == &quot;&quot;){ $out = &quot;[0m&quot;; } 
+    if($back){ 
+        return chr(27).&quot;$out$text&quot;.chr(27).chr(27).&quot;[0m&quot;.chr(27); 
+    }else{ 
+        echo chr(27).&quot;$out$text&quot;.chr(27).chr(27).&quot;[0m&quot;.chr(27); 
+    }//fi 
+}// end function 
+
+foreach ($_colors as $key=&gt;$v) {
+    echo termcolored(&quot;colors&quot;, $key);
+    echo &quot;\r\n&quot;;
+}
+?&gt;
 </code></pre>
-
-<p>拿到Application,然后run().<br/>
-找到ApplicationInterface的绑定关系,在</p>
-
-<pre><code class="language-text">vendor/hyperf/framework/src/ConfigProvider.php中
-
-ApplicationInterface::class =&gt; ApplicationFactory::class
-
-</code></pre>
-
-<p>核心实现在ApplicationFactory了.来看工厂类</p>
-
-<p><strong>__invoke()</strong><br/>
-先dispatch了一个BootApplication的Event.看一下这个Event在vendor/hyperf/framework/src/Event目录下面,这里定义的是框架的各个事件.</p>
-
-<p>通过Config管理对象获取全部的$commands,这个commands就是框架支持的一些命令,或者用户自己定义的一些命令.<br/>
-后面继续加载通过注解annotation定义的commands</p>
-
-<p>\(application对象是Symfony\Component\Console\Application,直接new生成对象,然后把SymfonyEventDispatcher注入进application依赖.<br/>
-每一个命令字符串,通过\)Container拿到最终的对象,通过add方法加入到application里面,工厂的任务就结束了<br/>
-最终把依赖都注入到$application后返回</p>
-
-<p><strong>$application-&gt;run()</strong><br/>
-start命令执行的入口.<br/>
-先设置了一些基本的环境,Excenption处理的Handler之类.</p>
-
-<ul>
-<li>configureIO()<br/>
-解析基本的输入命令,设置报错等级</li>
-<li>doRun()<br/>
-执行命令 套在一个try catch finally里面,最上层的catch,同时在finally里面做一些清理</li>
-</ul>
-
-<p>运行成功会返回0;失败返回error code.</p>
-
-<p><strong>Application-&gt;doRun()</strong><br/>
-执行命令前 也是先dispatch一些Event<br/>
-最终调用$command-&gt;run()方法<br/>
-如果有Throwable的错误在catch一下<br/>
-执行后dispatch一个TerminalEvent</p>
-
-<p><strong>StartServer.php</strong><br/>
-启动时输入的命令 start 最终执行的类在<br/>
-vendor/hyperf/server/src/Command/StartServer.php</p>
-
-<p>先拿到Hyperf\Server\ServerFactory<br/>
-注入EventDispatcher和Logger依赖</p>
 
 
 </div>
@@ -317,15 +316,15 @@ vendor/hyperf/server/src/Command/StartServer.php</p>
   <div class="large-6 columns">
 	<div class="text-left" style="padding:15px 0px;">
 		
-	        <a href="15922725010749.html"  title="Previous Post: PHP调试技巧">&laquo; PHP调试技巧</a>
+	        <a href="15923063085282.html"  title="Previous Post: PHP的多线程Curl,rolling Curl实现与坑">&laquo; PHP的多线程Curl,rolling Curl实现与坑</a>
 	    
 	</div>
   </div>
   <div class="large-6 columns">
 	<div class="text-right" style="padding:15px 0px;">
 		
-	        <a href="15918404223001.html" 
-	        title="Next Post: Hyperf源码阅读 - 框架初始化之容器初始化">Hyperf源码阅读 - 框架初始化之容器初始化 &raquo;</a>
+	        <a href="15923063086512.html" 
+	        title="Next Post: App内使用H5页面的一个安全问题">App内使用H5页面的一个安全问题 &raquo;</a>
 	    
 	</div>
   </div>
@@ -338,7 +337,7 @@ vendor/hyperf/server/src/Command/StartServer.php</p>
 </div>
 <script type="text/javascript">
 	$(function(){
-		var currentURL = '15919610280346.html';
+		var currentURL = '15923063085495.html';
 		$('#side-nav a').each(function(){
 			if($(this).attr('href') == currentURL){
 				$(this).parent().addClass('active');

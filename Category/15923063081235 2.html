@@ -1,0 +1,413 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+    
+  git commit后自动检查php文件语法 - Rainyluo's BLOG
+  
+  </title>
+ <meta name="description" content="">
+ <link href="atom.xml" rel="alternate" title="Rainyluo's BLOG" type="application/atom+xml">
+    <link rel="stylesheet" href="asset/css/foundation.min.css" />
+    <link rel="stylesheet" href="asset/css/docs.css" />
+
+    <script src="asset/js/vendor/modernizr.js"></script>
+    <script src="asset/js/vendor/jquery.js"></script>
+    <script src="asset/highlightjs/highlight.pack.js"></script>
+    <link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+  </head>
+  <body class="antialiased hide-extras">
+    
+    <div class="marketing off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+
+
+<nav class="top-bar docs-bar hide-for-small" data-topbar>
+
+<div id="header">
+    <h1><a href="index.html">Rainyluo's BLOG</a></h1>
+</div>
+
+</nav>
+        <nav class="tab-bar show-for-small">
+  <a href="javascript:void(0)" class="left-off-canvas-toggle menu-icon">
+    <span> &nbsp; Rainyluo's BLOG</span>
+  </a>
+</nav>
+
+<aside class="left-off-canvas-menu">
+      <ul class="off-canvas-list">
+      <li><a href="index.html">Home</a></li>
+      
+        <li class="divider"></li>
+        <li><label>Hyperf</label></li>
+
+          
+            <li><a title="# Hyperf源码阅读 第二章 HTTP服务初始化" href="15932480961729.html"># Hyperf源码阅读 第二章 HTTP服务初始化</a></li>
+          
+            <li><a title="Hyperf源码阅读 第一章 初始化" href="15928236190986.html">Hyperf源码阅读 第一章 初始化</a></li>
+          
+
+      
+        <li class="divider"></li>
+        <li><label>随感</label></li>
+
+          
+            <li><a title="如何变得平庸" href="15923063082122.html">如何变得平庸</a></li>
+          
+            <li><a title="一个实用主义者的反思" href="15923063082072.html">一个实用主义者的反思</a></li>
+          
+            <li><a title="2018-08-01 感想" href="15923063081475.html">2018-08-01 感想</a></li>
+          
+            <li><a title="2019的成长" href="15923063084995.html">2019的成长</a></li>
+          
+            <li><a title="细节与功利主义：致那些同我一样想突破自己技术层级的朋友们" href="15771974682027.html">细节与功利主义：致那些同我一样想突破自己技术层级的朋友们</a></li>
+          
+            <li><a title="审美是一切美好追求的基础" href="15706010504336.html">审美是一切美好追求的基础</a></li>
+          
+            <li><a title="什么叫"回归初心" 以及技术成长突破的心态" href="15696591889118.html">什么叫"回归初心" 以及技术成长突破的心态</a></li>
+          
+
+      
+        <li class="divider"></li>
+        <li><label>其他</label></li>
+
+          
+            <li><a title="理解矩阵" href="15936798966495.html">理解矩阵</a></li>
+          
+            <li><a title="cocopods重装解决framework not found Pods/no such module" href="15923063082414.html">cocopods重装解决framework not found Pods/no such module</a></li>
+          
+            <li><a title="pts导入bts2.0教程" href="15923063083603.html">pts导入bts2.0教程</a></li>
+          
+            <li><a title="gopush代码分析-comet模块" href="15923063083769.html">gopush代码分析-comet模块</a></li>
+          
+            <li><a title="Chrome Extension扩展开发之复制粘贴" href="15923063083833.html">Chrome Extension扩展开发之复制粘贴</a></li>
+          
+            <li><a title="iowait详解" href="15923063084125.html">iowait详解</a></li>
+          
+            <li><a title="mac安装mysql-python(with XAMPP)" href="15923063084788.html">mac安装mysql-python(with XAMPP)</a></li>
+          
+            <li><a title="App内使用H5页面的一个安全问题" href="15923063086512.html">App内使用H5页面的一个安全问题</a></li>
+          
+            <li><a title="PHP 通过Apns给Ios设备推送Notification" href="15923063086602.html">PHP 通过Apns给Ios设备推送Notification</a></li>
+          
+            <li><a title="python中使用import加载目录中全部文件" href="15923063087292.html">python中使用import加载目录中全部文件</a></li>
+          
+            <li><a title="kvm/virsh 异常断电导致虚拟机无法启动的修复实战" href="15923063088164.html">kvm/virsh 异常断电导致虚拟机无法启动的修复实战</a></li>
+          
+            <li><a title="Synology office error: User home service is not enabled" href="15923063081281.html">Synology office error: User home service is not enabled</a></li>
+          
+            <li><a title="git commit后自动检查php文件语法" href="15923063081235.html">git commit后自动检查php文件语法</a></li>
+          
+            <li><a title="梅林固件/R6300V2 安装Lcd4Linux显示屏" href="15923063081215.html">梅林固件/R6300V2 安装Lcd4Linux显示屏</a></li>
+          
+
+      
+        <li class="divider"></li>
+        <li><label>About</label></li>
+
+          
+            <li><a title="Rainyluo's Blog" href="15923063081658.html">Rainyluo's Blog</a></li>
+          
+
+      
+        <li class="divider"></li>
+        <li><label>PHP</label></li>
+
+          
+            <li><a title="二维数组排序 array multisort" href="15756185241314.html">二维数组排序 array multisort</a></li>
+          
+            <li><a title="PHP中的闭包理解" href="15931630289738.html">PHP中的闭包理解</a></li>
+          
+            <li><a title="reactPHP + lumen性能简测" href="15923063083212.html">reactPHP + lumen性能简测</a></li>
+          
+            <li><a title="QueryPath中文乱码问题,UTF8乱码问题解决" href="15923063084242.html">QueryPath中文乱码问题,UTF8乱码问题解决</a></li>
+          
+            <li><a title="WorkerMan的restart命令的一个Bug修复记录" href="15923063084445.html">WorkerMan的restart命令的一个Bug修复记录</a></li>
+          
+            <li><a title="PHP的多线程Curl,rolling Curl实现与坑" href="15923063085282.html">PHP的多线程Curl,rolling Curl实现与坑</a></li>
+          
+            <li><a title="用PHP-CLI在SHELL中输出颜色" href="15923063085495.html">用PHP-CLI在SHELL中输出颜色</a></li>
+          
+            <li><a title="使用GITHUB+JustWriting搭建BLOG" href="15923063087852.html">使用GITHUB+JustWriting搭建BLOG</a></li>
+          
+            <li><a title="[原创翻译]QueryPath PHP的Jquery实现,QueryPath教程" href="15923063087972.html">[原创翻译]QueryPath PHP的Jquery实现,QueryPath教程</a></li>
+          
+            <li><a title="(伪)异步实现加速PHP接口的返回速度" href="15923063089153.html">(伪)异步实现加速PHP接口的返回速度</a></li>
+          
+            <li><a title="PHP调试技巧" href="15922725010749.html">PHP调试技巧</a></li>
+          
+
+      
+      </ul>
+    </aside>
+
+<a class="exit-off-canvas" href="#"></a>
+
+        <section id="main-content" role="main" class="scroll-container">
+
+          <div class="row">
+            <div class="large-3 medium-3 columns">
+              <div class="hide-for-small">
+                <div class="sidebar">
+                <nav>
+                  <ul id="side-nav" class="side-nav">
+
+                    
+                      <li class="side-title"><span>Hyperf</span></li>
+                        
+                          <li><a title="# Hyperf源码阅读 第二章 HTTP服务初始化" href="15932480961729.html"># Hyperf源码阅读 第二章 HTTP服务初始化</a></li>
+                        
+                          <li><a title="Hyperf源码阅读 第一章 初始化" href="15928236190986.html">Hyperf源码阅读 第一章 初始化</a></li>
+                        
+
+                    
+                      <li class="side-title"><span>随感</span></li>
+                        
+                          <li><a title="如何变得平庸" href="15923063082122.html">如何变得平庸</a></li>
+                        
+                          <li><a title="一个实用主义者的反思" href="15923063082072.html">一个实用主义者的反思</a></li>
+                        
+                          <li><a title="2018-08-01 感想" href="15923063081475.html">2018-08-01 感想</a></li>
+                        
+                          <li><a title="2019的成长" href="15923063084995.html">2019的成长</a></li>
+                        
+                          <li><a title="细节与功利主义：致那些同我一样想突破自己技术层级的朋友们" href="15771974682027.html">细节与功利主义：致那些同我一样想突破自己技术层级的朋友们</a></li>
+                        
+                          <li><a title="审美是一切美好追求的基础" href="15706010504336.html">审美是一切美好追求的基础</a></li>
+                        
+                          <li><a title="什么叫"回归初心" 以及技术成长突破的心态" href="15696591889118.html">什么叫"回归初心" 以及技术成长突破的心态</a></li>
+                        
+
+                    
+                      <li class="side-title"><span>其他</span></li>
+                        
+                          <li><a title="理解矩阵" href="15936798966495.html">理解矩阵</a></li>
+                        
+                          <li><a title="cocopods重装解决framework not found Pods/no such module" href="15923063082414.html">cocopods重装解决framework not found Pods/no such module</a></li>
+                        
+                          <li><a title="pts导入bts2.0教程" href="15923063083603.html">pts导入bts2.0教程</a></li>
+                        
+                          <li><a title="gopush代码分析-comet模块" href="15923063083769.html">gopush代码分析-comet模块</a></li>
+                        
+                          <li><a title="Chrome Extension扩展开发之复制粘贴" href="15923063083833.html">Chrome Extension扩展开发之复制粘贴</a></li>
+                        
+                          <li><a title="iowait详解" href="15923063084125.html">iowait详解</a></li>
+                        
+                          <li><a title="mac安装mysql-python(with XAMPP)" href="15923063084788.html">mac安装mysql-python(with XAMPP)</a></li>
+                        
+                          <li><a title="App内使用H5页面的一个安全问题" href="15923063086512.html">App内使用H5页面的一个安全问题</a></li>
+                        
+                          <li><a title="PHP 通过Apns给Ios设备推送Notification" href="15923063086602.html">PHP 通过Apns给Ios设备推送Notification</a></li>
+                        
+                          <li><a title="python中使用import加载目录中全部文件" href="15923063087292.html">python中使用import加载目录中全部文件</a></li>
+                        
+                          <li><a title="kvm/virsh 异常断电导致虚拟机无法启动的修复实战" href="15923063088164.html">kvm/virsh 异常断电导致虚拟机无法启动的修复实战</a></li>
+                        
+                          <li><a title="Synology office error: User home service is not enabled" href="15923063081281.html">Synology office error: User home service is not enabled</a></li>
+                        
+                          <li><a title="git commit后自动检查php文件语法" href="15923063081235.html">git commit后自动检查php文件语法</a></li>
+                        
+                          <li><a title="梅林固件/R6300V2 安装Lcd4Linux显示屏" href="15923063081215.html">梅林固件/R6300V2 安装Lcd4Linux显示屏</a></li>
+                        
+
+                    
+                      <li class="side-title"><span>About</span></li>
+                        
+                          <li><a title="Rainyluo's Blog" href="15923063081658.html">Rainyluo's Blog</a></li>
+                        
+
+                    
+                      <li class="side-title"><span>PHP</span></li>
+                        
+                          <li><a title="二维数组排序 array multisort" href="15756185241314.html">二维数组排序 array multisort</a></li>
+                        
+                          <li><a title="PHP中的闭包理解" href="15931630289738.html">PHP中的闭包理解</a></li>
+                        
+                          <li><a title="reactPHP + lumen性能简测" href="15923063083212.html">reactPHP + lumen性能简测</a></li>
+                        
+                          <li><a title="QueryPath中文乱码问题,UTF8乱码问题解决" href="15923063084242.html">QueryPath中文乱码问题,UTF8乱码问题解决</a></li>
+                        
+                          <li><a title="WorkerMan的restart命令的一个Bug修复记录" href="15923063084445.html">WorkerMan的restart命令的一个Bug修复记录</a></li>
+                        
+                          <li><a title="PHP的多线程Curl,rolling Curl实现与坑" href="15923063085282.html">PHP的多线程Curl,rolling Curl实现与坑</a></li>
+                        
+                          <li><a title="用PHP-CLI在SHELL中输出颜色" href="15923063085495.html">用PHP-CLI在SHELL中输出颜色</a></li>
+                        
+                          <li><a title="使用GITHUB+JustWriting搭建BLOG" href="15923063087852.html">使用GITHUB+JustWriting搭建BLOG</a></li>
+                        
+                          <li><a title="[原创翻译]QueryPath PHP的Jquery实现,QueryPath教程" href="15923063087972.html">[原创翻译]QueryPath PHP的Jquery实现,QueryPath教程</a></li>
+                        
+                          <li><a title="(伪)异步实现加速PHP接口的返回速度" href="15923063089153.html">(伪)异步实现加速PHP接口的返回速度</a></li>
+                        
+                          <li><a title="PHP调试技巧" href="15922725010749.html">PHP调试技巧</a></li>
+                        
+
+                    
+                  </ul>
+                </nav>
+                </div>
+              </div>
+            </div>
+            <div class="large-9 medium-9 columns">
+
+ <div class="markdown-body">
+<h1>git commit后自动检查php文件语法</h1>
+
+<p>最近,同事有出现一些低级错误的情况,比如提交的代码有语法错误啊,var_dump没有去掉啊什么的.为了防止自己也这样(文件一多就容易乱啊...),写了个小脚本,git commit后自动检查语法和文件内容,如果语法有错误或者有var_dump/print_r就会显示出来,防止自己被耻笑...</p>
+
+<p>PHP代码如下:</p>
+
+<pre><code class="language-text">&lt;?php
+//git有变动的文件列表
+$file_list = shell_exec(&quot;git diff-index --name-only --diff-filter=ACMR HEAD&quot;);
+if(empty($file_list) || empty($_SERVER[&quot;argv&quot;][1])) {
+    cecho (&quot;没有文件改动或文件路径错误&quot;, &quot;RED&quot;);
+    die();
+}
+
+$check_dir = $_SERVER[&quot;argv&quot;][1];//要检查的目录路径
+
+$file_list = explode(&quot;\n&quot;, $file_list);
+if(empty($file_list[0])) {
+    cecho (&quot;没有更新文件 :)&quot;);
+    die();
+}
+
+cecho(&quot;更新文件检查如下&quot;, &quot;GREEN&quot;);
+foreach($file_list as $file) {
+    $file_full_path = $check_dir. &quot;/&quot;. $file;
+    if(substr($file, -4) != &quot;.php&quot;) continue;//只检查php文件
+    cecho( &quot;检查.....&quot;, &quot;GREEN&quot;);
+    cecho( $file_full_path, &quot;YELLOW&quot;);
+    /* 语法检查 */
+    $php_syntax = shell_exec(&quot;php -l &quot;.$file_full_path);
+    if(substr($php_syntax, 0, 2) !== &quot;No&quot; ) {
+        cecho(&quot;有语法错误!!!!!!!\r\n&quot;, &quot;RED&quot;);
+        cecho($php_syntax);
+    } else {
+        cecho(&quot;没啥问题.........\r\n&quot;, &quot;GREEN&quot;);
+    }
+    /*关键字检查 */
+    $content = file_get_contents($file_full_path);
+    if(empty($content)) cecho (&quot;文件内容为空!!!!!&quot;, &quot;RED&quot;);
+    if(strpos($content, &quot;var_dump&quot;)) cecho (&quot;发现关键词:var_dump!!!!!&quot;, &quot;RED&quot;);
+    if(strpos($content, &quot;print_r&quot;)) cecho (&quot;发现关键词:print_r!!!!!&quot;, &quot;RED&quot;);
+}
+
+function cecho($text, $color=&quot;LIGHT_RED&quot;){
+    $_colors = array(
+        &#39;LIGHT_RED&#39;      =&gt; &quot;[1;31m&quot;,
+        &#39;LIGHT_GREEN&#39;     =&gt; &quot;[1;32m&quot;,
+        &#39;YELLOW&#39;     =&gt; &quot;[1;33m&quot;,
+        &#39;LIGHT_BLUE&#39;     =&gt; &quot;[1;34m&quot;,
+        &#39;MAGENTA&#39;     =&gt; &quot;[1;35m&quot;,
+        &#39;LIGHT_CYAN&#39;     =&gt; &quot;[1;36m&quot;,
+        &#39;WHITE&#39;     =&gt; &quot;[1;37m&quot;,
+        &#39;NORMAL&#39;     =&gt; &quot;[0m&quot;,
+        &#39;BLACK&#39;     =&gt; &quot;[0;30m&quot;,
+        &#39;RED&#39;         =&gt; &quot;[0;31m&quot;,
+        &#39;GREEN&#39;     =&gt; &quot;[0;32m&quot;,
+        &#39;BROWN&#39;     =&gt; &quot;[0;33m&quot;,
+        &#39;BLUE&#39;         =&gt; &quot;[0;34m&quot;,
+        &#39;CYAN&#39;         =&gt; &quot;[0;36m&quot;,
+        &#39;BOLD&#39;         =&gt; &quot;[1m&quot;,
+        &#39;UNDERSCORE&#39;     =&gt; &quot;[4m&quot;,
+        &#39;REVERSE&#39;     =&gt; &quot;[7m&quot;,
+    );
+    $out = $_colors[&quot;$color&quot;];
+    if($out == &quot;&quot;){ $out = &quot;[0m&quot;; }
+    echo chr(27).&quot;$out$text&quot;.chr(27).chr(27).&quot;[0m&quot;.chr(27);
+    echo &quot;\r\n&quot;;
+}
+?&gt;
+</code></pre>
+
+<p>使用方法: <br/>
+在~/.bashrc 或者 .zshrc里添加个alias  </p>
+
+<blockquote>
+<p>alias &#39;gcm&#39;=&#39;commit() {dir=\((pwd);php -c /home/luo/php.ini /home/luo/checkphp.php &quot;\)dir&quot;;git commit -a -m &quot;$1&quot;}; commit&#39;  </p>
+</blockquote>
+
+<p>指定了php.ini是为了用自己的配置来允许shell_exec函数执行.<br/><br/>
+然后在git目录,需要提交的时候输入 gcm &quot;提交注释&quot; 就可以了.  </p>
+
+
+</div>
+
+<br /><br />
+<hr />
+
+<div class="row clearfix">
+  <div class="large-6 columns">
+	<div class="text-left" style="padding:15px 0px;">
+		
+	        <a href="15923063081281.html"  title="Previous Post: Synology office error: User home service is not enabled">&laquo; Synology office error: User home service is not enabled</a>
+	    
+	</div>
+  </div>
+  <div class="large-6 columns">
+	<div class="text-right" style="padding:15px 0px;">
+		
+	        <a href="15923063081215.html" 
+	        title="Next Post: 梅林固件/R6300V2 安装Lcd4Linux显示屏">梅林固件/R6300V2 安装Lcd4Linux显示屏 &raquo;</a>
+	    
+	</div>
+  </div>
+</div>
+
+<div class="row">
+<div style="padding:0px 0.93em;" class="share-comments">
+
+</div>
+</div>
+<script type="text/javascript">
+	$(function(){
+		var currentURL = '15923063081235.html';
+		$('#side-nav a').each(function(){
+			if($(this).attr('href') == currentURL){
+				$(this).parent().addClass('active');
+			}
+		});
+	});
+</script>  
+</div></div>
+
+
+<div class="page-bottom">
+  <div class="row">
+  <hr />
+  <div class="small-9 columns">
+  <p class="copyright">Copyright &copy; 2015
+Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a>,&nbsp; 
+Theme used <a target="_blank" href="http://github.com">GitHub CSS</a>.</p>
+  </div>
+  <div class="small-3 columns">
+  <p class="copyright text-right"><a href="#header">TOP</a></p>
+  </div>
+   
+  </div>
+</div>
+
+        </section>
+      </div>
+    </div>
+    
+    
+    <script src="asset/js/foundation.min.js"></script>
+    <script src="asset/js/foundation/foundation.offcanvas.js"></script>
+    <script>
+      $(document).foundation();
+
+     
+    </script>
+    
+
+
+  </body>
+</html>

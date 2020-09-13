@@ -4,7 +4,7 @@
   <title><![CDATA[Rainyluo's BLOG]]></title>
   <link href="blog.v2cb.com/atom.xml" rel="self"/>
   <link href="blog.v2cb.com/"/>
-  <updated>2020-06-21T15:53:03+08:00</updated>
+  <updated>2020-09-13T12:16:05+08:00</updated>
   <id>blog.v2cb.com/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -12,6 +12,574 @@
   </author>
   <generator uri="http://www.mweb.im">MWeb</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[理解矩阵]]></title>
+    <link href="blog.v2cb.com/15936798966495.html"/>
+    <updated>2020-07-02T16:51:36+08:00</updated>
+    <id>blog.v2cb.com/15936798966495.html</id>
+    <content type="html"><![CDATA[
+<p>最近开始研究推荐算法,发现绕不过去的还是线性代数.<br/>
+CSDN的孟岩老板讲的这篇非常好.收藏一下.</p>
+
+<p>原文地址:<a href="https://blog.csdn.net/myan/article/details/647511">https://blog.csdn.net/myan/article/details/647511</a></p>
+
+<p>理解矩阵（一）</p>
+
+<p>前不久chensh出于不可告人的目的，要充当老师，教别人线性代数。于是我被揪住就线性代数中一些务虚性的问题与他讨论了几次。很明显，chensh觉得，要让自己在讲线性代数的时候不被那位强势的学生认为是神经病，还是比较难的事情。</p>
+
+<p>可怜的chensh，谁让你趟这个地雷阵？！色令智昏啊！</p>
+
+<p>线性代数课程，无论你从行列式入手还是直接从矩阵入手，从一开始就充斥着莫名其妙。比如说，在全国一般工科院系教学中应用最广泛的同济线性代数教材（现在到了第四版），一上来就介绍逆序数这个“前无古人，后无来者”的古怪概念，然后用逆序数给出行列式的一个极不直观的定义，接着是一些简直犯傻的行列式性质和习题——把这行乘一个系数加到另一行上，再把那一列减过来，折腾得那叫一个热闹，可就是压根看不出这个东西有嘛用。大多数像我一样资质平庸的学生到这里就有点犯晕：连这是个什么东西都模模糊糊的，就开始钻火圈表演了，这未免太“无厘头”了吧！于是开始有人逃课，更多的人开始抄作业。这下就中招了，因为其后的发展可以用一句峰回路转来形容，紧跟着这个无厘头的行列式的，是一个同样无厘头但是伟大的无以复加的家伙的出场——矩阵来了！多年之后，我才明白，当老师犯傻似地用中括号把一堆傻了吧叽的数括起来，并且不紧不慢地说：“这个东西叫做矩阵”的时候，我的数学生涯掀开了何等悲壮辛酸、惨绝人寰的一幕！自那以后，在几乎所有跟“学问”二字稍微沾点边的东西里，矩阵这个家伙从不缺席。对于我这个没能一次搞定线性代数的笨蛋来说，矩阵老大的不请自来每每搞得我灰头土脸，头破血流。长期以来，我在阅读中一见矩阵，就如同阿Q见到了假洋鬼子，揉揉额角就绕道走。</p>
+
+<p>事实上，我并不是特例。一般工科学生初学线性代数，通常都会感到困难。这种情形在国内外皆然。瑞典数学家Lars Garding在其名著Encounter with Mathematics中说：“如果不熟悉线性代数的概念，要去学习自然科学，现在看来就和文盲差不多。”，然而“按照现行的国际标准，线性代数是通过公理化来表述的，它是第二代数学模型，...，这就带来了教学上的困难。”事实上，当我们开始学习线性代数的时候，不知不觉就进入了“第二代数学模型”的范畴当中，这意味着数学的表述方式和抽象性有了一次全面的进化，对于从小一直在“第一代数学模型”，即以实用为导向的、具体的数学模型中学习的我们来说，在没有并明确告知的情况下进行如此剧烈的paradigm shift，不感到困难才是奇怪的。</p>
+
+<p>大部分工科学生，往往是在学习了一些后继课程，如数值分析、数学规划、矩阵论之后，才逐渐能够理解和熟练运用线性代数。即便如此，不少人即使能够很熟练地以线性代数为工具进行科研和应用工作，但对于很多这门课程的初学者提出的、看上去是很基础的问题却并不清楚。比如说：</p>
+
+<ul>
+<li><p>矩阵究竟是什么东西？向量可以被认为是具有n个相互独立的性质（维度）的对象的表示，矩阵又是什么呢？我们如果认为矩阵是一组列（行）向量组成的新的复合向量的展开式，那么为什么这种展开式具有如此广泛的应用？特别是，为什么偏偏二维的展开式如此有用？如果矩阵中每一个元素又是一个向量，那么我们再展开一次，变成三维的立方阵，是不是更有用？</p></li>
+<li><p>矩阵的乘法规则究竟为什么这样规定？为什么这样一种怪异的乘法规则却能够在实践中发挥如此巨大的功效？很多看上去似乎是完全不相关的问题，最后竟然都归结到矩阵的乘法，这难道不是很奇妙的事情？难道在矩阵乘法那看上去莫名其妙的规则下面，包含着世界的某些本质规律？如果是的话，这些本质规律是什么？</p></li>
+<li><p>行列式究竟是一个什么东西？为什么会有如此怪异的计算规则？行列式与其对应方阵本质上是什么关系？为什么只有方阵才有对应的行列式，而一般矩阵就没有（不要觉得这个问题很蠢，如果必要，针对m x n矩阵定义行列式不是做不到的，之所以不做，是因为没有这个必要，但是为什么没有这个必要）？而且，行列式的计算规则，看上去跟矩阵的任何计算规则都没有直观的联系，为什么又在很多方面决定了矩阵的性质？难道这一切仅是巧合？</p></li>
+<li><p>矩阵为什么可以分块计算？分块计算这件事情看上去是那么随意，为什么竟是可行的？</p></li>
+<li><p>对于矩阵转置运算AT，有(AB)T = BTAT，对于矩阵求逆运算A-1，有(AB)-1 = B-1A-1。两个看上去完全没有什么关系的运算，为什么有着类似的性质？这仅仅是巧合吗？</p></li>
+<li><p>为什么说P-1AP得到的矩阵与A矩阵“相似”？这里的“相似”是什么意思？</p></li>
+<li><p>特征值和特征向量的本质是什么？它们定义就让人很惊讶，因为Ax =λx，一个诺大的矩阵的效应，竟然不过相当于一个小小的数λ，确实有点奇妙。但何至于用“特征”甚至“本征”来界定？它们刻划的究竟是什么？</p></li>
+</ul>
+
+<p>这样的一类问题，经常让使用线性代数已经很多年的人都感到为难。就好像大人面对小孩子的刨根问底，最后总会迫不得已地说“就这样吧，到此为止”一样，面对这样的问题，很多老手们最后也只能用：“就是这么规定的，你接受并且记住就好”来搪塞。然而，这样的问题如果不能获得回答，线性代数对于我们来说就是一个粗暴的、不讲道理的、莫名其妙的规则集合，我们会感到，自己并不是在学习一门学问，而是被不由分说地“抛到”一个强制的世界中，只是在考试的皮鞭挥舞之下被迫赶路，全然无法领略其中的美妙、和谐与统一。直到多年以后，我们已经发觉这门学问如此的有用，却仍然会非常迷惑：怎么这么凑巧？</p>
+
+<p>我认为，这是我们的线性代数教学中直觉性丧失的后果。上述这些涉及到“如何能”、“怎么会”的问题，仅仅通过纯粹的数学证明来回答，是不能令提问者满意的。比如，如果你通过一般的证明方法论证了矩阵分块运算确实可行，那么这并不能够让提问者的疑惑得到解决。他们真正的困惑是：矩阵分块运算为什么竟然是可行的？究竟只是凑巧，还是说这是由矩阵这种对象的某种本质所必然决定的？如果是后者，那么矩阵的这些本质是什么？只要对上述那些问题稍加考虑，我们就会发现，所有这些问题都不是单纯依靠数学证明所能够解决的。像我们的教科书那样，凡事用数学证明，最后培养出来的学生，只能熟练地使用工具，却欠缺真正意义上的理解。</p>
+
+<p>自从1930年代法国布尔巴基学派兴起以来，数学的公理化、系统性描述已经获得巨大的成功，这使得我们接受的数学教育在严谨性上大大提高。然而数学公理化的一个备受争议的副作用，就是一般数学教育中直觉性的丧失。数学家们似乎认为直觉性与抽象性是矛盾的，因此毫不犹豫地牺牲掉前者。然而包括我本人在内的很多人都对此表示怀疑，我们不认为直觉性与抽象性一定相互矛盾，特别是在数学教育中和数学教材中，帮助学生建立直觉，有助于它们理解那些抽象的概念，进而理解数学的本质。反之，如果一味注重形式上的严格性，学生就好像被迫进行钻火圈表演的小白鼠一样，变成枯燥的规则的奴隶。</p>
+
+<p>对于线性代数的类似上述所提到的一些直觉性的问题，两年多来我断断续续地反复思考了四、五次，为此阅读了好几本国内外线性代数、数值分析、代数和数学通论性书籍，其中像前苏联的名著《数学：它的内容、方法和意义》、龚昇教授的《线性代数五讲》、前面提到的Encounter with Mathematics（《数学概观》）以及Thomas A. Garrity的《数学拾遗》都给我很大的启发。不过即使如此，我对这个主题的认识也经历了好几次自我否定。比如以前思考的一些结论曾经写在自己的blog里，但是现在看来，这些结论基本上都是错误的。因此打算把自己现在的有关理解比较完整地记录下来，一方面是因为我觉得现在的理解比较成熟了，可以拿出来与别人探讨，向别人请教。另一方面，如果以后再有进一步的认识，把现在的理解给推翻了，那现在写的这个snapshot也是很有意义的。</p>
+
+<p>因为打算写得比较多，所以会分几次慢慢写。也不知道是不是有时间慢慢写完整，会不会中断，写着看吧。</p>
+
+<hr/>
+
+<p>今天先谈谈对线形空间和矩阵的几个核心概念的理解。这些东西大部分是凭着自己的理解写出来的，基本上不抄书，可能有错误的地方，希望能够被指出。但我希望做到直觉，也就是说能把数学背后说的实质问题说出来。</p>
+
+<p>首先说说空间(space)，这个概念是现代数学的命根子之一，从拓扑空间开始，一步步往上加定义，可以形成很多空间。线形空间其实还是比较初级的，如果在里面定义了范数，就成了赋范线性空间。赋范线性空间满足完备性，就成了巴那赫空间；赋范线性空间中定义角度，就有了内积空间，内积空间再满足完备性，就得到希尔伯特空间。</p>
+
+<p>总之，空间有很多种。你要是去看某种空间的数学定义，大致都是“存在一个集合，在这个集合上定义某某概念，然后满足某些性质”，就可以被称为空间。这未免有点奇怪，为什么要用“空间”来称呼一些这样的集合呢？大家将会看到，其实这是很有道理的。</p>
+
+<p>我们一般人最熟悉的空间，毫无疑问就是我们生活在其中的（按照牛顿的绝对时空观）的三维空间，从数学上说，这是一个三维的欧几里德空间，我们先不管那么多，先看看我们熟悉的这样一个空间有些什么最基本的特点。仔细想想我们就会知道，这个三维的空间：1. 由很多（实际上是无穷多个）位置点组成；2. 这些点之间存在相对的关系；3. 可以在空间中定义长度、角度；4. 这个空间可以容纳运动，这里我们所说的运动是从一个点到另一个点的移动（变换），而不是微积分意义上的“连续”性的运动，</p>
+
+<p>上面的这些性质中，最最关键的是第4条。第1、2条只能说是空间的基础，不算是空间特有的性质，凡是讨论数学问题，都得有一个集合，大多数还得在这个集合上定义一些结构（关系），并不是说有了这些就算是空间。而第3条太特殊，其他的空间不需要具备，更不是关键的性质。只有第4条是空间的本质，也就是说，容纳运动是空间的本质特征。</p>
+
+<p>认识到了这些，我们就可以把我们关于三维空间的认识扩展到其他的空间。事实上，不管是什么空间，都必须容纳和支持在其中发生的符合规则的运动（变换）。你会发现，在某种空间中往往会存在一种相对应的变换，比如拓扑空间中有拓扑变换，线性空间中有线性变换，仿射空间中有仿射变换，其实这些变换都只不过是对应空间中允许的运动形式而已。</p>
+
+<p>因此只要知道，“空间”是容纳运动的一个对象集合，而变换则规定了对应空间的运动。</p>
+
+<p>下面我们来看看线性空间。线性空间的定义任何一本书上都有，但是既然我们承认线性空间是个空间，那么有两个最基本的问题必须首先得到解决，那就是：</p>
+
+<ol>
+<li><p>空间是一个对象集合，线性空间也是空间，所以也是一个对象集合。那么线性空间是什么样的对象的集合？或者说，线性空间中的对象有什么共同点吗？</p></li>
+<li><p>线性空间中的运动如何表述的？也就是，线性变换是如何表示的？</p></li>
+</ol>
+
+<p>我们先来回答第一个问题，回答这个问题的时候其实是不用拐弯抹角的，可以直截了当的给出答案。线性空间中的任何一个对象，通过选取基和坐标的办法，都可以表达为向量的形式。通常的向量空间我就不说了，举两个不那么平凡的例子：</p>
+
+<p>L1. 最高次项不大于n次的多项式的全体构成一个线性空间，也就是说，这个线性空间中的每一个对象是一个多项式。如果我们以x0, x1, ..., xn为基，那么任何一个这样的多项式都可以表达为一组n+1维向量，其中的每一个分量ai其实就是多项式中x(i-1)项的系数。值得说明的是，基的选取有多种办法，只要所选取的那一组基线性无关就可以。这要用到后面提到的概念了，所以这里先不说，提一下而已。</p>
+
+<p>L2. 闭区间[a, b]上的n阶连续可微函数的全体，构成一个线性空间。也就是说，这个线性空间的每一个对象是一个连续函数。对于其中任何一个连续函数，根据魏尔斯特拉斯定理，一定可以找到最高次项不大于n的多项式函数，使之与该连续函数的差为0，也就是说，完全相等。这样就把问题归结为L1了。后面就不用再重复了。</p>
+
+<p>所以说，向量是很厉害的，只要你找到合适的基，用向量可以表示线性空间里任何一个对象。这里头大有文章，因为向量表面上只是一列数，但是其实由于它的有序性，所以除了这些数本身携带的信息之外，还可以在每个数的对应位置上携带信息。为什么在程序设计中数组最简单，却又威力无穷呢？根本原因就在于此。这是另一个问题了，这里就不说了。</p>
+
+<p>下面来回答第二个问题，这个问题的回答会涉及到线性代数的一个最根本的问题。</p>
+
+<p>线性空间中的运动，被称为线性变换。也就是说，你从线性空间中的一个点运动到任意的另外一个点，都可以通过一个线性变化来完成。那么，线性变换如何表示呢？很有意思，在线性空间中，当你选定一组基之后，不仅可以用一个向量来描述空间中的任何一个对象，而且可以用矩阵来描述该空间中的任何一个运动（变换）。而使某个对象发生对应运动的方法，就是用代表那个运动的矩阵，乘以代表那个对象的向量。</p>
+
+<p>简而言之，在线性空间中选定基之后，向量刻画对象，矩阵刻画对象的运动，用矩阵与向量的乘法施加运动。</p>
+
+<p>是的，矩阵的本质是运动的描述。如果以后有人问你矩阵是什么，那么你就可以响亮地告诉他，矩阵的本质是运动的描述。（chensh，说你呢！）</p>
+
+<p>可是多么有意思啊，向量本身不是也可以看成是n x 1矩阵吗？这实在是很奇妙，一个空间中的对象和运动竟然可以用相类同的方式表示。能说这是巧合吗？如果是巧合的话，那可真是幸运的巧合！可以说，线性代数中大多数奇妙的性质，均与这个巧合有直接的关系。</p>
+
+<p>理解矩阵（二）</p>
+
+<p>接着理解矩阵。</p>
+
+<p>上一篇里说“矩阵是运动的描述”，到现在为止，好像大家都还没什么意见。但是我相信早晚会有数学系出身的网友来拍板转。因为运动这个概念，在数学和物理里是跟微积分联系在一起的。我们学习微积分的时候，总会有人照本宣科地告诉你，初等数学是研究常量的数学，是研究静态的数学，高等数学是变量的数学，是研究运动的数学。大家口口相传，差不多人人都知道这句话。但是真知道这句话说的是什么意思的人，好像也不多。简而言之，在我们人类的经验里，运动是一个连续过程，从A点到B点，就算走得最快的光，也是需要一个时间来逐点地经过AB之间的路径，这就带来了连续性的概念。而连续这个事情，如果不定义极限的概念，根本就解释不了。古希腊人的数学非常强，但就是缺乏极限观念，所以解释不了运动，被芝诺的那些著名悖论（飞箭不动、飞毛腿阿喀琉斯跑不过乌龟等四个悖论）搞得死去活来。因为这篇文章不是讲微积分的，所以我就不多说了。有兴趣的读者可以去看看齐民友教授写的《重温微积分》。我就是读了这本书开头的部分，才明白“高等数学是研究运动的数学”这句话的道理。</p>
+
+<p>不过在我这个《理解矩阵》的文章里，“运动”的概念不是微积分中的连续性的运动，而是瞬间发生的变化。比如这个时刻在A点，经过一个“运动”，一下子就“跃迁”到了B点，其中不需要经过A点与B点之间的任何一个点。这样的“运动”，或者说“跃迁”，是违反我们日常的经验的。不过了解一点量子物理常识的人，就会立刻指出，量子（例如电子）在不同的能量级轨道上跳跃，就是瞬间发生的，具有这样一种跃迁行为。所以说，自然界中并不是没有这种运动现象，只不过宏观上我们观察不到。但是不管怎么说，“运动”这个词用在这里，还是容易产生歧义的，说得更确切些，应该是“跃迁”。因此这句话可以改成：</p>
+
+<p>“矩阵是线性空间里跃迁的描述”。</p>
+
+<p>可是这样说又太物理，也就是说太具体，而不够数学，也就是说不够抽象。因此我们最后换用一个正牌的数学术语——变换，来描述这个事情。这样一说，大家就应该明白了，所谓变换，其实就是空间里从一个点（元素/对象）到另一个点（元素/对象）的跃迁。比如说，拓扑变换，就是在拓扑空间里从一个点到另一个点的跃迁。再比如说，仿射变换，就是在仿射空间里从一个点到另一个点的跃迁。附带说一下，这个仿射空间跟向量空间是亲兄弟。做计算机图形学的朋友都知道，尽管描述一个三维对象只需要三维向量，但所有的计算机图形学变换矩阵都是4 x 4的。说其原因，很多书上都写着“为了使用中方便”，这在我看来简直就是企图蒙混过关。真正的原因，是因为在计算机图形学里应用的图形变换，实际上是在仿射空间而不是向量空间中进行的。想想看，在向量空间里相一个向量平行移动以后仍是相同的那个向量，而现实世界等长的两个平行线段当然不能被认为同一个东西，所以计算机图形学的生存空间实际上是仿射空间。而仿射变换的矩阵表示根本就是4 x 4的。又扯远了，有兴趣的读者可以去看《计算机图形学——几何工具算法详解》。</p>
+
+<p>一旦我们理解了“变换”这个概念，矩阵的定义就变成：</p>
+
+<p>“矩阵是线性空间里的变换的描述。”</p>
+
+<p>到这里为止，我们终于得到了一个看上去比较数学的定义。不过还要多说几句。教材上一般是这么说的，在一个线性空间V里的一个线性变换T，当选定一组基之后，就可以表示为矩阵。因此我们还要说清楚到底什么是线性变换，什么是基，什么叫选定一组基。线性变换的定义是很简单的，设有一种变换T，使得对于线性空间V中间任何两个不相同的对象x和y，以及任意实数a和b，有：<br/>
+T(ax + by) = aT(x) + bT(y)，<br/>
+那么就称T为线性变换。</p>
+
+<p>定义都是这么写的，但是光看定义还得不到直觉的理解。线性变换究竟是一种什么样的变换？我们刚才说了，变换是从空间的一个点跃迁到另一个点，而线性变换，就是从一个线性空间V的某一个点跃迁到另一个线性空间W的另一个点的运动。这句话里蕴含着一层意思，就是说一个点不仅可以变换到同一个线性空间中的另一个点，而且可以变换到另一个线性空间中的另一个点去。不管你怎么变，只要变换前后都是线性空间中的对象，这个变换就一定是线性变换，也就一定可以用一个非奇异矩阵来描述。而你用一个非奇异矩阵去描述的一个变换，一定是一个线性变换。有的人可能要问，这里为什么要强调非奇异矩阵？所谓非奇异，只对方阵有意义，那么非方阵的情况怎么样？这个说起来就会比较冗长了，最后要把线性变换作为一种映射，并且讨论其映射性质，以及线性变换的核与像等概念才能彻底讲清楚。我觉得这个不算是重点，如果确实有时间的话，以后写一点。以下我们只探讨最常用、最有用的一种变换，就是在同一个线性空间之内的线性变换。也就是说，下面所说的矩阵，不作说明的话，就是方阵，而且是非奇异方阵。学习一门学问，最重要的是把握主干内容，迅速建立对于这门学问的整体概念，不必一开始就考虑所有的细枝末节和特殊情况，自乱阵脚。</p>
+
+<p>接着往下说，什么是基呢？这个问题在后面还要大讲一番，这里只要把基看成是线性空间里的坐标系就可以了。注意是坐标系，不是坐标值，这两者可是一个“对立矛盾统一体”。这样一来，“选定一组基”就是说在线性空间里选定一个坐标系。就这意思。</p>
+
+<p>好，最后我们把矩阵的定义完善如下：</p>
+
+<p>“矩阵是线性空间中的线性变换的一个描述。在一个线性空间中，只要我们选定一组基，那么对于任何一个线性变换，都能够用一个确定的矩阵来加以描述。”</p>
+
+<p>理解这句话的关键，在于把“线性变换”与“线性变换的一个描述”区别开。一个是那个对象，一个是对那个对象的表述。就好像我们熟悉的面向对象编程中，一个对象可以有多个引用，每个引用可以叫不同的名字，但都是指的同一个对象。如果还不形象，那就干脆来个很俗的类比。</p>
+
+<p>比如有一头猪，你打算给它拍照片，只要你给照相机选定了一个镜头位置，那么就可以给这头猪拍一张照片。这个照片可以看成是这头猪的一个描述，但只是一个片面的的描述，因为换一个镜头位置给这头猪拍照，能得到一张不同的照片，也是这头猪的另一个片面的描述。所有这样照出来的照片都是这同一头猪的描述，但是又都不是这头猪本身。</p>
+
+<p>同样的，对于一个线性变换，只要你选定一组基，那么就可以找到一个矩阵来描述这个线性变换。换一组基，就得到一个不同的矩阵。所有这些矩阵都是这同一个线性变换的描述，但又都不是线性变换本身。</p>
+
+<p>但是这样的话，问题就来了如果你给我两张猪的照片，我怎么知道这两张照片上的是同一头猪呢？同样的，你给我两个矩阵，我怎么知道这两个矩阵是描述的同一个线性变换呢？如果是同一个线性变换的不同的矩阵描述，那就是本家兄弟了，见面不认识，岂不成了笑话。</p>
+
+<p>好在，我们可以找到同一个线性变换的矩阵兄弟们的一个性质，那就是：</p>
+
+<p>若矩阵A与B是同一个线性变换的两个不同的描述（之所以会不同，是因为选定了不同的基，也就是选定了不同的坐标系），则一定能找到一个非奇异矩阵P，使得A、B之间满足这样的关系：</p>
+
+<p>A = P-1BP</p>
+
+<p>线性代数稍微熟一点的读者一下就看出来，这就是相似矩阵的定义。没错，所谓相似矩阵，就是同一个线性变换的不同的描述矩阵。按照这个定义，同一头猪的不同角度的照片也可以成为相似照片。俗了一点，不过能让人明白。</p>
+
+<p>而在上面式子里那个矩阵P，其实就是A矩阵所基于的基与B矩阵所基于的基这两组基之间的一个变换关系。关于这个结论，可以用一种非常直觉的方法来证明（而不是一般教科书上那种形式上的证明），如果有时间的话，我以后在blog里补充这个证明。</p>
+
+<p>这个发现太重要了。原来一族相似矩阵都是同一个线性变换的描述啊！难怪这么重要！工科研究生课程中有矩阵论、矩阵分析等课程，其中讲了各种各样的相似变换，比如什么相似标准型，对角化之类的内容，都要求变换以后得到的那个矩阵与先前的那个矩阵式相似的，为什么这么要求？因为只有这样要求，才能保证变换前后的两个矩阵是描述同一个线性变换的。当然，同一个线性变换的不同矩阵描述，从实际运算性质来看并不是不分好环的。有些描述矩阵就比其他的矩阵性质好得多。这很容易理解，同一头猪的照片也有美丑之分嘛。所以矩阵的相似变换可以把一个比较丑的矩阵变成一个比较美的矩阵，而保证这两个矩阵都是描述了同一个线性变换。</p>
+
+<p>这样一来，矩阵作为线性变换描述的一面，基本上说清楚了。但是，事情没有那么简单，或者说，线性代数还有比这更奇妙的性质，那就是，矩阵不仅可以作为线性变换的描述，而且可以作为一组基的描述。而作为变换的矩阵，不但可以把线性空间中的一个点给变换到另一个点去，而且也能够把线性空间中的一个坐标系（基）表换到另一个坐标系（基）去。而且，变换点与变换坐标系，具有异曲同工的效果。线性代数里最有趣的奥妙，就蕴含在其中。理解了这些内容，线性代数里很多定理和规则会变得更加清晰、直觉。</p>
+
+<p>这个留在下一篇再写吧。</p>
+
+<p>因为有别的事情要做，下一篇可能要过几天再写了。</p>
+
+<p>理解矩阵（三）</p>
+
+<p>这两篇文章发表于去年的4月。在第二部分结束的时候，我说：<br/>
+“矩阵不仅可以作为线性变换的描述，而且可以作为一组基的描述。而 作为变换的矩阵，不但可以把线性空间中的一个点给变换到另一个点去，而且也能够把线性空间中的一个坐标系（基）表换到另一个坐标系（基）去。而且，变换点 与变换坐标系，具有异曲同工的效果。线性代数里最有趣的奥妙，就蕴含在其中。理解了这些内容，线性代数里很多定理和规则会变得更加清晰、直觉。<br/>
+这个留在下一篇再写吧。</p>
+
+<p>因为有别的事情要做，下一篇可能要过几天再写了。 ”</p>
+
+<p>然而这一拖就是一年半。一年半以来，这两篇粗糙放肆的文章被到处转载，以至于在Google的搜索提示中，我的名字跟“矩阵”是一对关联词汇。这对于学生时代数学一直很差的我来说，实在是令人惶恐的事情。数学是何等辉煌精致的学问！代表着人类智慧的最高成就，是人与上帝对话的语言。而我实在连数学的门都还没进去，不要说谈什么理解，就是稍微难一些的题目我也很少能解开。我有什么资格去谈矩阵这样重要的一个数学概念呢？更何况，我的想法直观是直观，未见的是正确的啊，会不会误人子弟呢？因此，算了吧，到此为止吧，我这么想。</p>
+
+<p>        是时不时收到的来信逐渐改变了我的想法。</p>
+
+<p>        一年半以来，我收到过不下一百封直接的来信，要求我把后面的部分写出来。这些来信大部分是国内的网友和学生，也有少数来自正在国外深造的朋友，大部分是鼓励，有的是诚挚的请求，也有少数严厉斥责我不守承诺。不管是何种态度，这都表明他们对我这一点点小小的思考成果的鼓励，特别是对于我这种思维的视角和尝试的鼓励。他们在信中让我知道，尽管我的数学水平不高，但是我这种从普通人（而不是数学家）视角出发，强调对数学概念和规则的直觉理解的思路，对于很多人是有益的。也许这条路子在数学中绝非正道，也不会走得很远，但是无论如何，在一定的阶段，对一部分人来说，较之目前数学教材普遍采用的思路，这种方式可能更容易理解一些。既然是可能对一部分人有帮助的事情，那么我就不应该心存太多杂念，应该不断思考和总结下去。</p>
+
+<p>       所以，下面就是你们来信要求我写出来的东西。</p>
+
+<p>       首先来总结一下前面两部分的一些主要结论：</p>
+
+<ol>
+<li>首先有空间，空间可以容纳对象运动的。一种空间对应一类对象。</li>
+<li>有一种空间叫线性空间，线性空间是容纳向量对象运动的。</li>
+<li>运动是瞬时的，因此也被称为变换。</li>
+<li>矩阵是线性空间中运动（变换）的描述。</li>
+<li>矩阵与向量相乘，就是实施运动（变换）的过程。</li>
+<li>同一个变换，在不同的坐标系下表现为不同的矩阵，但是它们的本质是一样的，所以本征值相同。</li>
+</ol>
+
+<p>        下面让我们把视力集中到一点以改变我们以往看待矩阵的方式。我们知道，线性空间里的基本对象是向量，而向量是这么表示的：</p>
+
+<p>        [a1, a2, a3, ..., an]</p>
+
+<p>       矩阵呢？矩阵是这么表示的：</p>
+
+<p>        a11, a12, a13, ..., a1n<br/>
+        a21, a22, a23, ..., a2n<br/>
+                     ...<br/>
+        an1, an2, an3, ..., ann</p>
+
+<p>        不用太聪明，我们就能看出来，矩阵是一组向量组成的。特别的，n维线性空间里的方阵是由n个n维向量组成的。我们在这里只讨论这个n阶的、非奇异的方阵，因为理解它就是理解矩阵的关键，它才是一般情况，而其他矩阵都是意外，都是不得不对付的讨厌状况，大可以放在一边。这里多一句嘴，学习东西要抓住主流，不要纠缠于旁支末节。很可惜我们的教材课本大多数都是把主线埋没在细节中的，搞得大家还没明白怎么回事就先被灌晕了。比如数学分析，明明最要紧的观念是说，一个对象可以表达为无穷多个合理选择的对象的线性和，这个概念是贯穿始终的，也是数学分析的精华。但是课本里自始至终不讲这句话，反正就是让你做吉米多维奇，掌握一大堆解偏题的技巧，记住各种特殊情况，两类间断点，怪异的可微和可积条件（谁还记得柯西条件、迪里赫莱条件...？），最后考试一过，一切忘光光。要我说，还不如反复强调这一个事情，把它深深刻在脑子里，别的东西忘了就忘了，真碰到问题了，再查数学手册嘛，何必因小失大呢？</p>
+
+<p>        言归正传。如果一组向量是彼此线性无关的话，那么它们就可以成为度量这个线性空间的一组基，从而事实上成为一个坐标系体系，其中每一个向量都躺在一根坐标轴上，并且成为那根坐标轴上的基本度量单位（长度1）。</p>
+
+<p>        现在到了关键的一步。看上去矩阵就是由一组向量组成的，而且如果矩阵非奇异的话（我说了，只考虑这种情况），那么组成这个矩阵的那一组向量也就是线性无关的了，也就可以成为度量线性空间的一个坐标系。结论：矩阵描述了一个坐标系。</p>
+
+<p>        “慢着！”，你嚷嚷起来了，“你这个骗子！你不是说过，矩阵就是运动吗？怎么这会矩阵又是坐标系了？”</p>
+
+<p>        嗯，所以我说到了关键的一步。我并没有骗人，之所以矩阵又是运动，又是坐标系，那是因为——</p>
+
+<p>        “运动等价于坐标系变换”。</p>
+
+<p>        对不起，这话其实不准确，我只是想让你印象深刻。准确的说法是：</p>
+
+<p>       “对象的变换等价于坐标系的变换”。</p>
+
+<p>       或者：</p>
+
+<p>       “固定坐标系下一个对象的变换等价于固定对象所处的坐标系变换。”</p>
+
+<p>       说白了就是：</p>
+
+<p>        “运动是相对的。”        </p>
+
+<p>        让我们想想，达成同一个变换的结果，比如把点(1, 1)变到点(2, 3)去，你可以有两种做法。第一，坐标系不动，点动，把(1, 1)点挪到(2, 3)去。第二，点不动，变坐标系，让x轴的度量（单位向量）变成原来的1/2，让y轴的度量（单位向量）变成原先的1/3，这样点还是那个点，可是点的坐标就变成(2, 3)了。方式不同，结果一样。</p>
+
+<p>        从第一个方式来看，那就是我在《理解矩阵》1/2中说的，把矩阵看成是运动描述，矩阵与向量相乘就是使向量（点）运动的过程。在这个方式下，</p>
+
+<p>       Ma = b</p>
+
+<p>       的意思是：</p>
+
+<p>       “向量a经过矩阵M所描述的变换，变成了向量b。”</p>
+
+<p>        而从第二个方式来看，矩阵M描述了一个坐标系，姑且也称之为M。那么：</p>
+
+<p>        Ma = b</p>
+
+<p>       的意思是：</p>
+
+<p>        “有一个向量，它在坐标系M的度量下得到的度量结果向量为a，那么它在坐标系I的度量下，这个向量的度量结果是b。”</p>
+
+<p>        这里的I是指单位矩阵，就是主对角线是1，其他为零的矩阵。</p>
+
+<p>        而这两个方式本质上是等价的。</p>
+
+<p>        我希望你务必理解这一点，因为这是本篇的关键。</p>
+
+<p>        正因为是关键，所以我得再解释一下。</p>
+
+<p>        在M为坐标系的意义下，如果把M放在一个向量a的前面，形成Ma的样式，我们可以认为这是对向量a的一个环境声明。它相当于是说：</p>
+
+<p>        “注意了！这里有一个向量，它在坐标系M中度量，得到的度量结果可以表达为a。可是它在别的坐标系里度量的话，就会得到不同的结果。为了明确，我把M放在前面，让你明白，这是该向量在坐标系M中度量的结果。”</p>
+
+<p>       那么我们再看孤零零的向量b：</p>
+
+<p>       b</p>
+
+<p>       多看几遍，你没看出来吗？它其实不是b，它是：</p>
+
+<p>       Ib</p>
+
+<p>       也就是说：“在单位坐标系，也就是我们通常说的直角坐标系I中，有一个向量，度量的结果是b。”</p>
+
+<p>       而  Ma = Ib的意思就是说：</p>
+
+<p>       “在M坐标系里量出来的向量a，跟在I坐标系里量出来的向量b，其实根本就是一个向量啊！”</p>
+
+<p>       这哪里是什么乘法计算，根本就是身份识别嘛。</p>
+
+<p>       从这个意义上我们重新理解一下向量。向量这个东西客观存在，但是要把它表示出来，就要把它放在一个坐标系中去度量它，然后把度量的结果（向量在各个坐标轴上的投影值）按一定顺序列在一起，就成了我们平时所见的向量表示形式。你选择的坐标系（基）不同，得出来的向量的表示就不同。向量还是那个向量，选择的坐标系不同，其表示方式就不同。因此，按道理来说，每写出一个向量的表示，都应该声明一下这个表示是在哪个坐标系中度量出来的。表示的方式，就是 Ma，也就是说，有一个向量，在M矩阵表示的坐标系中度量出来的结果为a。我们平时说一个向量是[2 3 5 7]T，隐含着是说，这个向量在 I 坐标系中的度量结果是[2 3 5 7]T，因此，这个形式反而是一种简化了的特殊情况。</p>
+
+<p>        注意到，M矩阵表示出来的那个坐标系，由一组基组成，而那组基也是由向量组成的，同样存在这组向量是在哪个坐标系下度量而成的问题。也就是说，表述一个矩阵的一般方法，也应该要指明其所处的基准坐标系。所谓M，其实是 IM，也就是说，M中那组基的度量是在 I 坐标系中得出的。从这个视角来看，M×N也不是什么矩阵乘法了，而是声明了一个在M坐标系中量出的另一个坐标系N，其中M本身是在I坐标系中度量出来的。</p>
+
+<p>       回过头来说变换的问题。我刚才说，“固定坐标系下一个对象的变换等价于固定对象所处的坐标系变换”，那个“固定对象”我们找到了，就是那个向量。但是坐标系的变换呢？我怎么没看见？</p>
+
+<p>       请看：</p>
+
+<p>       Ma = Ib</p>
+
+<p>       我现在要变M为I，怎么变？对了，再前面乘以个M-1，也就是M的逆矩阵。换句话说，你不是有一个坐标系M吗，现在我让它乘以个M-1，变成I，这样一来的话，原来M坐标系中的a在I中一量，就得到b了。</p>
+
+<p>       我建议你此时此刻拿起纸笔，画画图，求得对这件事情的理解。比如，你画一个坐标系，x轴上的衡量单位是2，y轴上的衡量单位是3，在这样一个坐标系里，坐标为(1，1)的那一点，实际上就是笛卡尔坐标系里的点(2, 3)。而让它原形毕露的办法，就是把原来那个坐标系:</p>
+
+<p>       2 0<br/>
+       0 3</p>
+
+<p>       的x方向度量缩小为原来的1/2，而y方向度量缩小为原来的1/3，这样一来坐标系就变成单位坐标系I了。保持点不变，那个向量现在就变成了(2, 3)了。</p>
+
+<p>       怎么能够让“x方向度量缩小为原来的1/2，而y方向度量缩小为原来的1/3”呢？就是让原坐标系：</p>
+
+<p>      2 0<br/>
+      0 3</p>
+
+<p>       被矩阵：</p>
+
+<p>       1/2   0<br/>
+         0   1/3</p>
+
+<p>       左乘。而这个矩阵就是原矩阵的逆矩阵。</p>
+
+<p>       下面我们得出一个重要的结论：</p>
+
+<p>        “对坐标系施加变换的方法，就是让表示那个坐标系的矩阵与表示那个变化的矩阵相乘。”</p>
+
+<p>        再一次的，矩阵的乘法变成了运动的施加。只不过，被施加运动的不再是向量，而是另一个坐标系。</p>
+
+<p>        如果你觉得你还搞得清楚，请再想一下刚才已经提到的结论，矩阵MxN，一方面表明坐标系N在运动M下的变换结果，另一方面，把M当成N的前缀，当成N的环境描述，那么就是说，在M坐标系度量下，有另一个坐标系N。这个坐标系N如果放在I坐标系中度量，其结果为坐标系MxN。</p>
+
+<p>        在这里，我实际上已经回答了一般人在学习线性代数是最困惑的一个问题，那就是为什么矩阵的乘法要规定成这样。简单地说，是因为：</p>
+
+<p>        1. 从变换的观点看，对坐标系N施加M变换，就是把组成坐标系N的每一个向量施加M变换。</p>
+
+<p>        2. 从坐标系的观点看，在M坐标系中表现为N的另一个坐标系，这也归结为，对N坐标系基的每一个向量，把它在I坐标系中的坐标找出来，然后汇成一个新的矩阵。</p>
+
+<p>        3. 至于矩阵乘以向量为什么要那样规定，那是因为一个在M中度量为a的向量，如果想要恢复在I中的真像，就必须分别与M中的每一个向量进行內积运算。我把这个结论的推导留给感兴趣的朋友吧。应该说，其实到了这一步，已经很容易了。</p>
+
+<p>        综合以上1/2/3，矩阵的乘法就得那么规定，一切有根有据，绝不是哪个神经病胡思乱想出来的。<br/>
+ <br/>
+        我已经无法说得更多了。矩阵又是坐标系，又是变换。到底是坐标系，还是变换，已经说不清楚了，运动与实体在这里统一了，物质与意识的界限已经消失了，一切归于无法言说，无法定义了。道可道，非常道，名可名，非常名。矩阵是在是不可道之道，不可名之名的东西。到了这个时候，我们不得不承认，我们伟大的线性代数课本上说的矩阵定义，是无比正确的：</p>
+
+<p>        “矩阵就是由m行n列数放在一起组成的数学对象。”</p>
+
+<p>        好了，这基本上就是我想说的全部了。还留下一个行列式的问题。矩阵M的行列式实际上是组成M的各个向量按照平行四边形法则搭成一个n维立方体的体积。对于这一点，我只能感叹于其精妙，却无法揭开其中奥秘了。也许我掌握的数学工具不够，我希望有人能够给我们大家讲解其中的道理了。</p>
+
+<p>        我不知道是否讲得足够清楚了，反正这一部分需要您花些功夫去推敲。</p>
+
+<p>        此外，请大家不必等待这个系列的后续部分。以我的工作情况而言，近期内很难保证继续投入脑力到这个领域中，尽管我仍然对此兴致浓厚。不过如果还有（四）的话，可能是一些站在应用层面的考虑，比如对计算机图形学相关算法的理解。但是我不承诺这些讨论近期内会出现了。</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[# Hyperf源码阅读 第二章 HTTP服务初始化]]></title>
+    <link href="blog.v2cb.com/15932480961729.html"/>
+    <updated>2020-06-27T16:54:56+08:00</updated>
+    <id>blog.v2cb.com/15932480961729.html</id>
+    <content type="html"><![CDATA[
+<p>Hyperf提供了多种服务器模式,本章以最常用的HTTP服务器的启动流程来进行分析.</p>
+
+<h2 id="toc_0">目录</h2>
+
+<ul>
+<li><a href="#start%E5%91%BD%E4%BB%A4">start命令</a>
+<ul>
+<li><a href="#StartServer">StartServer</a></li>
+<li><a href="#ServerFactory">ServerFactory</a></li>
+<li><a href="#Server">Server</a></li>
+</ul></li>
+</ul>
+
+<h3 id="toc_1"><a name="start命令">start命令</a></h3>
+
+<ul>
+<li><p><a name="StartServer">Hyperf\Server\Command\StartServer</a><br/><br/>
+本类即是start命令对应的Command类.传给parent::_construct()的参数为命令的名字&quot;start&quot;</p>
+<ul>
+<li>execute()<br/>
+执行命令.<br/>
+先检查一下swoole相关的配置。<br/>
+从容器中拿到ServerFactory,传入config/autoload/server.php中关于server的配置；这个server可以配置多个，可以启动HTTP服务器，RPC服务器，WS服务器等；<br/>
+Runtime::enableCoroutine()是swoole相关方法，开启协程；</li>
+</ul></li>
+<li><p><a name="ServerFactory">Hyperf\Server\ServerFactory</a><br/>
+start()方法通过getServer()最终创建了一个Hyperf\Server\Server对象。<br/>
+传入了Container依赖，Log依赖，事件分发器EventDispatcher依赖。<br/>
+最后调用Server的start()方法。</p></li>
+<li><p><a name="Server">Hyperf\Server\Server</a></p>
+<ul>
+<li>_construct() 很简单，把传入的依赖存起来。</li>
+<li>initServers()<br/>
+在StartServer-&gt;ServerFactory-&gt;configure()的阶段，调用了本方法，也是开始设置服务回调的阶段，非常重要。</li>
+</ul></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Hyperf源码阅读 第一章 初始化]]></title>
+    <link href="blog.v2cb.com/15928236190986.html"/>
+    <updated>2020-06-22T19:00:19+08:00</updated>
+    <id>blog.v2cb.com/15928236190986.html</id>
+    <content type="html"><![CDATA[
+<h2 id="toc_0">目录</h2>
+
+<ul>
+<li><a href="#%E5%85%A5%E5%8F%A3">入口 bin/hyperf.php</a></li>
+<li><a href="#%E5%88%9D%E5%A7%8B%E6%A1%86%E6%9E%B6%E4%BE%9D%E8%B5%96%E6%96%87%E4%BB%B6">初始化框架依赖文件 config/container</a>
+<ul>
+<li><a href="#DefinitionSourceFactory">DefinitionSourceFactory</a></li>
+<li><a href="#DefinitionSource">DefinitionSource</a><br/></li>
+</ul></li>
+<li><a href="#%E5%88%9D%E5%A7%8B%E5%8C%96%E5%AE%B9%E5%99%A8">初始化容器Container vendor/hyperf/di/src/Container</a></li>
+<li><a href="#%E5%88%9D%E5%A7%8B%E5%8C%96%E5%BA%94%E7%94%A8">初始化应用Application vendor/hyperf/framework/src/ApplicationFactory</a>
+<ul>
+<li><a href="#ApplicationFactory">ApplicationFactory</a></li>
+<li><a href="#Application">Application</a></li>
+</ul></li>
+<li><a href="#%E7%BB%93%E5%B0%BE">结尾</a></li>
+</ul>
+
+<h3 id="toc_1"><a name="入口">入口</a></h3>
+
+<p>初始化基本环境: 报错级别, 时区, 基础目录, autoload<br/>
+通过一个匿名函数,来初始化整个容器与App,避免了变量污染了全局作用域.</p>
+
+<p>现代化的Web框架,一般都先创建Container容器,通过容器来创建框架初始化需要的全部对象, 最后拿到一个代表框架本身的$application.</p>
+
+<p>define的SWOOLE_HOOK_ALL,是设置swoole的&quot;一键协程化&quot;,把PHP全部的IO函数,通过swoole转化为协程执行,避免阻塞.</p>
+
+<h3 id="toc_2"><a name="初始化框架依赖文件">初始化框架依赖文件</a></h3>
+
+<p>容器的文件在Hyperf\Di\Container,new创建容器对象,传入了一个依赖Hyperf\Di\Definition\DefinitionSourceFactory,这是框架初始化需要用到的依赖.<br/>
+注意写法(new DefinitionSourceFactory(true))(),会先调用construct然后调用__invoke()方法.</p>
+
+<ul>
+<li><p><a name="DefinitionSourceFactory">DefinitionSourceFactory</a><br/>
+从名字看出是一个工厂类,工厂最终生产出的对象是DefinitionSource,是框架初始化真正需要用到的对象.<br/>
+在Hyperf中,DefinitionSource这个概念值得提前说一下.每个DefinitionSource对象,代表了一个需要被容器管理的类;在这个DS对象中,保存了目标对象的基本信息,主要是新建类的时候,construct是不是存在,是不是需要注入依赖,是不是有注解定义的依赖,这些依赖又是谁,等等这些创建目标对象时候需要的基础信息.</p>
+<ul>
+<li>__construct()很简单,设置几个参数.</li>
+<li>核心操作在__invoke() 里面.<br/>
+整个函数的作用,主要是从框架自己,和每个组件的ProviderConfig里面加载配置,合并成一个大的数组.<br/>
+关于框架的ConfigProvider机制详见<a href="https://hyperf.wiki/1.1/#/zh-cn/component-guide/configprovider?id=configprovider-%e6%9c%ba%e5%88%b6">此处</a>,简单来说,每个组件通过一个ConfigProvider.php文件提供一个配置数组,最后在此处 把这个配置数组合并成一个大的配置数组.<br/>
+同时,通过注解注入的对象,也在此处进行解析.<br/>
+先通过ProviderConfig::load()获取到各个组件里面定义的dependencies,然后跟/autoload/dependencies.php里面的定义进行合并和覆盖.同样在处理annotations注解的扫描路径,都传给ScanConfig对象进行搜索,最后做为依赖一起注入给DefinitionSource.</li>
+</ul></li>
+<li><p><a name="DefinitionSource">DefinitionSource</a></p>
+<ul>
+<li><p>__construct() <br/>
+$this-&gt;scan()主要是处理注解,进行搜索,处理vendor下面的组件和app目录里的注解.<br/>
+通过loadMetadata方法,把扫描到的结果存到AstCollector中,并且生成文件缓存.</p>
+<p>紧接着就是初始化框架启动必须的对象</p>
+<pre><code class="language-php">$this-&gt;source = $this-&gt;normalizeSource($source);
+</code></pre>
+<p>$source就是dependencies的配置,各个接口与具体实现类的对应,内容大致如下</p>
+<pre><code class="language-php">[
+&quot;Psr\SimpleCache\CacheInterface&quot;=&gt; &quot;Hyperf\Cache\Cache&quot;,<br/>
+&quot;Hyperf\Contract\ConfigInterface&quot;=&gt; &quot;Hyperf\Config\ConfigFactory&quot;,<br/>
+&quot;Hyperf\DbConnection\Pool\PoolFactory&quot;=&gt;&quot;Hyperf\DbConnection\Pool\PoolFactory&quot;,<br/>
+&quot;Hyperf\Database\Connectors\ConnectionFactory&quot;=&gt; &quot;Hyperf\Database\Connectors\ConnectionFactory&quot;,<br/>
+&quot;Hyperf\Database\ConnectionResolverInterface&quot;=&gt; &quot;Hyperf\DbConnection\ConnectionResolver&quot;,<br/>
+&quot;db.connector.mysql&quot;=&gt;  &quot;Hyperf\Database\Connectors\MySqlConnector&quot;,<br/>
+...<br/>
+]
+</code></pre>
+<p>normalize 正常化,即为实例化的意思, 把类实例化成为对象.<br/>
+通过循环调用normalizeDefinition()来实例化.</p></li>
+<li><p>normalizeDefinition()<br/>
+实例化对象时分2种情况: 工厂类,非工厂类.实现了 __invoke()或者is_callable()的类为工厂类,返回一个新的FactoryDefinition对象;<br/>
+非工厂类,生成一个新的ObjectDefinition对象,交由autowire处理;</p></li>
+<li><p>autowire()<br/>
+此处开始完善一个类实例化需要的各种参数.<br/>
+通过反射ReflectManager拿到类的construct,并通过getParametersDefinition()获取type-hint的结果,拿到construct需要注入的依赖类型;<br/>
+通过AnnotationCollector拿到@Inject注解注入的依赖;<br/>
+如果需要Proxy的话,设置Proxy;关于AOP参考文档<a href="https://hyperf.wiki/1.1/#/zh-cn/aop?id=aop-%e9%9d%a2%e5%90%91%e5%88%87%e9%9d%a2%e7%bc%96%e7%a8%8b">AOP</a><br/>
+经过完善后,返回$definition,一个随时可以被实例化的类的定义.</p></li>
+</ul></li>
+</ul>
+
+<h3 id="toc_3"><a name="初始化容器">初始化容器Container</a></h3>
+
+<ul>
+<li><p>__construct()<br/>
+注入了一个依赖\(definitionSource,就是上面说到的\)definition数组, 框架需要的基础对象;<br/>
+初始化了ResolverDispatcher对象,主要用来执行实例化;<br/>
+初始化了ProxyFactory对象,代理工厂;</p></li>
+<li><p>make() 常用核心方法<br/>
+Container的本质是通过一个数组$resolvedEntries来管理已经实例化的对象.实例化的对象,通过set()方法保存在容器的这个变量内,下次获取的时候直接可以返回;所以容器管理的对象都可以看做是单例实现的.  </p>
+<p>而make()方法不太一样,每次make后会返回一个新的对象,从而使Container变成了一个类工厂;make一个对象,是通过调用$this-&gt;ResolverDispatcher实现的;一个Definition如果可以自己resolve(实现了SelfResolvingDefinitionInterface接口),就调用Definition的resolve方法自己处理就好了;否则就根据是不是工厂类来决定,是通过ObjectResolver还是FactoryResolver来resolve;<br/>
+resolve的核心就是createInstance,说白了就是new一个类,然后把依赖在注入进去:</p>
+<pre><code class="language-php">$object = new $className(...$args);
+$this-&gt;injectProperties($object, $definition);
+</code></pre>
+<p>有兴趣可以自己在深入看一下.</p></li>
+</ul>
+
+<h3 id="toc_4"><a name="初始化应用">初始化应用Application</a></h3>
+
+<p>通过容器拿到Application的工厂.\Hyperf\Contract\ApplicationInterface对应的实现为\Hyperf\Framework\ApplicationFactory</p>
+
+<ul>
+<li><p><a name="ApplicationFactory">ApplicationFactory</a><br/>
+工厂类,只有__invoke(), 环境初始化/注入依赖,最后得到$application对象<br/><br/>
+如果存在EventDispatcher (此处默认实现为Hyperf\Event\EventDispatcher)则发出框架第一个Event:Hyperf\Framework\Event\BootApplication,可以监听此Event在框架启动前做一些操作.  </p>
+<p>通过$config和AnnotationCollector,拿到配置定义的和注解定义的Commands,就是hyperf.php支持的所有Commands,传给Application进行注册.</p>
+<p>这个Application直接用的Symfony\Component\Console\Application,一个在CLI环境使用的Application;区别于Laravel继承的Symfony的Application是在WEB环境用的;因为Hyperf+swoole只有CLI环境,不需要FPM,所以不用.</p>
+<p>new Application后,设置了事件的Dispatcher分发器,这个SymfonyEventDispatcher实际上是Hyperf\Framework\SymfonyEventDispatcher,把注入的Hyperf\Event\EventDispatcher包装一下以符合SymfonyDispatcherInterface才能传给Symfony的Application.</p></li>
+<li><p><a name="Application">Application</a><br/>
+看一下最终的Application实现:Symfony\Component\Console\Application</p>
+<ul>
+<li><p>__construct()<br/>
+很简单 初始化一些参数;<br/>
+Terminal指的就是真正的终端,获取一些终端窗口的属性,长宽,环境变量等等</p></li>
+<li><p>run()<br/>
+在hyperf.php中拿到application后,执行的run方法就是这个方法;<br/>
+先进行一系列的初始化: 设置Terminal的宽高属性;设置输入&amp;输出的对象;设置报错的回调ExceptionHandler;<br/>
+在try...catch中,调用$this-&gt;doRun()继续执行;</p></li>
+<li><p>doRun()<br/>
+如果参数中有类似-V --help的参数,直接处理返回,不再继续;<br/>
+如果没传参数,则给一个默认的命令&quot;command&quot;;<br/>
+然后调用$this-&gt;find()查找这个命令,找到后,得到一个 Command对象, 继续调用doRunCommand()真正执行命令;<br/>
+Symfony\Component\Console\Command类值得一看,每个命令都是一个Command对象,但这个对象却不是抽象的;execute()方法的注释写的很明白:你不仅可以继承这个类实现一个Command,也可以直接用这个类的实体对象;这种情况下,通过setCode()方法设置一个回调,通过\Closure::bind()方法把这个对象(也就是this)本身绑定给回调函数,可以做到&quot;在运行时给对象增加方法&quot;的效果;具体可以看一下官方文档.</p></li>
+<li><p>doRunCommand()<br/>
+真正执行Command;<br/>
+如果Application没设置Event的Dispatcher(默认为Hyperf/Event/Dispatcher 参看前面),直接执行Command-&gt;run(),否则先发出一个ConsoleCommandEvent事件,事件执行完再执行Command</p></li>
+</ul></li>
+</ul>
+
+<h3 id="toc_5"><a name="结尾">结尾</a></h3>
+
+<p>至此,框架的初始化就基本上完成了.<br/>
+下一章继续讲,在执行了&quot;start&quot;命令后,框架都做了哪些动作.</p>
+
+<p>现代化的框架,通过容器来管理类和对象,框架生命周期的各个阶段都有事件Event,可以方便而无入侵的改变框架本身,开放而灵活.<br/>
+Hyperf引入的AOP与注解,增加了容器的复杂性,同时也给开发者带来了更多便利.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[二维数组排序 array multisort]]></title>
+    <link href="blog.v2cb.com/15756185241314.html"/>
+    <updated>2019-12-06T15:48:44+08:00</updated>
+    <id>blog.v2cb.com/15756185241314.html</id>
+    <content type="html"><![CDATA[
+<p>一个这样的二维数组</p>
+
+<pre><code class="language-text">array(6) {
+  [0]=&gt;
+  array(4) {
+    [&quot;customer_name&quot;]=&gt;
+    string(6) &quot;小李&quot;
+    [&quot;money&quot;]=&gt;
+    int(12)
+    [&quot;distance&quot;]=&gt;
+    int(2)
+    [&quot;address&quot;]=&gt;
+    string(13) &quot;长安街C坊&quot;
+  }
+  [1]=&gt;
+  array(4) {
+    [&quot;customer_name&quot;]=&gt;
+    string(6) &quot;王晓&quot;
+    [&quot;money&quot;]=&gt;
+    int(30)
+    [&quot;distance&quot;]=&gt;
+    int(10)
+    [&quot;address&quot;]=&gt;
+    string(14) &quot;北大街30号&quot;
+  }
+}
+</code></pre>
+
+<p>想根据distance排序,则先构建一个1维数组<br/>
+key是原数组的key,值是distance的值.这样根据值来排序,就得到了排序过的key.</p>
+
+<p>在根据这个key,就可以对原来数组的key进行重新排序了.</p>
+
+<p>这个过程就是array_multisort的过程,第一个数组是构造的新的1维数组,第二个数组是待排序的数组.</p>
+
+<h2 id="toc_0">通过usort</h2>
+
+<p>usort可以传一个匿名function(\(a,\)b)<br/>
+返回值,a&gt;b则返回大于0的值 a&lt;b返回小于0的值</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[PHP中的闭包理解]]></title>
+    <link href="blog.v2cb.com/15931630289738.html"/>
+    <updated>2020-06-26T17:17:08+08:00</updated>
+    <id>blog.v2cb.com/15931630289738.html</id>
+    <content type="html"><![CDATA[
+<p>没有名字的函数叫&quot;匿名函数&quot;,这个很好理解.但单纯的匿名函数不是闭包,只有当匿名函数绑定了外部变量的时候,此时才形成了一个&quot;闭包&quot;.</p>
+
+<p>在JS中,闭包被广泛使用,一方面由于JS的垃圾回收机制,一方面由于JS的作用域比较简单,没有namespace这些&quot;高级&quot;的用法.JS创建闭包的时候,相对于PHP,会隐式地绑定外部变量,所以很多时候都没有意识到用到了闭包.</p>
+
+<p>在PHP中,创建一个匿名函数,通过use引用外部变量,此时就创建了一个&quot;闭包&quot;.</p>
+
+<p>对于闭包而言,引入外部变量可以通过函数传参,也可以通过use来绑定外部变量,从而在匿名函数内可以使用.区别在于,对于传参而言,函数在被调用(called)的时候才会绑定参数变量.<br/>
+而闭包是在函数定义的时候,就&quot;绑定&quot;了外部的变量.</p>
+
+<p>闭包相当于一个独立的namespace空间.闭包内部定义的变量,外部是不可访问的.外部的变量,需要通过use才能被使用.这样形成了一个局部的&quot;作用域&quot;,避免了变量污染问题.</p>
+
+<p>use的作用可以理解为&quot;早期绑定(early binding)&quot;,在函数定义的时候把外部变量拷贝到闭包里面.除非use了一个引用,否则闭包内对绑定的参数的修改,不会影响到外部.</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Rainyluo's Blog]]></title>
@@ -1521,661 +2089,6 @@ Position: 1</p>
 <p>更重要的是,我根本不Care你的sign算法.如果App考虑的不周全没有过滤和验证,那么任意的接口Url通过JS发给App,都能获得对应的Token,这简直太Easy了,完全不需要反编译 你的App接口基本上就是裸奔的了.想想这个洞都好严重,有经验的基本上个把小时就搞定了,成本非常低.</p>
 
 <p>给开发讲了一下这玩意的原理,至少先要弄个白名单了.后面在考虑一下,上HTTP/2应该也是个不错的选择,安全性能更好速度还能快一些了.</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[PHP 通过Apns给Ios设备推送Notification]]></title>
-    <link href="blog.v2cb.com/15923063086602.html"/>
-    <updated>2020-06-16T19:18:28+08:00</updated>
-    <id>blog.v2cb.com/15923063086602.html</id>
-    <content type="html"><![CDATA[
-<p>前几天折腾Gopush,是没有通过Apns推送IOS实现的,找了几个Golang的实现都有问题,转而寻找PHP的实现方法,发现还是蛮简单的<br/>
-Apns推送的原理懒得看,基本就是通过Http请求Apns然后苹果去给IOS设备发推送,所以只要请求苹果的服务器就好了.先弄证书</p>
-
-<p>开发给我的都是p12结尾的证书,openssl搞一下</p>
-
-<pre><code class="language-text">openssl pkcs12 -clcerts -nokeys -out cer.pem -in cer.pkcs12
-openssl pkcs12 -nocerts -out key.pem -inkey.p12 
-</code></pre>
-
-<p>然后把key转换为不带密码的pem证书</p>
-
-<pre><code class="language-text">openssl rsa -in key.pem -out key.unencrypted.pem
-</code></pre>
-
-<p>最后合并一下两个证书</p>
-
-<pre><code class="language-text">cat cer.pem key.unencrypted.pem &gt; ck.pem
-</code></pre>
-
-<p>PHP代码如下:</p>
-
-<pre><code class="language-text">&lt;?php
-// 这里是我们上面得到的deviceToken，直接复制过来（记得去掉空格）
-$deviceToken = &#39;device token&#39;;
-// Put your alert message here:
-$message = &#39;My first push test!.&#39;;
-$ctx = stream_context_create();
-stream_context_set_option($ctx, &#39;ssl&#39;, &#39;local_cert&#39;, &#39;ck.pem&#39;);
-//stream_context_set_option($ctx, &#39;ssl&#39;, &#39;passphrase&#39;, $passphrase);
-// Open a connection to the APNS server
-//这个为正是的发布地址
- //$fp = stream_socket_client(&quot;ssl://gateway.push.apple.com:2195&quot;, $err, $errstr, 60, STREAM_CLIENT_CONNECT, $ctx);
-//这个是沙盒测试地址，发布到appstore后记得修改哦
-$fp = stream_socket_client(&#39;ssl://gateway.sandbox.push.apple.com:2195&#39;, $err,$errstr, 60, STREAM_CLIENT_CONNECT|STREAM_CLIENT_PERSISTENT, $ctx);
-
-if (!$fp)
-exit(&quot;Failed to connect: $err $errstr&quot; . PHP_EOL);
-echo &#39;Connected to APNS&#39; . PHP_EOL;
-
-// Create the payload body
-$body[&#39;aps&#39;] = array(
-&#39;alert&#39; =&gt; $message,
-&#39;sound&#39; =&gt; &#39;default&#39;
-);
-
-// Encode the payload as JSON
-$payload = json_encode($body);
-
-// Build the binary notification
-$msg = chr(0) . pack(&#39;n&#39;, 32) . pack(&#39;H*&#39;, $deviceToken) . pack(&#39;n&#39;, strlen($payload)) . $payload;
-// Send it to the server
-$result = fwrite($fp, $msg, strlen($msg));
-
-if (!$result)
-echo &#39;Message not delivered&#39; . PHP_EOL;
-else
-echo &#39;Message successfully delivered&#39; . PHP_EOL;
-var_dump($result);
-// Close the connection to the server
-fclose($fp);
-?&gt;
-</code></pre>
-
-<p>运行一下 ,然后就收到啦~</p>
-
-<p>注意:<br/>
-记得判断好,app是sendbox的还是正式的,对不上也收不到推送</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[python中使用import加载目录中全部文件]]></title>
-    <link href="blog.v2cb.com/15923063087292.html"/>
-    <updated>2020-06-16T19:18:28+08:00</updated>
-    <id>blog.v2cb.com/15923063087292.html</id>
-    <content type="html"><![CDATA[
-<p>Tags:  经验<br/>
-Toc:no<br/>
-Status: public<br/>
-Position: 1</p>
-
-<p>最近准备换用Flask,于是开始研究Python了.py的包导入机制,没有PHP那么直观,直接写文件名字就行.虽然学习起来有一些难度,不过能够有效的避免大型项目的命名空间问题,相比PHP 等到实在不行了引入一个namespace反而更乱了.</p>
-
-<p>关于import 的基本用法就不说了,这个教程很多了.想要从其他文件夹里面import文件,需要在文件夹中建立一个__init__.py的文件用于初始化和声明,这个文件是空的也ok,不过在import的时候会自动执行这个文件,也可以做初始化来使用.</p>
-
-<p>不过虽然建立了这个文件,在其他地方引用的时候还是只能每次通过from xx import xx加载一个文件,不是很方便.标准的用法是,修改目录下的__init__.py文件,用这个来实现加载全部文件的目的.</p>
-
-<p>手动的方法:</p>
-
-<pre><code class="language-text">import a
-import b
-</code></pre>
-
-<p>或者:</p>
-
-<pre><code class="language-text">__all__ = [&quot;a&quot;, &quot;b&quot;]
-
-</code></pre>
-
-<p>这样会自动加载目录下的a.py和b.py文件了.</p>
-
-<p>来个终极懒人的方法:</p>
-
-<pre><code class="language-text">from os.path import dirname, basename, isfile
-import glob
-modules = glob.glob(dirname(__file__)+&quot;/*.py&quot;)
-__all__ = [ basename(f)[:-3] for f in modules if isfile(f)]
-
-</code></pre>
-
-<p>自动加载目录下的全部文件.再一次感叹py的简洁和强大的表达能力.</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[使用GITHUB+JustWriting搭建BLOG]]></title>
-    <link href="blog.v2cb.com/15923063087852.html"/>
-    <updated>2020-06-16T19:18:28+08:00</updated>
-    <id>blog.v2cb.com/15923063087852.html</id>
-    <content type="html"><![CDATA[
-<p>最近觉得需要写一个BLOG了.至于为什么有这种感觉,后面再说了.</p>
-
-<blockquote>
-<p><strong>Why not Wordpress</strong></p>
-</blockquote>
-
-<p>写BLOG之前都是用Wordpress,又大又慢比较蛋疼,而且树大招风,漏洞比较多.经常被人攻击挂马,烦.整天研究插件主题乱七八糟的东西,耗时耗精力,不专注.因为vps不固定,备份也是个问题,文件需要打包,数据库也要单独备份,麻烦.这次在公司使用的开源WIKI软件 dokuWiki,不用数据库直接用文件来保存数据,这种做法深得我心,简单方便.换个环境,基本上配置好NGINX扔那解析过去就能跑,而且从源头上杜绝了SQL Injection的问题,安全.于是目标就是寻找一个不用数据库的博客系统.</p>
-
-<blockquote>
-<p><strong>PHP BLOG Engine With no Database</strong></p>
-</blockquote>
-
-<p>之前见过的一个方案是拿github搭博客,总觉得这样比较蛋疼,而且VPS也浪费了,可能也不利于搜索引擎过来抓,所以放弃了.</p>
-
-<p>google一下,blog with no database,第一个结果出来的是dropplets,看着官网还不错.兴冲冲装上,根本不知道怎么用啊,看了看代码,写的一坨屎,觉得不怎么安全.放弃了</p>
-
-<p>继续找,无意中发现了<a href="https://github.com/hjue/JustWriting">JustWriting</a>,star很多 这就是口碑的保证啊.看文档,直接把md文件扔上去就能显示,符合需求.默认主题不难看,而且国人开发,github开源,就这个了.</p>
-
-<p>作者推荐的是通过Dropbox来同步md文件,因为GFW的问题dp在国内也不好用,好麻烦.todo里面写着未来预计支持百度网盘,然而这么久过去估计也没信儿了.想了想,直接用github来搞,VPS上clone下来仓库,写个脚本每分钟拉一次,在本地写好了push上去 就能显示了,so easy.搞起来</p>
-
-<p>git先建个仓库,<a href="http://www.cnblogs.com/smilejinge/p/3589479.html">教程可以看这个</a>,弄好之后把服务器上代码里的posts目录干掉,clone自己的仓库然后mv成posts,随便找个目录写个pull.sh脚本保存一下:</p>
-
-<pre><code class="language-text">#!/bin/bash
-cd /home/wwwroot/blog/posts
-git pull origin master
-</code></pre>
-
-<p>crontab -e,用vim添加:</p>
-
-<pre><code class="language-text">*/1 * * * *  source /home/wwwroot/fetch.sh
-</code></pre>
-
-<p>每分钟pull一次git,妥妥够了.</p>
-
-<p>然后在自己电脑上clone一下,写好了commit&amp;push就搞定啦~<br/>
-注意,测试了一下,中文文件名会有问题,所以记得要用英文文件名.</p>
-
-<p>ps:另外发现一个在线编辑Markdown文本的地方:<a href="https://stackedit.io/">stackedit</a>, 支持直接发布git和ssh server,但是觉得图片问题不好解决,得找好图床然后做外链,不方便.等有空给JustWriteing写一个上传图片的工具 应该就ok了</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[[原创翻译]QueryPath PHP的Jquery实现,QueryPath教程]]></title>
-    <link href="blog.v2cb.com/15923063087972.html"/>
-    <updated>2020-06-16T19:18:28+08:00</updated>
-    <id>blog.v2cb.com/15923063087972.html</id>
-    <content type="html"><![CDATA[
-<p>Tags:  QueryPath 教程 php  jquery dom 抓取 <br/>
-Toc:no<br/>
-Status: public<br/>
-Position: 1</p>
-
-<h1 id="toc_0">QueryPath PHP的Jquery实现</h1>
-
-<p>HTML,HTTP和XML,是WEB技术领域无可争议的三大基础支柱技术.然而对于PHP开发者来说,在使用这三种技术的时候可能会比较麻烦.新出现的QueryPath库,是一个使用PHP实现的如同Jquery的类库,提供了方便强大的处理XML,HTTP,HTML的类库.无论是WEB网页,WEB service,SVG或者SPAARQL,RDF,Atom,QueryPath都能处理,并且用PHP语言提供了健壮并简单易用的API.在本文中,介绍了如何构建QueryPath对象,如何遍历并处理XML和HTML.</p>
-
-<h3 id="toc_1">QueryPath</h3>
-
-<p>从使用简单方面,QueryPath的语法很简洁,方法的名字都很短并且语义化,很容易知道是做什么的(比如text(),append(),remove()).因为很多方法返回的都是QueryPath对象,方法的调用是支持链式调用的.这种用法有时候也叫做流式接口.为了符合Javascript开发者的习惯,QueryPath实现了Jquery主要的遍历方法和操作方法.</p>
-
-<p>从健壮性来说,QueryPath提供了载入,读取,搜索,写入XML与HTML的工具.尽管不考虑类库的大小,通用的接口还是很难满足所有的需求,QueryPath提供了扩展开发接口,可以给QueryPath添加新的方法.同时其扩展也包含了数据库支持,模板支持,以及额外的XML支持.</p>
-
-<p>或许你也会说,为啥还需要一个XML或HTML的轮子?PHPv5已经提供了很实用的XML工具,也有DOM实现和SimpleXML类库了.答案很简单:QueryPath被设计作为一个通用的工具.DOM API复杂并且笨重.虽然它的对象模型可能很强大,但是即便实现最简单的功能都需要写很多行代码.SimpleXML,对于许多需求来说又太过简陋了.除非XML是完全确定的,使用SimpleXML来操作文档才比较简单.<br/>
-    QueryPath正是力求在DOM的功能性与SimpleXML的简单之间找到一个平衡点.</p>
-
-<h3 id="toc_2">需求:</h3>
-
-<p>QueryPath是纯PHP的类库,所以可以直接从官方网站下载后使用</p>
-
-<p>QueryPath的系统要求很少,只要PHPv5版本并且开启DOM扩展就可以.大部分的PHPv5发行版都符合开箱即用的需求.QueryPath不支持遗弃多年的PHPv4.</p>
-
-<h3 id="toc_3">链式调用:</h3>
-
-<p>QueryPaht有四个基本的概念:</p>
-
-<pre><code class="language-text">* 一个QueryPath对象总是会与一个XML或HTML文档关联
-* QueryPath可以查询文档,并生成一个匹配的结果集
-* QueryPath可以操作文档,可以对文档进行新增,修改,删除操作.
-* QueryPath的方法支持链式调用,所以一行语句可以执行多个方法.只需几行代码就可以对文档进行载入和增删改查等操作
-</code></pre>
-
-<p>上代码,包含如上的特点:</p>
-
-<pre><code class="language-text">    &lt;?php
-    require &#39;QueryPath/QueryPath.php&#39;;
-
-    qp(&#39;sample.html&#39;)-&gt;find(&#39;title&#39;)-&gt;text(&#39;Hello World&#39;)-&gt;writeHTML();
-    ?&gt;
-</code></pre>
-
-<p>例子中只包含了一个文件,QueryPath/QueryPath.php ,这就是使用QueryPath需要包含的唯一的文件,除非还用到了QueryPath的其他扩展.</p>
-
-<p>下面一行代码就是QueryPath的链式调用,其做了如下事情:</p>
-
-<pre><code class="language-text">* 新建一个QueryPath对象,并指向sample.html文档.当qp()方法执行的时候,就会创建一个新的QueryPath对象,用于之后对其进行载入和解析.
-* 通过find()方法对文档进行搜索,使用CSS3选择器寻找所有&lt;title&gt;&lt;/title&gt;元素 
-* title的text值设置为了Hello World,当执行到此,title的子节点都会被替换成CDATA字符串Hello World.所有的内容都会被销毁.
-* 所有文档都会通过writeHTML()方法写入到标准输出.
-</code></pre>
-
-<p>上面的例子还可以简化,qp()方法支持把CSS选择器作为可选的第二个参数传入.下面是简化后的版本:</p>
-
-<pre><code class="language-text">    &lt;?php
-    require &#39;QueryPath/QueryPath.php&#39;;
-
-    qp(&#39;sample.html&#39;, &#39;title&#39;)-&gt;text(&#39;Hello World&#39;)-&gt;writeHTML();
-    ?&gt;
-
-</code></pre>
-
-<p>假设sample.html是空白的HTML文档,上面的例子输出会跟下面的内容差不多:</p>
-
-<pre><code class="language-text">    &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot; &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;
-    &lt;html lang=&quot;en&quot;&gt;
-    &lt;head&gt;
-        &lt;title&gt;Hello World&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-    &lt;/body&gt;
-    &lt;/html&gt;
-</code></pre>
-
-<blockquote>
-<p>这些简单的例子展示了QueryPath可以实现的功能.下面介绍一些其他的方法:</p>
-</blockquote>
-
-<h3 id="toc_4">qp()工厂方法:</h3>
-
-<p>在QueryPath中最常用的基础方法就是qp()方法.这个方法会生成一个新的QueryPath对象,就像传统的constructor构造方法做的事情一样.</p>
-
-<p>如果你对面向对象的开发模式比较熟悉,你可能会发现qp()方法实现了工厂模式.QueryPath采用了一个方法,而不是通过定义工厂类的构造方法来实现工厂模式.这样干能节省一些代码量,更重要的是这种实现使得QueryPath更接近jQuery,如果你对jQuery比较熟悉,学习难度曲线会降低一些吧.</p>
-
-<p>一个QueryPath对象必须与一个XML或者HTML文档关联,一旦对象创建好,他们就会绑定在一起.qp()方法支持三个参数,都是可选的:</p>
-
-<pre><code class="language-text">    #文档#  可以是文件名,URL,XML或者HTML字符串,DOM文档或者DOM元素,SimpleXML元素,或者一个DOM元素数组.如果不是这些支持的类型,则会创建一个空的XML文档.
-
-    #CSS3选择器#  如果传了这个参数,载入文档的时候QueryPath会同时使用这个选择器查询文档
-
-    #选项数组#  可以针对这个QueryPath实例,传一组配置参数进行配置.API文档有此处支持的参数的详细说明
-</code></pre>
-
-<p>qp()方法的第一个参数支持数量众多的类型的文档,从而可以很简单的创建一个QueryPath对象.QueryPath可以通过文件名或URL来载入文档.如果传的是XML/HTML字符串,也可以直接解析内容.同时,也支持DOM和SimpleXML这两种常见的XML文档.下面的例子展示了直接传XML字符串的用法:</p>
-
-<pre><code class="language-text">    &lt;?php
-    require &#39;QueryPath/QueryPath.php&#39;;
-
-    $xml = &#39;&lt;?xml version=&quot;1.0&quot;?&gt;&lt;doc&gt;&lt;item/&gt;&lt;/doc&gt;&#39;;
-    $qp  = qp($xml);
-    ?&gt;
-</code></pre>
-
-<p>执行上面的代码,$qp会指向一个经过解析XML的QueryPath对象.如果PHP的配置中允许HTTP/HTTPS流式封装,(大部分PHPv5发行版都支持),则也可以通过HTTP URL来载入内容.</p>
-
-<pre><code class="language-text">    &lt;?php
-    require &#39;QueryPath/QueryPath.php&#39;;
-
-    $qp = qp(&#39;http://example.com/file.xml&#39;);
-    ?&gt;
-</code></pre>
-
-<p>因此,QueryPath也可以用来解析Web Services.创建新文档的时候,有一种方便的载入HTML样板的方式:</p>
-
-<pre><code class="language-text">    &lt;?php
-    require &#39;QueryPath/QueryPath.php&#39;;
-
-    $qp = qp(QueryPath::HTML_STUB);
-    ?&gt;
-</code></pre>
-
-<p>QueryPath::HTML_STUB包含了一个最基本的HTML样板,内容如下:</p>
-
-<pre><code class="language-text">    &lt;?xml version=&quot;1.0&quot;?&gt;
-    &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot;
-      &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;
-    &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
-    &lt;head&gt;
-        &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;/&gt;
-        &lt;title&gt;Untitled&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;&lt;/body&gt;
-    &lt;/html&gt;
-</code></pre>
-
-<p>通过样板文件,可以更快捷的创建一个新的HTML文档.</p>
-
-<h3 id="toc_5">遍历文档</h3>
-
-<p>打开一个文档之后,会需要对文档进行遍历来找到需要的内容.QueryPath在这方面的设计非常易用.为了满足大部分遍历的需求,QueryPath提供了多种方法,大部分都支持使用CSS3选择器来找到对应的节点.</p>
-
-<p><img src="media/blog/QueryPath_1.gif" alt=""/></p>
-
-<p>上图总结了最常用的遍历方法.下面有具体对应的描述.除此之外还有别的方法,这些介绍的是最常用的方法.</p>
-
-<blockquote>
-<p>find() <br/>
-    在当前的节点内选择符合selector的元素(支持CSS选择器)</p>
-
-<p>xpath()<br/>
-    选择符合Xpath表达式的节点(不支持CSS选择器)</p>
-
-<p>top()<br/>
-    选择文档的根节点元素(不支持CSS选择器)</p>
-
-<p>parents()<br/>
-    选择任意多个父节点(支持CSS选择器)</p>
-
-<p>parent()<br/>
-    选择一个父节点(支持CSS选择器)</p>
-
-<p>siblings()<br/>
-    选择所有兄弟节点,前后都包括(支持CSS选择器)</p>
-
-<p>next()<br/>
-    选择下一个兄弟节点(支持CSS选择器)</p>
-
-<p>nextAll()<br/>
-    选择当前节点之后的所有兄弟节点(支持CSS选择器)</p>
-
-<p>prev()<br/>
-    选择上一个兄弟节点(支持CSS选择器)</p>
-
-<p>prevAll()<br/>
-    选择所有前面的兄弟节点(支持CSS选择器)</p>
-
-<p>children()<br/>
-    选择该节点的子节点(支持CSS选择器)</p>
-
-<p>deepest()<br/>
-    选择该节点最深的子节点或该节点下的所有子节点(不支持CSS选择器)</p>
-</blockquote>
-
-<p>QueryPath的许多方法都可以精确的查询到指定的元素,上面列出来的大部分方法都支持CSS3选择器参数.只有top()和deepest()方法是不带参数的查询方法.</p>
-
-<p>来看一个简单的关于遍历的例子.假设有如下的XML文档:</p>
-
-<pre><code class="language-text">    &lt;?xml version=&quot;1.0&quot;?&gt;
-    &lt;root&gt;
-      &lt;child id=&quot;one&quot;/&gt;
-      &lt;child id=&quot;two&quot;/&gt;
-      &lt;child id=&quot;three&quot;/&gt;
-      &lt;ignore/&gt;
-    &lt;/root&gt;
-</code></pre>
-
-<p><root/>元素有四个子元素,有三个名为<child/>的元素,还有一个<ignore/>.可以通过QueryPath方法来选择<root/>的全部子元素</p>
-
-<pre><code class="language-text">    &lt;?php 
-    require &#39;QueryPath/QueryPath.php&#39;;
-
-    $xml = &#39;&lt;?xml version=&quot;1.0&quot;?&gt;
-    &lt;root&gt;
-      &lt;child id=&quot;one&quot;/&gt;
-      &lt;child id=&quot;two&quot;/&gt;
-      &lt;child id=&quot;three&quot;/&gt;
-      &lt;ignore/&gt;
-    &lt;/root&gt;&#39;;
-
-    $qp = qp($xml, &#39;root&#39;)-&gt;children();
-    print $qp-&gt;size();
-    ?&gt;
-</code></pre>
-
-<p>children()方法会选择<root/>下的所有子元素,最后一行代码,打印了全部符合条件的元素,所以是4</p>
-
-<p>如果只想选定前三个<child/>元素而忽略<ignore/>元素,代码如下</p>
-
-<pre><code class="language-text">    &lt;?php 
-    require &#39;QueryPath/QueryPath.php&#39;;
-
-    $xml = &#39;&lt;?xml version=&quot;1.0&quot;?&gt;
-    &lt;root&gt;
-    &lt;child id=&quot;one&quot;/&gt;
-    &lt;child id=&quot;two&quot;/&gt;
-    &lt;child id=&quot;three&quot;/&gt;
-    &lt;ignore/&gt;
-    &lt;/root&gt;&#39;;
-
-    $qp = qp($xml, &#39;root&#39;)-&gt;children(&#39;child&#39;);
-
-    print $qp-&gt;size();
-    ?&gt;
-</code></pre>
-
-<p>最后一行打印了符合条件的全部元素,共有3个.在QueryPath内部会保存这三个元素作为当前的上下文数据.如果想做进一步的查询,则会从这三个元素开始,如果插入数据 也会插入到这三个元素内.</p>
-
-<h1 id="toc_6">CSS选择器</h1>
-
-<p>CSS选择器是CSS表达式的一部分,用来确定样式会作用在哪些元素上.CSS选择器也可以在文档外部作为样式表的一部分来使用.QueryPath使用选择器作为查询的描述语言,并且支持在CSS3选择器标准中定义的特性和方法.</p>
-
-<p>CSS选择器在QueryPath中相当重要,上面介绍了十个支持CSS选择器作为参数的方法,虽然到目前我们用过的还只是简单的tag名字查询的方法,然而CSS3选择器远比这些列举的简单例子要强大的多.更详细的描述本文不做过多介绍,只列举一些常用的例子如下</p>
-
-<pre><code class="language-text">    选择器:p 
-    描述  :找到所有标签为&lt;p/&gt;的元素 
-    匹配  : &lt;p/&gt; 
-</code></pre>
-
-<pre><code class="language-text">    选择器:.container 
-    描述  :找到所有class属性为container 的元素 
-    匹配  :&lt;div class=&quot;container&quot;&gt;
-</code></pre>
-
-<pre><code class="language-text">    选择器:#menu 
-    描述  :找到所有id属性为menu的元素.
-    匹配  :&lt;div id=&quot;menu&quot;&gt;
-</code></pre>
-
-<pre><code class="language-text">    选择器:[type=&quot;inline&quot;]
-    描述  :所有type属性为inline的元素
-    匹配  :&lt;code type=&quot;inline&quot;/&gt;
-</code></pre>
-
-<pre><code class="language-text">    选择器:tr &gt; th 
-    描述  :选择所有父元素为tr的th元素
-    匹配  :&lt;tr&gt;&lt;th/&gt;&lt;/tr&gt; 
-</code></pre>
-
-<pre><code class="language-text">    选择器:table td 
-    描述  :选择祖先(如父元素或祖父元素)为table的所有td元素
-    匹配  :&lt;table&gt;&lt;tr&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;
-</code></pre>
-
-<pre><code class="language-text">    选择器: li:first
-    描述  : 选择第一个&lt;li&gt;元素.除了:first 还支持:last  :even  :odd
-    匹配  : &lt;li/&gt;
-</code></pre>
-
-<p>这些常见的选择器可以组合起来使用,从而组成复杂的查询.比如</p>
-
-<blockquote>
-<p>div.content ul&gt;li:first</p>
-</blockquote>
-
-<pre><code class="language-text">这个语句会选择全部class为content的div,在div内部搜索全部的&lt;ul/&gt;,返回每个&lt;ul/&gt;内部的第一个&lt;li/&gt;元素.
-</code></pre>
-
-<h1 id="toc_7">在返回结果中遍历</h1>
-
-<p>上面已经介绍了两种遍历文档的方法,QueryPath内置方法和CSS3选择器.下面介绍一下如何遍历查询结果.</p>
-
-<p>一个QueryPath对象是可以遍历的,在PHP里面来讲,是可以作为迭代器遍历的.传统的PHP循环结构就可以对QueryPath的匹配结果对象进行遍历.</p>
-
-<p>如果想要独立的处理每个元素,也很容易.下面的例子,展示了QueryPath作为迭代器的用法.</p>
-
-<pre><code class="language-text">    &lt;?php 
-        require &#39;QueryPath/QueryPath.php&#39;;
-
-        $xml = &#39;&lt;?xml version=&quot;1.0&quot;?&gt;
-        &lt;root&gt;
-        &lt;child id=&quot;one&quot;/&gt;
-        &lt;child id=&quot;two&quot;/&gt;
-        &lt;child id=&quot;three&quot;/&gt;
-        &lt;ignore/&gt;
-        &lt;/root&gt;&#39;;
-
-        $qp = qp($xml, &#39;root&#39;)-&gt;children(&#39;child&#39;);
-
-        foreach ($qp as $child) {
-          print $child-&gt;attr(&#39;id&#39;) . PHP_EOL;
-        }
-    ?&gt;
-</code></pre>
-
-<p>foreach循环的每个结果会赋值给\(child变量,但\)child变量不只是一个元素,它是一个指向当前元素的QueryPath对象,所以可以对其使用QueryPath提供的那些方法.<br/>
-为了与Jquery的Api保持一致,QueryPath也提供了一些读取和修改的方法.单个的方法,可以根据传递参数的不同,既能获取数据也可以修改数据.比如 attr()方法,qp()-&gt;attr(&quot;name&quot;)会获取name属性的值,qp()-&gt;attr(&quot;name&quot;,&quot;value&quot;)则会把name属性的值设置为value.其他一些方法,诸如text(),html(),xml(),都可以这样既能读取又能修改属性的值.</p>
-
-<p>由于所有的循环结果都包装在QUeryPath对象里,所以这些$child都可以调用QueryPath的方法,比如上面的attr(),来读取或者修改元素属性.</p>
-
-<p>上面介绍了使用QueryPath方法,CSS3选择器,迭代器来遍历文档,下面介绍一下如何用QueryPath修改文档.</p>
-
-<h1 id="toc_8">修改文档</h1>
-
-<p>遍历文档之后,接下来就可以对文档进行增删改查的操作了.再来看一下上面的例子.</p>
-
-<pre><code class="language-text">    &lt;?php
-    require &#39;QueryPath/QueryPath.php&#39;;
-
-    qp(&#39;sample.html&#39;)-&gt;find(&#39;title&#39;)-&gt;text(&#39;Hello World&#39;)-&gt;writeHTML();
-    ?&gt;
-</code></pre>
-
-<p>在这个例子中,使用了text()方法来修改了&lt;\title&gt;元素的内容.QueryPath提供了一堆这样的方法来修改文档. 下图展示了这些方法作用的地方,这些方法都可以用来新增或是修改数据.绿色的标签表示当前选中的元素:</p>
-
-<p><img src="media/blog/QueryPath_2.gif" alt=""/></p>
-
-<p>这些方法都是用来处理字符串的,通常用在HTML或者XML文档中,用来往文档中插入数据.插入后的数据立刻就可以访问和操作.</p>
-
-<p>实际上,有两种类型的方法,其中一种可以操作XML片段,如下:</p>
-
-<pre><code class="language-text">    append():  在当前选中的元素中插入数据作为最后一个子元素 
-    prepend(): 在当前选中的元素中插入一个元素并作为第一个子元素
-    after():   在当前选中的元素后插入新的元素 
-    before():  在当前选中的元素前插入新的元素
-    html():    用一段HTML代码替换当前元素的子元素
-    xml():     用一段XML代码替换当前元素的子元素
-</code></pre>
-
-<p>上面列举的方法,参数都需要传格式化好的XML或者HTML数据.下面展示一个html()方法的例子:</p>
-
-<pre><code class="language-text">    &lt;?php
-    require &#39;QueryPath/QueryPath.php&#39;;
-
-    qp($file)-&gt;find(&#39;div.content&#39;)-&gt;html(&#39;&lt;ul&gt;&lt;li&gt;One&lt;/li&gt;&lt;/ul&gt;&#39;);
-    ?&gt;
-</code></pre>
-
-<p>上面图片列举的操作方法没有包括remove()方法,这玩意实在是没法画出来.这个方法是从文档中删除元素用的,如果调用的时候不传参数,则会把当前选中的元素干掉.但是,就像其他QueryPath的方法一样,remove()也可以传CSS3选择器参数,然后把所有符合条件的元素删掉.</p>
-
-<p>另一类方法,是用来操作元素属性的,只有两个:</p>
-
-<pre><code class="language-text">    attr():      获取/设置所有选中元素的属性
-    addClass():  为当前选中的所有元素添加一个类
-</code></pre>
-
-<p>也有其他一些跟属性相关的方法,比如removeClass(),可以传一个类名,然后会把元素中相关的类删掉.removeAttr()方法,可以传一个属性名作为参数,然后把当前所有选中元素的属性删掉.</p>
-
-<p>如此这般,把这些基本的工具组合在一起,就能实现强大的功能了.下面的例子是基于Twitter的,就不翻译啦.</p>
-
-<p>原文地址:<a href="http://www.ibm.com/developerworks/library/os-php-querypath/">http://www.ibm.com/developerworks/library/os-php-querypath/</a></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[kvm/virsh 异常断电导致虚拟机无法启动的修复实战]]></title>
-    <link href="blog.v2cb.com/15923063088164.html"/>
-    <updated>2020-06-16T19:18:28+08:00</updated>
-    <id>blog.v2cb.com/15923063088164.html</id>
-    <content type="html"><![CDATA[
-<p>关键词:<br/>
-mount qcow2 on linux<br/><br/>
-xfs_repair  xfs磁盘修复<br/><br/>
-kvm virsh console<br/><br/>
-kvm虚拟机无法启动 故障排查 </p>
-
-<p>公司异常断电,导致2台kvm的虚拟机无法启动了.<br/>
-尝试修复的过程记录一下.</p>
-
-<p>首先看报错,log一般都在/var/log/libvirt/qemu下面.<br/>
-发现log很简单,没什么内容,也没有异常.谷歌一番发现可以打开debug的错误:</p>
-
-<blockquote>
-<p>修改/etc/libvirt/libvirtd.conf<br/><br/>
-将日志级别设置为 1（调试）<br/><br/>
-log_level = 1<br/><br/>
-指定日志输出文件名称<br/><br/>
-log_outputs=&quot;1:file:/var/log/libvirt/libvirtd.log&quot;<br/><br/>
-重启libvirtd (systemctl restart libvirtd)  </p>
-</blockquote>
-
-<p>结果打出一堆虚拟机的debug log,并不是我想要的,没什么用.<br/><br/>
-猜想是磁盘问题,但是console连接不了,virsh console vm1 之后没有反应.<br/><br/>
-思路上,还是得能看到虚拟机的输出才好知道怎么办.于是尝试VNC连接,<br/><br/>
-结果对着教程弄了半天,mac的VNC客户端还是连不上,一闪就断了.只能放弃了  </p>
-
-<p>此时没信心了,寻思得重装了吧.先把文件恢复了.<br/><br/>
-谷歌一下(mount qcow2 on linux),找到一篇很棒的教程:<a href="http://ask.xmodulo.com/mount-qcow2-disk-image-linux.html">http://ask.xmodulo.com/mount-qcow2-disk-image-linux.html</a>  </p>
-
-<p>我们的虚拟机用的qcow2的格式,有一台是ext4有一台是xfs的文件系统.<br/><br/>
-推荐用guestmount的方式,nbd方式还得编译内核才能挂载nbd模块,我这台宿主机centos7就没有nbd模块.后来我编译了一下挂载了,感觉也没什么大优势还挺麻烦.  </p>
-
-<pre><code class="language-text">yum install libguestfs-tools
-</code></pre>
-
-<p>装好之后 guestmount -a /path/to/qcow2/image -m <device> /path/to/mount/point<br/><br/>
-就可以把image里面的文件系统挂载到指定目录去,就可以看到文件了.<br/><br/>
-eg:  </p>
-
-<pre><code class="language-text">guestmount -a /var/lib/libvirt/images/xenserver.qcow2 -m /dev/sda1 /mnt
-</code></pre>
-
-<p>这个device,/dev/sda1可以随便打,然后会提示你正确的有哪几个.还挺方便的.<br/><br/>
-能看到文件了,重装至少心里有底了.还是不满足,想看到虚拟机到底什么情况.着手研究console  </p>
-
-<p>找到的教程(<a href="https://blog.csdn.net/lemontree1945/article/details/80461037">https://blog.csdn.net/lemontree1945/article/details/80461037</a> 还有<a href="https://www.oldboyedu.com/zuixin_wenzhang/index/id/366.html">https://www.oldboyedu.com/zuixin_wenzhang/index/id/366.html</a>) 都是得进入系统才行的.但是现在进不去系统,而且我见过console是可以显示进去系统前的启动log的,所以肯定不是系统打开的TTY Console.那么猜测就是Grub的问题了.    </p>
-
-<p>谷歌,关键词(kvm grub console),基本上学习了一圈之后总结如下:<br/>
-前提:文件系统能通过guestmount成功mount,主要mount的boot分区(不是root),这个分区一般存的都是引导文件和grub的配置文件.在能正常启动的机器上,就是对应的/boot 目录.文件内容如下<br/><br/>
-<img src="media/15652431791895/15652448513923.jpg" alt=""/>  </p>
-
-<p>对应的关系  </p>
-
-<p><img src="media/15652431791895/15652449131835.jpg" alt=""/>  </p>
-
-<p>在用guestmount 的时候提示你挂载哪个磁盘的时候都写的很清楚,挂载boot这个就ok了.这个盘一般也不会坏,都能挂成功.  </p>
-
-<h3 id="toc_0">对于Centos6</h3>
-
-<p>我司centos6用的是grub(没有2).挂载好后,修改 grub/grub.conf 文件</p>
-
-<pre><code class="language-text">title CentOS (2.6.32-696.13.2.el6.x86_64)
-    root (hd0,0)
-    kernel /vmlinuz-2.6.32-696.13.2.el6.x86_64 ro root=/dev/mapper/vg_2cloo-lv_root rd_NO_LUKS LANG=en_US.UTF-8 rd_LVM_LV=vg_2cloo/lv_swap rd_NO_MD SYSFONT=latarcyrheb-sun16 crashkernel=auto rd_LVM_LV=vg_2cloo/lv_root  KEYBOARDTYPE=pc KEYTABLE=us rd_NO_DM rhgb quiet console=ttyS0
-    initrd /initramfs-2.6.32-696.13.2.el6.x86_64.img
-</code></pre>
-
-<p>这个每一项对应的是我们开机时候在屏幕上能够看到的启动项.在kernel一行 quiet参数后面加 console=ttyS0 <br/>
-即可.<img src="media/15652431791895/15652451533364.jpg" alt=""/></p>
-
-<h3 id="toc_1">对于centos 7</h3>
-
-<p>centos7使用的是Grub2,推测跟grub类似应该.打开grub2/grub.cfg,发现文件内容完全不一样了,是shell形式的了<br/>
-稍微看了一下,形式差不多 也是定义了每个启动项,找到  </p>
-
-<pre><code class="language-text">linux16 /vmlinuz-3.10.0-514.2.2.el7.x86_64 root=/dev/mapper/centos-root ro ipv6.disable=1 crashkernel=auto rd.lvm.lv=centos/root rd.lvm.lv=centos/swap rhgb quiet console=ttyS0
-</code></pre>
-
-<p>在quiet后添加console=ttyS0好了  </p>
-
-<p>现在启动后,virsh console vm1 能成功进入console了,基本上成功一大半了.<br/><br/>
-然后dmesg看一下启动log,发现xfs挂载有问题,进入了centos emergency mode紧急模式.<br/><br/>
-对于xfs系统来说:<br/><br/>
-/sbin/xfs_repair /dev/mapper/centos-root看一下,一般会提示有错误.<br/><br/>
-然后加-L 参数修复错误.修复之前最好备份一下虚拟机, virsh destroy vm1然后把img文件复制一个出来好了.  </p>
-
-<p>执行/sbin/xfs_repair -L /dev/mapper/centos-root,有很多不一致的情况都修复好了.然后reboot 系统就起来了,美滋滋.<br/><br/>
-对于ext4格式的系统,可以  </p>
-
-<pre><code class="language-text">umount /
-fsck.ext4 -y /dev/sda1
-</code></pre>
-
-<p>尝试修复就ok了  </p>
 
 ]]></content>
   </entry>

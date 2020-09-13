@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
     
-  Hyperf源码阅读 - 框架初始化之容器初始化 - Rainyluo's BLOG
+  Chrome Extension扩展开发之复制粘贴 - Rainyluo's BLOG
   
   </title>
  <meta name="description" content="">
@@ -44,14 +44,12 @@
       <li><a href="index.html">Home</a></li>
       
         <li class="divider"></li>
-        <li><label>源码阅读</label></li>
+        <li><label>Hyperf</label></li>
 
           
-            <li><a title="Hyperf源码阅读 - 框架初始化之Application" href="15919610280346.html">Hyperf源码阅读 - 框架初始化之Application</a></li>
+            <li><a title="# Hyperf源码阅读 第二章 HTTP服务初始化" href="15932480961729.html"># Hyperf源码阅读 第二章 HTTP服务初始化</a></li>
           
-            <li><a title="Hyperf源码阅读 - 框架初始化之容器初始化" href="15918404223001.html">Hyperf源码阅读 - 框架初始化之容器初始化</a></li>
-          
-            <li><a title="Hyperf源码阅读 - Router流程" href="15918401062183.html">Hyperf源码阅读 - Router流程</a></li>
+            <li><a title="Hyperf源码阅读 第一章 初始化" href="15928236190986.html">Hyperf源码阅读 第一章 初始化</a></li>
           
 
       
@@ -78,6 +76,8 @@
         <li class="divider"></li>
         <li><label>其他</label></li>
 
+          
+            <li><a title="理解矩阵" href="15936798966495.html">理解矩阵</a></li>
           
             <li><a title="cocopods重装解决framework not found Pods/no such module" href="15923063082414.html">cocopods重装解决framework not found Pods/no such module</a></li>
           
@@ -119,6 +119,10 @@
         <li><label>PHP</label></li>
 
           
+            <li><a title="二维数组排序 array multisort" href="15756185241314.html">二维数组排序 array multisort</a></li>
+          
+            <li><a title="PHP中的闭包理解" href="15931630289738.html">PHP中的闭包理解</a></li>
+          
             <li><a title="reactPHP + lumen性能简测" href="15923063083212.html">reactPHP + lumen性能简测</a></li>
           
             <li><a title="QueryPath中文乱码问题,UTF8乱码问题解决" href="15923063084242.html">QueryPath中文乱码问题,UTF8乱码问题解决</a></li>
@@ -137,8 +141,6 @@
           
             <li><a title="PHP调试技巧" href="15922725010749.html">PHP调试技巧</a></li>
           
-            <li><a title="二维数组排序 array multisort" href="15756185241314.html">二维数组排序 array multisort</a></li>
-          
 
       
       </ul>
@@ -156,13 +158,11 @@
                   <ul id="side-nav" class="side-nav">
 
                     
-                      <li class="side-title"><span>源码阅读</span></li>
+                      <li class="side-title"><span>Hyperf</span></li>
                         
-                          <li><a title="Hyperf源码阅读 - 框架初始化之Application" href="15919610280346.html">Hyperf源码阅读 - 框架初始化之Application</a></li>
+                          <li><a title="# Hyperf源码阅读 第二章 HTTP服务初始化" href="15932480961729.html"># Hyperf源码阅读 第二章 HTTP服务初始化</a></li>
                         
-                          <li><a title="Hyperf源码阅读 - 框架初始化之容器初始化" href="15918404223001.html">Hyperf源码阅读 - 框架初始化之容器初始化</a></li>
-                        
-                          <li><a title="Hyperf源码阅读 - Router流程" href="15918401062183.html">Hyperf源码阅读 - Router流程</a></li>
+                          <li><a title="Hyperf源码阅读 第一章 初始化" href="15928236190986.html">Hyperf源码阅读 第一章 初始化</a></li>
                         
 
                     
@@ -185,6 +185,8 @@
 
                     
                       <li class="side-title"><span>其他</span></li>
+                        
+                          <li><a title="理解矩阵" href="15936798966495.html">理解矩阵</a></li>
                         
                           <li><a title="cocopods重装解决framework not found Pods/no such module" href="15923063082414.html">cocopods重装解决framework not found Pods/no such module</a></li>
                         
@@ -222,6 +224,10 @@
                     
                       <li class="side-title"><span>PHP</span></li>
                         
+                          <li><a title="二维数组排序 array multisort" href="15756185241314.html">二维数组排序 array multisort</a></li>
+                        
+                          <li><a title="PHP中的闭包理解" href="15931630289738.html">PHP中的闭包理解</a></li>
+                        
                           <li><a title="reactPHP + lumen性能简测" href="15923063083212.html">reactPHP + lumen性能简测</a></li>
                         
                           <li><a title="QueryPath中文乱码问题,UTF8乱码问题解决" href="15923063084242.html">QueryPath中文乱码问题,UTF8乱码问题解决</a></li>
@@ -240,8 +246,6 @@
                         
                           <li><a title="PHP调试技巧" href="15922725010749.html">PHP调试技巧</a></li>
                         
-                          <li><a title="二维数组排序 array multisort" href="15756185241314.html">二维数组排序 array multisort</a></li>
-                        
 
                     
                   </ul>
@@ -252,87 +256,97 @@
             <div class="large-9 medium-9 columns">
 
  <div class="markdown-body">
-<h1>Hyperf源码阅读 - 框架初始化之容器初始化</h1>
+<h1>Chrome Extension扩展开发之复制粘贴</h1>
 
-<p>框架入口bin/hyperf.php 跟Laravel一样,先初始化容器,剩下的初始化交给容器来做.<br/>
-这里面用了一个闭包,让我想起了JS,防止污染全局变量空间.这个跟常驻进程有关系应该,FPM模型每次释放变量就不需要这么搞.<br/>
-容器的定义在config/container.php</p>
+<p>Tags:  chrome extension 粘贴<br/>
+Toc:no<br/>
+Status: public<br/>
+Position: 1</p>
 
-<p><strong>config/container.php</strong><br/>
-初始化Container,注入依赖Hyperf\Di\Definition\DefinitionSourceFactory<br/>
-再把Container对象给到ApplicationContext.这个ApplicationContext可以理解为每次请求的应用上下文,猜测应该是协程安全的,类似线程安全.用来管理每次请求的框架应用上下文.</p>
+<p>最近在研究Chrome Extension扩展开发.想实现一个功能,选中文本后写入到插件弹层的div中.<br/><br/>
+一开始想的方案,用Selection来实现.钻研了好几天的Selection,总是有莫名其妙的问题,在某些页面选中文本后Selection对象里面无法获取到文本内容,感觉跟过于复杂的DOM结构有点关系.灵机一动,用复制粘贴不就解决了嘛,鼠标选中文本后自动复制,然后在弹出的div层中把文本粘贴回来就行了,如此简单的方案 岂不美滋滋.说干就干</p>
 
-<p><strong>vendor/hyperf/di/src/Definition/DefinitionSourceFactory.php</strong><br/>
-Definition是Hyperf依赖注入里面的概念,理解为&quot;抽象定义&quot;,比如接口 抽象类什么的.在Laravel里的概念叫Contracts,合约 都是差不多意思</p>
+<p>翻了翻方案,读写clipboard两条命令搞定:</p>
 
-<p>传入给Container的依赖是<br/>
-(new DefinitionSourceFactory(true))()<br/>
-就是先调用__construct(),然后又会调用__invoke(),把invoke的值返回给Container.</p>
-
-<p>construct设置了两个类变量,很简单</p>
-
-<p>__invoke()主要是初始化一些配置.<br/>
-$configFromProviders 是Hyperf的又一个概念;每个vendor里面的组件,通过ConfigProvider机制,把组件自己的配置注入到框架里面,这个注入流程在此完成的.注意每个ConfigProvider.php文件是通过各自组件的Composer.json的extra字段定义的, 在这里读取的时候是通过项目根目录的Composer.lock文件获取的,如果开发本地包,需要添加本地的respositories才会更新lock文件.</p>
-
-<p>$configFromProviders = ProviderConfig::load() <br/>
- 就是通过调用Composer的相关方法,获取到每个组件的extra配置拿到全部extra的数组,从而生成一个全部组件的ConfigProvider数组</p>
-
-<p>$serverDependencies 从config/dependencies.php获得dependency的配置,也就是用户自己定义的接口与实现的绑定关系</p>
-
-<p>继续加载配置config/autoload/annotations.php,注解相关的配置.</p>
-
-<p>生成一个$scanConfig = new ScanConfig()的对象后,把依赖注入到DefinitionSource对象,工厂的功能就完成了,最后我们得到一个DefinitionSource对象.</p>
-
-<p><strong>vendor/hyperf/di/src/Definition/DefinitionSource.php</strong><br/>
- __construct()中<br/>
- 生成了一个Hyperf\Di\Annotation\Scanner对象.</p>
-
-<ul>
-<li><p>调用\(this-&gt;scan()<br/>
-\)paths是在DefinitionSourceFactory中生成的ScanConfig-&gt;getDirs()来获取的,就是在DefinitionSourceFactory中合并的各个配置的 \(scanDirs.<br/>
-遍历每个目录\)path,看前缀是vendor还是app,从而把需要遍历的目录分组 app内还是vendor内的目录</p></li>
-<li><p>调用\(this-&gt;normalizeSource()把DefinitionSourceFactory中获取的用户在config/autoload/dependencies.php中配置的绑定关系,通过\)this-&gt;normalizeDefinition()方法转换成一个&quot;正常的&quot;Definition,也就是实例化,存到$this-&gt;source变量中.</p>
-<p>construct初始化就完成了.</p>
-<p>再看看什么是normalizeDefinition()<br/>
-如果\(definition是对象,并且实现了__invode()可以直接像函数一样调用,则传给FactoryDefinition <br/>
-如果\)definition是函数,也一样传给FactoryDefinition</p></li>
-</ul>
-
-<p>如果是普通类,则通过ObjectDefinition对象包装一下后,传给$this-&gt;autowire()</p>
-
-<p><em>autowire()</em>是真正把类实例化成为对象的地方.但是此函数还不实例化,而是生成一个ObjectDefinition对象;这个对象包含了需要被实例化的类的基础信息,construct有没有啊,需要哪些依赖啊,之类的信息.</p>
-
-<ul>
-<li>先通过ReflectionManager::reflectClass()拿到反射后的类,判断__construct()是不是存在而且是public的.如果存在且public则可以调用,通过getParametersDefinition()拿到type hint类定义,传给completeConstructorInjection-&gt;completeConstructorInjection来丰富construct需要的参数;</li>
-<li>然后处理通过注解注入对象的情况.通过AnnotationCollector::get()获取之前Scan到的全部需要处理的注入注解;</li>
-<li>然后获取这个类是不是需要proxy代理,在$this-&gt;isNeedProxy判断;通过代理来实现AOP切面;
-<ul>
-<li><strong>isNeexProxy()</strong>
-<ul>
-<li>先通过AspectCollector获取到类需要的aspect切面;</li>
-<li>获取一下类和方法的全部注解,判断一下条件,返回是否需要注解 true/false</li>
-</ul></li>
-</ul></li>
-<li>是否proxy的信息 存入$definition 齐活</li>
-</ul>
-
-<pre><code class="language-text">至此,Container里面装满了ObjectDefinition,各种初始化需要的类都创建好装在Container容器里了.然后开始运行
-bin/hyperf.php里
-$application = $container-&gt;get(\Hyperf\Contract\ApplicationInterface::class);
-$application-&gt;run();
-通过容器拿到Application然后run()起来
+<pre><code class="language-text">document.execcommand(&#39;copy&#39;)
+document.execcommand(&#39;paste&#39;)
 </code></pre>
 
-<p><strong>继续看一下Container的内部</strong><br/>
-Hyperf\Di\Container(vendor/hyperf/di/src/container.php)是核心的容器类,负责app应用内上层的依赖管理;之前的一些ObjectDefinition算是比较底层的依赖;</p>
+<p>然后在onmouseup里面调用一下copy,复制就搞定了,美滋滋<br/><br/>
+然而,paste却死活不行.调用document.execcommand(&#39;paste&#39;),返回值总是false,死活不行.查了半天,Chrome因为安全问题禁用了读取剪切板内容...这不坑爹了</p>
 
-<ul>
-<li>__construct()初始化,传入的依赖为$definitionSource,就是前面通过DefinitionSource.php生成的ObjectDefinition对象数组;definitionResolver负责具体的resolve,就是真正把类实例化变成对象</li>
-<li>make()实例化方法,会根据一个name生成一个对象实体;具体方式 先查一下缓存,getDefinition(\(name),这个缓存是本地的数组;然后调用\)this-&gt;definitionResolver-&gt;resolve()来实例化,resolver是ResolverDispatcher实现的</li>
-<li><strong>resolve的实现:ResolverDispatcher</strong>
-resolve分2种:如果实现了SelfResolvingDefinitionInterface,就是自己可以resolve的,直接调自己家的resolve()方法;如果不是,则看一下是属于ObjectDefinition普通类还是FactoryDefinition工厂类,然后用对应的Resolver来resolve.<br/>
-以ObjectDefinition为例,具体的new对象过程在createInstance()方法;先判断一下是不是isInstantiable并且Exist的;符合条件的,通过parameterResolver解析出construct需要的params,最后调用new方法 把params传给construct,才真正完成一个类的实例化,得到一个Entity实体对象.</li>
-</ul>
+<p>不信邪 一顿操作猛如虎,找到两个solution</p>
+
+<pre><code class="language-text">https://stackoverflow.com/questions/7144702/the-proper-use-of-execcommandpaste-in-a-chrome-extension
+
+https://gist.github.com/srsudar/e9a41228f06f32f272a2
+</code></pre>
+
+<p>stackoverflow讲的不是很明白,但是信息是明确的:Chrome的Extension里面是可以调用这个方法的,这个路子肯定是没问题的.大方向没问题,就开始折腾.</p>
+
+<p>开始在Content Script(就是注入到页面的js)各种折腾,各种失败.继续搜了半天,只有在background.js里面才有权限.</p>
+
+<p>那么,思路基本上是:必须在background.js里面调用paste拿到剪贴板内容,然后传给页面里的JS.<br/>
+开始在页面js里面调用chrome.extension.getBackgroundPage(),死活也不行.翻官方手册,貌似可以用传Message的方式进行通讯.一顿尝试,最终成功,必须记录一下了.</p>
+
+<p>background.js:</p>
+
+<pre><code class="language-text">chrome.runtime.onMessage.addListener(
+    function(request, sender, sendResponse){
+        var result = &#39;&#39;;
+        var sandbox = document.getElementById(&#39;sandbox&#39;);
+        sandbox.value = &#39;&#39;;
+        sandbox.select();
+        if (document.execCommand(&#39;paste&#39;)) {
+            result = sandbox.value;
+        }
+        sandbox.value = &#39;&#39;;
+        sendResponse({clipboard: result});
+    }
+)
+</code></pre>
+
+<p>background.html</p>
+
+<pre><code class="language-text">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+    &lt;head&gt;
+        &lt;script src=&quot;background.js&quot;&gt;&lt;/script&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+        &lt;textarea id=&quot;sandbox&quot;&gt;&lt;/textarea&gt;
+    &lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre>
+
+<p>mainfest.json  </p>
+
+<pre><code class="language-text">&quot;background&quot;: {
+    &quot;persistent&quot;: true,
+    &quot;page&quot;: &quot;background.html&quot;
+  },
+ ...
+ 
+权限我加入了&quot;clipboardRead&quot;, &quot;clipboardWrite&quot;,&quot;background&quot;这几个,
+web_accessible_resources加入&quot;background.html&quot;,&quot;background.js&quot; 懒得去测每个值的影响了,反正都加上了
+ 
+</code></pre>
+
+<p>在需要获取剪切板内容的方法里发消息:</p>
+
+<pre><code class="language-text">chrome.runtime.sendMessage({}, function (response){
+     console.log(response);
+});
+           
+</code></pre>
+
+<p>response中就可以获取到剪切板的内容了,搞定!</p>
+
+<p>PS:<br/>
+调试background.html的时候,这里面引入的js的debug信息和console信息,是不会在普通的tab页面中显示的.导致我摸黑调试了半天,浪费了很多时间.background相关的调试信息,需要在chrome://extensions/里面打开 develop mode,然后在插件下面点击&quot;Inspect views: background.html&quot;在弹出的inspector里面就可以看到debug信息了.有了信息在debug就方便多了.</p>
 
 
 </div>
@@ -344,15 +358,15 @@ resolve分2种:如果实现了SelfResolvingDefinitionInterface,就是自己可�
   <div class="large-6 columns">
 	<div class="text-left" style="padding:15px 0px;">
 		
-	        <a href="15919610280346.html"  title="Previous Post: Hyperf源码阅读 - 框架初始化之Application">&laquo; Hyperf源码阅读 - 框架初始化之Application</a>
+	        <a href="15923063083769.html"  title="Previous Post: gopush代码分析-comet模块">&laquo; gopush代码分析-comet模块</a>
 	    
 	</div>
   </div>
   <div class="large-6 columns">
 	<div class="text-right" style="padding:15px 0px;">
 		
-	        <a href="15918401062183.html" 
-	        title="Next Post: Hyperf源码阅读 - Router流程">Hyperf源码阅读 - Router流程 &raquo;</a>
+	        <a href="15923063084125.html" 
+	        title="Next Post: iowait详解">iowait详解 &raquo;</a>
 	    
 	</div>
   </div>
@@ -365,7 +379,7 @@ resolve分2种:如果实现了SelfResolvingDefinitionInterface,就是自己可�
 </div>
 <script type="text/javascript">
 	$(function(){
-		var currentURL = '15918404223001.html';
+		var currentURL = '15923063083833.html';
 		$('#side-nav a').each(function(){
 			if($(this).attr('href') == currentURL){
 				$(this).parent().addClass('active');
