@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
     
-  python中使用import加载目录中全部文件 - Rainyluo's BLOG
+  PHP的 Generator(yield)有啥用 - Rainyluo's BLOG
   
   </title>
  <meta name="description" content="">
@@ -260,43 +260,255 @@
             <div class="large-9 medium-9 columns">
 
  <div class="markdown-body">
-<h1>python中使用import加载目录中全部文件</h1>
+<h1>PHP的 Generator(yield)有啥用</h1>
 
-<p>Tags:  经验<br/>
-Toc:no<br/>
-Status: public<br/>
-Position: 1</p>
+<p>原文:<a href="https://blog.ircmaxell.com/2012/07/what-generators-can-do-for-you.html">https://blog.ircmaxell.com/2012/07/what-generators-can-do-for-you.html</a><br/>
+另一篇很经典的<a href="http://nikic.github.io/2012/12/22/Cooperative-multitasking-using-coroutines-in-PHP.html">http://nikic.github.io/2012/12/22/Cooperative-multitasking-using-coroutines-in-PHP.html</a> 鸟哥已经有翻译了,就不写了.</p>
 
-<p>最近准备换用Flask,于是开始研究Python了.py的包导入机制,没有PHP那么直观,直接写文件名字就行.虽然学习起来有一些难度,不过能够有效的避免大型项目的命名空间问题,相比PHP 等到实在不行了引入一个namespace反而更乱了.</p>
+<p>PHP的5.5.0版本引入了Generator这个概念.我觉得这是个非常有用的工具,但是看起来很多PHP开发者对Generator并不熟悉.所以我觉得应该花点时间来解释一下它是怎么工作的,以及怎么用这个工具来简化代码.</p>
 
-<p>关于import 的基本用法就不说了,这个教程很多了.想要从其他文件夹里面import文件,需要在文件夹中建立一个__init__.py的文件用于初始化和声明,这个文件是空的也ok,不过在import的时候会自动执行这个文件,也可以做初始化来使用.</p>
+<h3 id="toc_0">理论</h3>
 
-<p>不过虽然建立了这个文件,在其他地方引用的时候还是只能每次通过from xx import xx加载一个文件,不是很方便.标准的用法是,修改目录下的__init__.py文件,用这个来实现加载全部文件的目的.</p>
+<p>先说明一件事儿:Generators并没有给语言添加了什么新的神奇能力.用Generator能完成的事儿,都可以用itarator迭代器来完成.所以,记住这一点 先来个栗子.假设要逐行循环读取一个文件,传统的程序很容易写:</p>
 
-<p>手动的方法:</p>
-
-<pre><code class="language-text">import a
-import b
+<pre><code class="language-php">$f = fopen($file, &#39;r&#39;);
+while ($line = fgets($f)) {
+    doSomethingWithLine($line);
+}
 </code></pre>
 
-<p>或者:</p>
+<p>随便用一下这个就很好用了.但是如果我们想把调用抽象一下呢,从一个抽象的数据源读取多行数据 .今天可能是读取文件,明天可能是从数据库读取,或者也可能从服务调用读取,或者其他什么方法.</p>
 
-<pre><code class="language-text">__all__ = [&quot;a&quot;, &quot;b&quot;]
+<p>目前为止,我们有两种选择来实现这个抽象.我们可以在调用方法后返回一个数组,或者可以返回一个迭代器.如果每次调用方法都返回数组,可能有俩问题:首先我们可能不能把全部数据都塞到内存里(如果文件有30G怎么办);其次,我们甚至不能把返回数据考虑成数组(例如我们想返回一个无限的序列,让调用发来决定调用多少).</p>
 
+<p>所以剩下的就只有迭代器了.对于这个例子,转换成迭代器还是很简单的.本质上来说,对这个例子PHP已经有个内置的迭代器直接可以用了:SPLFileObject.为了演示一下,我们来实现一个:</p>
+
+<pre><code class="language-php">class FileIterator implements Iterator {
+    protected $f;
+    public function __construct($file) {
+        $this-&gt;f = fopen($file, &#39;r&#39;);
+        if (!$this-&gt;f) throw new Exception();
+    }
+    public function current() {
+        return fgets($this-&gt;f);
+    }
+    public function key() {
+        return ftell($this-&gt;f);
+    }
+    public function next() {
+    }
+    public function rewind() {
+        fseek($this-&gt;f, 0);
+    }
+    public function valid() {
+        return !feof($this-&gt;f);
+    }
+}
 </code></pre>
 
-<p>这样会自动加载目录下的a.py和b.py文件了.</p>
+<p>看起来很简单对吧.其实没这么简单.如果仔细看看就会发现,我们没有完全遵从迭代器的原则来实现.Next和Rewind方法应该是唯一用来改变数据的方法.每次调用 current()方法都应该返回相同的数据.但是这个实现并不是这样.我是故意写错的,来演示一下把普通的代码直接转换成迭代器并没有那么容易.实际上,想写的完全正确还是挺麻烦的,来看看正确的实现方法:</p>
 
-<p>来个终极懒人的方法:</p>
-
-<pre><code class="language-text">from os.path import dirname, basename, isfile
-import glob
-modules = glob.glob(dirname(__file__)+&quot;/*.py&quot;)
-__all__ = [ basename(f)[:-3] for f in modules if isfile(f)]
-
+<pre><code class="language-php">class FileIterator implements Iterator {
+    protected $f;
+    protected $data;
+    protected $key;
+    public function __construct($file) {
+        $this-&gt;f = fopen($file, &#39;r&#39;);
+        if (!$this-&gt;f) throw new Exception();
+    }
+    public function __destruct() {
+        fclose($this-&gt;f);
+    }
+    public function current() {
+        return $this-&gt;data;
+    }
+    public function key() {
+        return $this-&gt;key;
+    }
+    public function next() {
+        $this-&gt;data = fgets($this-&gt;f);
+        $this-&gt;key++;
+    }
+    public function rewind() {
+        fseek($this-&gt;f, 0);
+        $this-&gt;data = fgets($this-&gt;f);
+        $this-&gt;key = 0;
+    }
+    public function valid() {
+        return false !== $this-&gt;data;
+    }
+}
 </code></pre>
 
-<p>自动加载目录下的全部文件.再一次感叹py的简洁和强大的表达能力.</p>
+<p>WOw,为了一个简单的循环文件要写一大坨代码和很多保存状态的变量(而且还是在很多复杂的工作已经在文件操作函数内解决了的情况下).想象一下,如果有更多的状态需要操作,或者更复杂的算法需要实现.在方法调用之间保存状态还可行,但是在组合方法调用的时候就更难了.所以让我们了解一个解决这种问题的迭代器:</p>
+
+<pre><code class="language-php">function getLines($file) {
+    $f = fopen($file, &#39;r&#39;);
+    if (!$f) throw new Exception();
+    while ($line = fgets($f)) {
+        yield $line;
+    }
+    fclose($f);
+}
+</code></pre>
+
+<p>简单多了对不对.实际上,跟之前面向过程的版本基本上一样,只是多了一个新的 yield 关键词.</p>
+
+<h3 id="toc_1">这是咋回事</h3>
+
+<p>理解这个的关键点,在于理解函数的返回值变了.函数返回的并不是我们认为的NULL, yield关键词使得PHP解释器引擎让这个方法返回了一个Generator类.这个类实现了Iterator迭代器,所以可以直接拿来迭代:</p>
+
+<pre><code class="language-php">foreach (getLines(&quot;someFile&quot;) as $line) {
+    doSomethingWithLine($line);
+}
+</code></pre>
+
+<p>最棒的点在于,我们可以任意的组织代码结构,只需要在我们想返回迭代值的地方&quot;yield&quot;就好了.这是咋个原理呢?首先,当调用getLines()方法时,PHP会执行方法,直到遇到第一个yield,在这个地方停住,记住那个值,然后返回generator对象实例.接下来,对这个Generator对象调用next()方法的时候(可能是循环调用,或者手动调用),PHP会从yield暂定的地方,再次执行迭代器内的代码,直到遇到下一个yield(或者遇到一个return来结束掉方法).了解到这些,我们就可以写一个很有用的Generator了</p>
+
+<pre><code class="language-php">function doStuff() {
+    $last = 0;
+    $current = 1;
+    yield 1;
+    while (true) {
+        $current = $last + $current;
+        $last = $current - $last;
+        yield $current;
+    }
+}
+</code></pre>
+
+<p>你能看出来这是做什么的么?第一眼看上去,方法会无限循环下去.实际上,也可以这样.仔细看的话,这是一个很简单的实现了斐波那契数列的方法.</p>
+
+<p>说明一下,这不是一个iterator迭代器的替换版本,这是一个简化版本.Iterator迭代器依然很有用,尤其是在一些结果集类里面,有很多状态需要管理的时候.但是yield确实是非常有用的一个创建迭代器的方式.</p>
+
+<h3 id="toc_2">更复杂的例子</h3>
+
+<p>假设我们想实现一个ArrayObject.除了可以通过iterator迭代器和手动处理数组迭代的方式,我们还可以用一点技巧.IteratorAggregate接口需要一个方法,getIterator().因为这个生成器方法需要返回一个对象,我们就可以让getIterator()变成一个Generator.简单感受一下:</p>
+
+<pre><code class="language-php">class ArrayObject implements IteratorAggregate {
+    protected $array;
+    public function __construct(array $array) {
+        $this-&gt;array = $array;
+    }
+    public function getIterator() {
+        foreach ($this-&gt;array as $key =&gt; $value) {
+            yield $key =&gt; $value;
+        }
+    }
+}
+</code></pre>
+
+<p>很简单,含义清晰,很容易理解.并且,我们还可以通过传统的Key=&gt;value语法返回一个自定义的key.这里面包含了一系列复杂的逻辑(处理各种状态),通过语言提供的语法糖,我们可以写的很优雅.这样我们就可以更集中精神处理主线逻辑,而不用写出一坨坨的代码.<br/>
+但是还有更多可能...</p>
+
+<h3 id="toc_3">回传数据</h3>
+
+<p>我们还可以把数据传回给Generator方法.通过send()方法,yield可以接收到传进来的值.在某些情况下,这个特性非常有用.来看个例子,想要记录一些log数据.除了写一个复杂的log类,单独管理每个状态,用Generator就很简单了.</p>
+
+<pre><code class="language-php">function createLog($file) {
+    $f = fopen($file, &#39;a&#39;);
+    while (true) {
+        $line = yield;
+        fwrite($f, $line);
+    }
+}
+$log = createLog($file);
+$log-&gt;send(&quot;First&quot;);
+$log-&gt;send(&quot;Second&quot;);
+$log-&gt;send(&quot;Third&quot;);
+</code></pre>
+
+<p>很简单吧.再来看一个复杂点的例子,协程的用法(一起工作的子程序,会来回地进行控制权限的调度).假设我们要构建一个抓取数据的队列系统,在抓取任务间来回地传递数据,可能有二进制的数据流,在数据内集成了长度信息.我们可以手动的把它们组合在一起,也可以构建一系列的Generator:</p>
+
+<pre><code class="language-php">function fetchBytesFromFile($file) {
+    $length = yield;
+    $f = fopen($file, &#39;r&#39;);
+    while (!feof($f)) {
+        $length = yield fread($f, $length);
+    }
+    yield false;
+}
+function processBytesInBatch(Generator $byteGenerator) {
+    $buffer = &#39;&#39;;
+    $bytesNeeded = 1000;
+    while ($buffer .= $byteGenerator-&gt;send($bytesNeeded)) {
+        // determine if buffer has enough data to be executed
+        list($lengthOfRecord) = unpack(&#39;N&#39;, $buffer);
+        if (strlen($buffer) &lt; $lengthOfRecord) {
+            $bytesNeeded = $lengthOfRecord - strlen($buffer);
+            continue;
+        }
+        yield substr($buffer, 1, $lengthOfRecord);
+        $buffer = substr($buffer, 0, $lengthOfRecord + 1);
+        $bytesNeeded = 1000 - strlen($buffer);
+    }
+}
+$gen = processBytesInBatch(fetchBytesFromFile($file));
+foreach ($gen as $record) {
+    doSomethingWithRecord($record);
+}
+</code></pre>
+
+<p>略微复杂,但是希望你还是研究一下具体在做什么.我们把从缓存获取数据和处理的过程抽象了出来.借此,我们可以高效地获取我们需要的数据,同时也没有损失可重用性.</p>
+
+<h3 id="toc_4">其他用处</h3>
+
+<p>Generators还有很多其他用处.非常牛逼有用的一点就是用来模拟线程.基本上,把每个Generator都可以看成&quot;线程&quot;,然后 &quot;yield&quot;把执行上下文传回给调度器,然后调度器继续执行其他子线程(基本上这就是绿色线程 的工作模式).所以我们就可以构建一个从多个数据源同时处理数据的系统(并且可以用非阻塞I/O).一个简单的栗子:</p>
+
+<pre><code class="language-php">function step1() {
+    $f = fopen(&quot;file.txt&quot;, &#39;r&#39;);
+    while ($line = fgets($f)) {
+        processLine($line);
+        yield true;
+    }
+}
+function step2() {
+    $f = fopen(&quot;file2.txt&quot;, &#39;r&#39;);
+    while ($line = fgets($f)) {
+        processLine($line);
+        yield true;
+    }
+}
+function step3() {
+    $f = fsockopen(&quot;www.example.com&quot;, 80);
+    stream_set_blocking($f, false);
+    $headers = &quot;GET / HTTP/1.1\r\n&quot;;
+    $headers .= &quot;Host: www.example.com\r\n&quot;;
+    $headers .= &quot;Connection: Close\r\n\r\n&quot;;
+    fwrite($f, $headers);
+    $body = &#39;&#39;;
+    while (!feof($f)) {
+        $body .= fread($f, 8192);
+        yield true;
+    }
+    processBody($body);
+}
+function runner(array $steps) {
+    while (true) {
+        foreach ($steps as $key =&gt; $step) {
+             $step-&gt;next();
+             if (!$step-&gt;valid()) {
+                 unset($steps[$key]);
+             }
+        }
+        if (empty($steps)) return;
+    }
+}
+runner(array(step1(), step2(), step3()));
+</code></pre>
+
+<p>记住,所有用Generator能实现的,用Iterator迭代器都能实现.所以这不是非常特别的能力.但是关键点在于,每一个步骤之间的状态都由引擎来帮我们管理了,所以我们不需要做更多复杂的操作.把面向过程的函数转换为这种模式,只需在把数据传回给父级调用方的时候添加一个yield语句就行了.</p>
+
+<h3 id="toc_5">结论</h3>
+
+<p>迭代器是非常有用的概念.他们能极大地简化代码.想象一下,用一行代码写一个xrange()函数:</p>
+
+<pre><code class="language-php">function xrange($min, $max) {
+    for ($i = $min; $i &lt; $max; $i++) yield $i;
+}
+</code></pre>
+
+<p>简单明了,很容易看懂,性能也很好(比迭代实现的版本好多了).更美好的是,Generator给我们的思路打开了一扇门.更多的用法后面在介绍了</p>
 
 
 </div>
@@ -308,15 +520,13 @@ __all__ = [ basename(f)[:-3] for f in modules if isfile(f)]
   <div class="large-6 columns">
 	<div class="text-left" style="padding:15px 0px;">
 		
-	        <a href="15923063086602.html"  title="Previous Post: PHP 通过Apns给Ios设备推送Notification">&laquo; PHP 通过Apns给Ios设备推送Notification</a>
-	    
 	</div>
   </div>
   <div class="large-6 columns">
 	<div class="text-right" style="padding:15px 0px;">
 		
-	        <a href="15923063087852.html" 
-	        title="Next Post: 使用GITHUB+JustWriting搭建BLOG">使用GITHUB+JustWriting搭建BLOG &raquo;</a>
+	        <a href="15936798966495.html" 
+	        title="Next Post: 理解矩阵">理解矩阵 &raquo;</a>
 	    
 	</div>
   </div>
@@ -329,7 +539,7 @@ __all__ = [ basename(f)[:-3] for f in modules if isfile(f)]
 </div>
 <script type="text/javascript">
 	$(function(){
-		var currentURL = '15923063087292.html';
+		var currentURL = '16043884086250.html';
 		$('#side-nav a').each(function(){
 			if($(this).attr('href') == currentURL){
 				$(this).parent().addClass('active');
